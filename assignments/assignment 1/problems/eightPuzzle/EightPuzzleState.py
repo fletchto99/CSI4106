@@ -62,7 +62,13 @@ class EightPuzzleState(State):
 
     # returns true if the current state is the same as other, false otherwise
     def equals(self, other):
-        self.state = other
+        return self.state == other
+
+    def _eq_(self, other):
+        return self.equals(other)
+
+    def _hash_(self):
+        return hash(tuple(self.state))
 
 
     # prints the grid representing the current state
