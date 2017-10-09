@@ -13,7 +13,9 @@ class Queue:
 
     # returns the elements of the current data structure
     def show(self):
-        return self.items[]
+        for item in self.items:
+            print(str(item), end=' ')
+        print()
 
     # returns a boolean indicating whether the current data structure is empty or not
     def isEmpty(self):
@@ -40,41 +42,46 @@ class Queue:
 class PriorityQueue:
     # initializes the data structure
     def __init__(self, fct):
-    # TO COMPLETE
+        self.items = []
 
     # returns the elements of the current data structure
     def show(self):
-    # TO COMPLETE
+        for item in self.items:
+            print (str(item), end=' ')
+        print()
 
     # returns a boolean indicating whether the current data structure is empty or not
     def isEmpty(self):
-    # TO COMPLETE
+        return self.items == []
 
     # add the element item to the current data structure
     def enqueue(self, item):
-    # TO COMPLETE
+        self.items.insert(0, item)
 
     # removes an element from the current data structure
     def dequeue(self):
     # TO COMPLETE
+        return self.items
 
     # returns the size of the current data structure (the number of elements)
     def size(self):
-    # TO COMPLETE
+        return len(self.items)
 
     # returns a boolean value that indicates if the element item is contained in the current data structure
     def __contains__(self, item):
-    # TO COMPLETE
+        return item in items
 
 #Stack - Implementation of the data structure Stack
 class Stack:
     # initializes the data structure
     def __init__(self):
-        self.items[]
+        self.items = []
 
     # returns the elements of the current data structure
     def show(self):
-        return self.items[]
+        for item in self.items:
+            print(str(item), end=' ')
+        print()
 
     # returns a boolean indicating whether the current data structure is empty or not
     def isEmpty(self):
