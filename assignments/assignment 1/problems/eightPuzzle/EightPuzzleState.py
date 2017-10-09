@@ -96,6 +96,8 @@ class EightPuzzleState(State):
     ## returns the value of your first heuristic for the current state
     # make sure to explain it clearly in your comment
     def heuristic1(self):   # count the misplaced tiles
+        # Filters the array down to only elements not matching their index
+        # and then computes the length
         return len([1 for i,x in enumerate(state) if i!=x])
 
     # returns the value of your first heuristic for the current state
