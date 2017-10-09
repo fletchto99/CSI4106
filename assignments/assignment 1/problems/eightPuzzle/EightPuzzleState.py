@@ -32,16 +32,15 @@ class EightPuzzleState(State):
     def possibleActions(self):
         possibleactions = []
         #depending on where the blank node is, return the possible actions
-        if state.index(0) > self.boardSize:
+        if self.state.index(0) > self.boardSize:
             possibleactions.append("up")
-        if (state.index(0)+1) % self.boardSize != 0:
+        if (self.state.index(0)+1) % self.boardSize != 0:
             possibleactions.append("right")
-        if state.index(0) < (self.boardSize**2)-self.boardSize:
+        if self.state.index(0) < (self.boardSize**2)-self.boardSize:
             possibleactions.append("down")
-        if state.index(0) % self.boardSize != 0:
+        if self.state.index(0) % self.boardSize != 0:
             possibleactions.append("left")
         return possibleactions
-
 
     # applies the result of the move on the current state
     def executeAction(self, move):
@@ -49,16 +48,16 @@ class EightPuzzleState(State):
 
         # I've created a simple helper function __swap which just swaps the elements
         if move == 'up':
-            __swap(idx, idx-self.boardSize)
+            self.__swap(idx, idx - self.boardSize)
         elif move == 'right':
-            __swap(idx, idx+1)
+            self.__swap(idx, idx + 1)
         elif move == 'down':
-            __swap(idx, idx+self.boardSize)
+            self.__swap(idx, idx + self.boardSize)
         elif move == 'left':
-            __swap(idx, idx-1)
+            self.__swap(idx, idx - 1)
 
     # A simple helper function to swap the elements
-    def __swap(start, end):
+    def __swap(self, start, end):
         self.state[start], self.state[end] = self.state[end], self.state[start]
 
     # returns true if the current state is the same as other, false otherwise
@@ -90,21 +89,19 @@ class EightPuzzleState(State):
     # returns the value of the heuristic for the current state
     # note that you can alternatively call heuristic1() and heuristic2() to test both heuristics with A*
     def heuristic(self):
-        return self.heuristic1()
+        return 1
+        # return self.heuristic1()
         # return self.heuristic2()
 
 
     ## returns the value of your first heuristic for the current state
     # make sure to explain it clearly in your comment
-    def heuristic1(self):
-        # TO COMPLETE
+    def heuristic1(self):   # count the misplaced tiles
         pass
-
 
     # returns the value of your first heuristic for the current state
     # make sure to explain it clearly in your comment
-    def heuristic2(self, matrix, goal):
-        # TO COMPLETE
+    def heuristic2(self):   # total Manhattan distance
         pass
 
 
@@ -159,10 +156,10 @@ puzzle.show()
 if not issolvable(puzzle_choice):
     print("NOT SOLVABLE")
 else:
-    start = timeit.default_timer()
-    solution, nbvisited = breadthfirst_search(puzzle)
-    stop = timeit.default_timer()
-    printResults('BFS', solution, start, stop, nbvisited)
+    # start = timeit.default_timer()
+    # solution, nbvisited = breadthfirst_search(puzzle)
+    # stop = timeit.default_timer()
+    # printResults('BFS', solution, start, stop, nbvisited)
 
 
     start = timeit.default_timer()
