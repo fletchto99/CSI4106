@@ -39,13 +39,11 @@ class EightPuzzleState(State):
         if state.index(0) < (self.boardSize**2)-boardSize:
             possibleactions.append("down")
         if state.index(0) % self.boardSize != 0:
-            possibleactions.append('left')
         return possibleactions
 
 
     # applies the result of the move on the current state
     def executeAction(self, move):
-
         idx = self.state.index(0)
 
         # I've created a simple helper function __swap which just swaps the elements
