@@ -165,10 +165,10 @@ puzzle.show()
 if not issolvable(puzzle_choice):
     print("NOT SOLVABLE")
 else:
-    start = timeit.default_timer()
-    solution, nbvisited = breadthfirst_search(puzzle)
-    stop = timeit.default_timer()
-    printResults('BFS', solution, start, stop, nbvisited)
+    # start = timeit.default_timer()
+    # solution, nbvisited = breadthfirst_search(puzzle)
+    # stop = timeit.default_timer()
+    # printResults('BFS', solution, start, stop, nbvisited)
 
 
     start = timeit.default_timer()
@@ -176,9 +176,9 @@ else:
     stop = timeit.default_timer()
     printResults('DFS', solution, start, stop, nbvisited)
 
-    # start = timeit.default_timer()
-    # solution, nbvisited = astar_search(puzzle)
-    # stop = timeit.default_timer()
-    # printResults('A*', solution, start, stop, nbvisited)
+    start = timeit.default_timer()
+    solution, nbvisited = astar_search(puzzle)
+    stop = timeit.default_timer()
+    printResults('A*', solution, start, stop, nbvisited)
 
 

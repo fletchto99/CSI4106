@@ -3,6 +3,8 @@
 ### Author: Hadi Abdi Ghavidel
 ### habdi.cnlp@gmail.com
 
+import functools
+
 from operator import attrgetter
 
 #Queue - Implementation of the data structure Queue
@@ -55,13 +57,13 @@ class PriorityQueue:
 
     # add the element item to the current data structure
     def enqueue(self, item):
-        # TODO use comparator
         self.items.insert(0, item)
 
     # removes an element from the current data structure
     def dequeue(self):
         if self.isEmpty():
             raise Exception("Nothing in queue")
+        self.items.sort(key=functools.cmp_to_key(self.comparator))
         return self.items.pop()
 
     # returns the size of the current data structure (the number of elements)
