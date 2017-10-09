@@ -14,7 +14,7 @@ def breadthfirst_search(initialState):
     while not q.isEmpty():
         v = q.dequeue()  # dequeue the vertex (or node)
         if not v.state.isGoal():
-        	for _next in v.state.possibleActions(): # Find all next possible actions
+            for _next in v.state.possibleActions(): # Find all next possible actions
                 newV = v._createNode(_next)      # create a new vertex (or node)
                 if newV.elem not in visited :    # if new vertex has not been explored
                     q.enqueue(newV)  # enqueue the new vertice
