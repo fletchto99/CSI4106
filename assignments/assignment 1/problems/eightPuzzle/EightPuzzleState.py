@@ -89,15 +89,14 @@ class EightPuzzleState(State):
     # returns the value of the heuristic for the current state
     # note that you can alternatively call heuristic1() and heuristic2() to test both heuristics with A*
     def heuristic(self):
-        return 1
-        # return self.heuristic1()
+        return self.heuristic1()
         # return self.heuristic2()
 
 
     ## returns the value of your first heuristic for the current state
     # make sure to explain it clearly in your comment
     def heuristic1(self):   # count the misplaced tiles
-        pass
+        return len([1 for i,x in enumerate(state) if i!=x])
 
     # returns the value of your first heuristic for the current state
     # make sure to explain it clearly in your comment
