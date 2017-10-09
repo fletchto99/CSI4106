@@ -17,13 +17,11 @@ class EightPuzzleState(State):
 
     #initializes the eight puzzle with the configuration passed in parameter (numbers)
     def __init__(self, numbers):
-       # TO COMPLETE
-
-
+       self.state = numbers
 
     #returns a boolean value that indicates if the current configuration is the same as the goal configuration
     def isGoal(self):
-        # TO COMPLETE
+        return self.state == [0, 1, 2, 3, 4, 5, 6, 7, 8]
 
 
     # returns the set of legal actions in the current state
@@ -38,23 +36,29 @@ class EightPuzzleState(State):
 
     # returns true if the current state is the same as other, false otherwise
     def equals(self, other):
-    # TO COMPLETE
+        self.state = other
 
 
     # prints the grid representing the current state
-    # e.g. -----------
-        # |   | 1 | 2 |
-        # -----------
-        # | 3 | 4 | 5 |
-        # -----------
-        # | 6 | 7 | 8 |
-        # -----------
+    # e.g.
+    # -------------
+    # |   | 1 | 2 |
+    # -------------
+    # | 3 | 4 | 5 |
+    # -------------
+    # | 6 | 7 | 8 |
+    # -------------
     def show(self):
-    # TO COMPLETE
+        print("-------------", end="\n|")
+        for idx, element in enumerate(self.state):
+            print("  " if element == 0 else element, "| ", end = "")
+            if (idx+1) % 3 == 0 and idx != 0:
+                print("\n-------------", end = "\n" if idx+1 == len(self.state) else "\n| ")
+
 
     # returns the cost of the action in parameter
     def cost(self, action):
-    # TO COMPLETE
+        return 1 # Won't it always be 1 since we can only move 1 square in a single move?
 
     # returns the value of the heuristic for the current state
     # note that you can alternatively call heuristic1() and heuristic2() to test both heuristics with A*
