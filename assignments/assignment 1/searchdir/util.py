@@ -13,13 +13,11 @@ class Queue:
 
     # returns the elements of the current data structure
     def show(self):
-        for item in self.items:
-            print(str(item), end=' ')
-        print()
+        return self.items
 
     # returns a boolean indicating whether the current data structure is empty or not
     def isEmpty(self):
-        return self.items == []
+        return not self.items
 
     # add the element item to the current data structure
     def enqueue(self, item):
@@ -27,6 +25,8 @@ class Queue:
 
     # removes an element from the current data structure
     def dequeue(self):
+        if self.isEmpty():
+            raise Exception("Nothing in queue")
         return self.items.pop()
 
     # returns the size of the current data structure (the number of elements)
@@ -35,7 +35,7 @@ class Queue:
 
     # returns a boolean value that indicates if the element item is contained in the current data structure
     def __contains__(self, item):
-        return item in items
+        return item in self.items
 
 
 #Priority Queue Implementation of the data structure PriorityQueue
@@ -43,25 +43,26 @@ class PriorityQueue:
     # initializes the data structure
     def __init__(self, fct):
         self.items = []
+        self.comparator = fct
 
     # returns the elements of the current data structure
     def show(self):
-        for item in self.items:
-            print (str(item), end=' ')
-        print()
+        return self.items
 
     # returns a boolean indicating whether the current data structure is empty or not
     def isEmpty(self):
-        return self.items == []
+        return not self.items
 
     # add the element item to the current data structure
     def enqueue(self, item):
+        # TODO use comparator
         self.items.insert(0, item)
 
     # removes an element from the current data structure
     def dequeue(self):
-    # TO COMPLETE
-        return self.items
+        if self.isEmpty():
+            raise Exception("Nothing in queue")
+        return self.items.pop()
 
     # returns the size of the current data structure (the number of elements)
     def size(self):
@@ -69,7 +70,7 @@ class PriorityQueue:
 
     # returns a boolean value that indicates if the element item is contained in the current data structure
     def __contains__(self, item):
-        return item in items
+        return item in self.items
 
 #Stack - Implementation of the data structure Stack
 class Stack:
@@ -79,13 +80,11 @@ class Stack:
 
     # returns the elements of the current data structure
     def show(self):
-        for item in self.items:
-            print(str(item), end=' ')
-        print()
+        return self.items
 
     # returns a boolean indicating whether the current data structure is empty or not
     def isEmpty(self):
-        return self.items == []
+        return not self.items
 
     # add the element item to the current data structure
     def push(self, item):
@@ -93,6 +92,8 @@ class Stack:
 
     # removes an element from the current data structure
     def pop(self):
+        if self.isEmpty():
+            raise Exception("Nothing on stack")
         return self.items.pop()
 
     # returns the size of the current data structure (the number of elements)
@@ -101,7 +102,7 @@ class Stack:
 
     # returns a boolean value that indicates if the element item is contained in the current data structure
     def __contains__(self, item):
-        return item in items
+        return item in self.items
 
 #Prints results for search alorithms
 def printResults(alg, solution, start, stop, nbvisited):
