@@ -39,6 +39,7 @@ class EightPuzzleState(State):
         if state.index(0) < (self.boardSize**2)-boardSize:
             possibleactions.append("down")
         if state.index(0) % self.boardSize != 0:
+            possibleactions.append("left")
         return possibleactions
 
 
