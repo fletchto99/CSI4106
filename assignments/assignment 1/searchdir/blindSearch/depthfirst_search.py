@@ -9,16 +9,14 @@ def depthfirst_search(initialState):
     visited = []
     s = Stack()
     s.push(first)
-    visited.append(0)
 
     while not s.isEmpty():
         v = s.pop()
-        visited.append(v.getcost())
+        visited.append(v)
         if not v.state.isGoal():
             for _next in v.expand():
-                if _next.state not in visited:
+                if _next not in visited:
                     s.push(_next)
-                    visited.append(v.getcost())
         else:
             return v, len(visited)
 

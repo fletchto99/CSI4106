@@ -12,14 +12,11 @@ def breadthfirst_search(initialState):
 
     while not q.isEmpty():
         v = q.dequeue()  # dequeue the vertex (or node)
-        visited.append(v.getcost())
+        visited.append(v)
         if not v.state.isGoal():
-            for _next in v.state.possibleActions(): # Find all next possible actions
-                newV = v._createNode(_next)      # create a new vertex (or node)
-                if newV not in visited :    # if new vertex has not been explored
-                    q.enqueue(newV)  # enqueue the new vertice
-                    visited.append(newV.getcost())  # add the cost to the list
-
+            for _next in v.expand():
+                if _next not in visited:
+                    q.enqueue(_next)
         else:
         	return v, len(visited) # return solution
 
