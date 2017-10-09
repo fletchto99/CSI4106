@@ -6,19 +6,21 @@ from searchdir.util import *
 def breadthfirst_search(initialState):
     print('BFS------------------------------')
     first = Node(initialState)
-    visited = []
+    visited = set()
     q = Queue()
     q.enqueue(first)
 
     while not q.isEmpty():
-        v = q.dequeue()  # dequeue the vertex (or node)
-        visited.append(v)
+        v = q.dequeue()  # add the visited state to the set
+        visited.add(v.state)
         if not v.state.isGoal():
-            for _next in v.expand():
-                if _next not in visited:
-                    q.enqueue(_next)
+            for newV in v.expand(): # for each new vertice in the list of possible targets.
+                if newV.state not in visited :    # if new vertex has not been explored
+                    q.enqueue(newV)  # enqueue the new vertice
+                    visited.add(newV.state)  # This is not needed, however is does optimize the speed
+
         else:
-        	return v, len(visited) # return solution
+        	return v, len(visited)
 
 
 

@@ -6,17 +6,18 @@ from searchdir.util import *
 def depthfirst_search(initialState):
     print('DFS------------------------------')
     first = Node(initialState)
-    visited = []
+    visited = set()
     s = Stack()
     s.push(first)
 
     while not s.isEmpty():
         v = s.pop()
-        visited.append(v)
+        visited.add(v.state) # add the visited state to the set
         if not v.state.isGoal():
-            for _next in v.expand():
-                if _next not in visited:
-                    s.push(_next)
+            for newV in v.expand(): # for each new vertice in the list of possible targets.
+                if newV.state not in visited :    # if new vertex has not been explored
+                    s.push(newV)  # push the new vertice
+                    visited.add(newV.state)  # This is not needed, however it does optimize the speed
         else:
             return v, len(visited)
 
