@@ -48,26 +48,26 @@ class EightPuzzleState(State):
 
         # I've created a simple helper function __swap which just swaps the elements
         if move == 'up':
-            self.__swap(idx, idx - self.boardSize)
+            self._swap(idx, idx - self.boardSize)
         elif move == 'right':
-            self.__swap(idx, idx + 1)
+            self._swap(idx, idx + 1)
         elif move == 'down':
-            self.__swap(idx, idx + self.boardSize)
+            self._swap(idx, idx + self.boardSize)
         elif move == 'left':
-            self.__swap(idx, idx - 1)
+            self._swap(idx, idx - 1)
 
     # A simple helper function to swap the elements
-    def __swap(self, start, end):
+    def _swap(self, start, end):
         self.state[start], self.state[end] = self.state[end], self.state[start]
 
     # returns true if the current state is the same as other, false otherwise
     def equals(self, other):
         return self.state == other
 
-    def _eq_(self, other):
+    def __eq__(self, other):
         return self.equals(other)
 
-    def _hash_(self):
+    def __hash__(self):
         return hash(tuple(self.state))
 
 
@@ -157,7 +157,7 @@ EIGHT_PUZZLE_DATA = [[0, 1, 2, 3, 4, 5, 6, 7, 8],
                      [1, 2, 5, 7, 6, 8, 0, 4, 3],
                      [4, 6, 0, 7, 2, 8, 3, 1, 5]]
 
-puzzle_choice = EIGHT_PUZZLE_DATA[3]
+puzzle_choice = EIGHT_PUZZLE_DATA[6]
 puzzle = EightPuzzleState(puzzle_choice)
 #puzzle, puzzle_choice = randomize(puzzle)
 print('Initial Config')
@@ -171,10 +171,10 @@ else:
     printResults('BFS', solution, start, stop, nbvisited)
 
 
-    start = timeit.default_timer()
-    solution, nbvisited = depthfirst_search(puzzle)
-    stop = timeit.default_timer()
-    printResults('DFS', solution, start, stop, nbvisited)
+    # start = timeit.default_timer()
+    # solution, nbvisited = depthfirst_search(puzzle)
+    # stop = timeit.default_timer()
+    # printResults('DFS', solution, start, stop, nbvisited)
 
     # start = timeit.default_timer()
     # solution, nbvisited = astar_search(puzzle)
