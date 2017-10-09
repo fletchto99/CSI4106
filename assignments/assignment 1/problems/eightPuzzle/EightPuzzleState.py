@@ -17,7 +17,11 @@ class EightPuzzleState(State):
 
     #initializes the eight puzzle with the configuration passed in parameter (numbers)
     def __init__(self, numbers):
-       self.state = numbers
+        self.state = numbers
+        self.boardSize = 3
+        if len(self.state) != boardSize**2 or len(self.state) != len(set(self.state)):
+            print("Invalid state array!")
+
 
     #returns a boolean value that indicates if the current configuration is the same as the goal configuration
     def isGoal(self):
@@ -26,13 +30,37 @@ class EightPuzzleState(State):
 
     # returns the set of legal actions in the current state
     def possibleActions(self):
-         # TO COMPLETE
+        possibleactions = []
+        #depending on where the blank node is, return the possible actions
+        if state.index(0) > self.boardSize:
+            possibleactions.append("up")
+        if (state.index(0)+1) % self.boardSize != 0:
+            possibleactions.append("right")
+        if state.index(0) < (self.boardSize**2)-boardSize:
+            possibleactions.append("down")
+        if state.index(0) % self.boardSize != 0:
+            possibleactions.append('left')
+        return possibleactions
 
 
     # applies the result of the move on the current state
     def executeAction(self, move):
-        # TO COMPLETE
 
+        idx = self.state.index(0)
+
+        # I've created a simple helper function __swap which just swaps the elements
+        if move == 'up':
+            __swap(idx, idx-self.boardSize)
+        elif move == 'right':
+            __swap(idx, idx+1)
+        elif move == 'down':
+            __swap(idx, idx+self.boardSize)
+        elif move == 'left':
+            __swap(idx, idx-1)
+
+    # A simple helper function to swap the elements
+    def __swap(start, end):
+        self.state[start], self.state[end] = self.state[end], self.state[start]
 
     # returns true if the current state is the same as other, false otherwise
     def equals(self, other):
@@ -49,16 +77,16 @@ class EightPuzzleState(State):
     # | 6 | 7 | 8 |
     # -------------
     def show(self):
-        print("-------------", end="\n|")
+        print("-------------", end="\n| ")
         for idx, element in enumerate(self.state):
-            print("  " if element == 0 else element, "| ", end = "")
-            if (idx+1) % 3 == 0 and idx != 0:
+            print(" " if element == 0 else element, "| ", end = "")
+            if (idx+1) % self.boardSize == 0 and idx != 0:
                 print("\n-------------", end = "\n" if idx+1 == len(self.state) else "\n| ")
 
 
     # returns the cost of the action in parameter
     def cost(self, action):
-        return 1 # Won't it always be 1 since we can only move 1 square in a single move?
+        return 1 # Will always be 1 in this implementation
 
     # returns the value of the heuristic for the current state
     # note that you can alternatively call heuristic1() and heuristic2() to test both heuristics with A*
@@ -71,12 +99,14 @@ class EightPuzzleState(State):
     # make sure to explain it clearly in your comment
     def heuristic1(self):
         # TO COMPLETE
+        pass
 
 
     # returns the value of your first heuristic for the current state
     # make sure to explain it clearly in your comment
     def heuristic2(self, matrix, goal):
         # TO COMPLETE
+        pass
 
 
 ####################### SOLVABILITY ###########################
