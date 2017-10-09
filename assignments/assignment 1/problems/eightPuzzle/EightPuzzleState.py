@@ -98,12 +98,14 @@ class EightPuzzleState(State):
     def heuristic1(self):   # count the misplaced tiles
         # Filters the array down to only elements not matching their index
         # and then computes the length
-        return len([1 for i,x in enumerate(state) if i!=x])
+        return len([1 for idx,num in enumerate(self.state) if idx!=num])
 
     # returns the value of your first heuristic for the current state
     # make sure to explain it clearly in your comment
     def heuristic2(self):   # total Manhattan distance
-        pass
+        # Compute the row & column offsets using list comprehension and store the sum of the two in a new list
+        # returns the sum of this new list
+        return sum([(abs(num % self.boardSize - idx % self.boardSize) + abs(num // self.boardSize - idx // self.boardSize)) for idx, num in enumerate(state) if num != 0])
 
 
 ####################### SOLVABILITY ###########################
