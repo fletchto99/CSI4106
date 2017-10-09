@@ -19,7 +19,7 @@ class EightPuzzleState(State):
     def __init__(self, numbers):
         self.state = numbers
         self.boardSize = 3
-        if len(self.state) != boardSize**2 or len(self.state) != len(set(self.state)):
+        if len(self.state) != self.boardSize**2 or len(self.state) != len(set(self.state)):
             print("Invalid state array!")
 
 
@@ -36,7 +36,7 @@ class EightPuzzleState(State):
             possibleactions.append("up")
         if (state.index(0)+1) % self.boardSize != 0:
             possibleactions.append("right")
-        if state.index(0) < (self.boardSize**2)-boardSize:
+        if state.index(0) < (self.boardSize**2)-self.boardSize:
             possibleactions.append("down")
         if state.index(0) % self.boardSize != 0:
             possibleactions.append("left")
