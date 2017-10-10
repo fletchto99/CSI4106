@@ -12,6 +12,7 @@ from searchdir.blindSearch.depthfirst_search import *
 from searchdir.heuristicSearch.astar_search import *
 from searchdir.state import *
 
+heuristic = True;
 
 class EightPuzzleState(State):
 
@@ -95,9 +96,7 @@ class EightPuzzleState(State):
     # returns the value of the heuristic for the current state
     # note that you can alternatively call heuristic1() and heuristic2() to test both heuristics with A*
     def heuristic(self):
-        # return self.heuristic1()
-        return self.heuristic2()
-
+        return self.heuristic1() if heuristic else self.heuristic2()
 
     ## returns the value of your first heuristic for the current state
     # make sure to explain it clearly in your comment
@@ -157,7 +156,7 @@ EIGHT_PUZZLE_DATA = [[0, 1, 2, 3, 4, 5, 6, 7, 8],
                      [1, 2, 5, 7, 6, 8, 0, 4, 3],
                      [4, 6, 0, 7, 2, 8, 3, 1, 5]]
 
-puzzle_choice = EIGHT_PUZZLE_DATA[7]
+puzzle_choice = EIGHT_PUZZLE_DATA[3]
 puzzle = EightPuzzleState(puzzle_choice)
 #puzzle, puzzle_choice = randomize(puzzle)
 print('Initial Config')
@@ -170,11 +169,17 @@ else:
     stop = timeit.default_timer()
     printResults('BFS', solution, start, stop, nbvisited)
 
-
     start = timeit.default_timer()
     solution, nbvisited = depthfirst_search(puzzle)
     stop = timeit.default_timer()
     printResults('DFS', solution, start, stop, nbvisited)
+
+    start = timeit.default_timer()
+    solution, nbvisited = astar_search(puzzle)
+    stop = timeit.default_timer()
+    printResults('A*', solution, start, stop, nbvisited)
+
+    heuristic = False
 
     start = timeit.default_timer()
     solution, nbvisited = astar_search(puzzle)

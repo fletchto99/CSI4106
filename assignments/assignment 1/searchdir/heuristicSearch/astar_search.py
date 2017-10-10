@@ -6,6 +6,7 @@ from searchdir.util import PriorityQueue
 ## This method must implement A* search
 ## It must return the solution node and the number of visited nodes
 def astar_search(initialState):
+	print('A*------------------------------')
 	first = Node(initialState)
 
 	# Priority based on the cost of the node
