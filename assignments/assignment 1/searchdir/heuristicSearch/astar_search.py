@@ -8,21 +8,27 @@ from searchdir.util import PriorityQueue
 def astar_search(initialState):
 	first = Node(initialState)
 
-	pq_open = PriorityQueue((lambda x, y: x[1] - y[1]))
-	closed = []
+	# Priority based on the cost of the node
+	pq_open = PriorityQueue((lambda x, y: y.f - x.f))
+	closed = set()
+	visited = 0
 
-	pq_open.enqueue((first, first.getcost()))
+	pq_open.enqueue(first)
 
 	while not pq_open.isEmpty():
-		current = pq_open.dequeue()[0]
+		current = pq_open.dequeue()
+		visited += 1
 		if current.state.isGoal():
-			return len(pq_closed), current.state
-		closed.append(current)
+			return current, visited
+		closed.add(current.state)
 		for neighbor in current.expand():
 			cost = current.getcost() + neighbor.state.heuristic()
-			if neighbor in pq_open.show() and cost < neighbor.getcost():
-				pq_open.show().remove(neighbor)
-			if neighbor in closed and cost <  neighbor.getcost():
-				closed.remove(neighbor)
+			if cost < neighbor.f:
+				# Search for old node since there is no _eq_ fnc in node.py
+				old_node = [node for node in pq_open.show() if node.state == neighbor.state]
+				if old_node:
+					pq_open.show().remove(old_node[0])
+				if neighbor.state in closed:
+					closed.remove(neighbor.state)
 			if neighbor not in pq_open.show() and neighbor not in closed:
-				pq_open.enqueue((neighbor.state, neighbor.getcost()))
+				pq_open.enqueue(neighbor)
