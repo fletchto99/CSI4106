@@ -23,6 +23,7 @@ def astar_search(initialState):
 		current = pq_open.dequeue()
 		visited += 1
 		if current.state.isGoal():
+			# Goal has been reached
 			return current, visited
 		closed.add(current.state)
 		for neighbor in current.expand():
