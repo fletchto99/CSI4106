@@ -6,9 +6,9 @@ from searchdir.util import *
 def depthfirst_search(initialState):
     print('DFS------------------------------')
     first = Node(initialState)
-    visited = set()
+    visited = set() # a Set data structure was used for optimized speed
     s = Stack()
-    s.push(first)
+    s.push(first) # enqueue the first item
 
     while not s.isEmpty():
         v = s.pop()
@@ -19,5 +19,5 @@ def depthfirst_search(initialState):
                     s.push(newV)  # push the new vertice
                     visited.add(newV.state)  # This is not needed, however it does optimize the speed
         else:
-            return v, len(visited)
+            return v, len(visited) #returns the last vertex (solution) and the length of vertex traversed
 

@@ -6,13 +6,13 @@ from searchdir.util import *
 def breadthfirst_search(initialState):
     print('BFS------------------------------')
     first = Node(initialState)
-    visited = set()
+    visited = set() # a Set data structure was used for optimized speed
     q = Queue()
-    q.enqueue(first)
+    q.enqueue(first) # enqueue the first item
 
     while not q.isEmpty():
-        v = q.dequeue()  # add the visited state to the set
-        visited.add(v.state)
+        v = q.dequeue()
+        visited.add(v.state) # add the visited vertex to the set
         if not v.state.isGoal():
             for newV in v.expand(): # for each new vertice in the list of possible targets.
                 if newV.state not in visited :    # if new vertex has not been explored
@@ -20,7 +20,7 @@ def breadthfirst_search(initialState):
                     visited.add(newV.state)  # This is not needed, however is does optimize the speed
 
         else:
-        	return v, len(visited)
+        	return v, len(visited) #returns the last vertex (solution) and the length of vertex traversed
 
 
 
