@@ -12,6 +12,7 @@ from searchdir.blindSearch.depthfirst_search import *
 from searchdir.heuristicSearch.astar_search import *
 from searchdir.state import *
 
+# Added a variable for simple heuristic switching for A*
 heuristic = True;
 
 class EightPuzzleState(State):
@@ -19,29 +20,41 @@ class EightPuzzleState(State):
     #initializes the eight puzzle with the configuration passed in parameter (numbers)
     def __init__(self, numbers):
         self.state = numbers
+        # Made to work for larger boards as well (3x3, 4x4)
         self.boardSize = 3
+
+        # Validate the input
         if len(self.state) != self.boardSize**2 or len(self.state) != len(set(self.state)):
             print("Invalid state array!")
 
 
     #returns a boolean value that indicates if the current configuration is the same as the goal configuration
     def isGoal(self):
+        # We've reached the goal when every item in the array has the same value as its index
         return len([0 for idx, num in enumerate(self.state) if idx!=num]) == 0
 
 
     # returns the set of legal actions in the current state
     def possibleActions(self):
-        possibleactions = []
-        #depending on where the blank node is, return the possible actions
+        actions = []
+        # Builds an array of actions based on where 0 is
+
+        # anything after the first row can move up
         if self.state.index(0) > self.boardSize:
-            possibleactions.append("up")
+            actions.append("up")
+
+        # anything left of the the right row can move right
         if (self.state.index(0)+1) % self.boardSize != 0:
-            possibleactions.append("right")
+            actions.append("right")
+
+        # anything above the bottom row can move down
         if self.state.index(0) < (self.boardSize**2)-self.boardSize:
-            possibleactions.append("down")
+            actions.append("down")
+
+        # anyting to right right of the left row can move left
         if self.state.index(0) % self.boardSize != 0:
-            possibleactions.append("left")
-        return possibleactions
+            actions.append("left")
+        return actions
 
     # applies the result of the move on the current state
     def executeAction(self, move):
@@ -59,12 +72,14 @@ class EightPuzzleState(State):
 
     # A simple helper function to swap the elements
     def _swap(self, start, end):
+        # Swap two elements in a list
         self.state[start], self.state[end] = self.state[end], self.state[start]
 
     # returns true if the current state is the same as other, false otherwise
     def equals(self, other):
         return self.state == other
 
+    # Minor optimizations for comparisons used within DFS, BFS and A*
     def __eq__(self, other):
         return self.equals(other)
 
@@ -82,9 +97,11 @@ class EightPuzzleState(State):
     # | 6 | 7 | 8 |
     # -------------
     def show(self):
+        #print function which iterates over all items and their indicies
         print("-------------", end="\n| ")
         for idx, element in enumerate(self.state):
             print(" " if element == 0 else element, "| ", end = "")
+            # When we reach the edge of the board start the next line
             if (idx+1) % self.boardSize == 0 and idx != 0:
                 print("\n-------------", end = "\n" if idx+1 == len(self.state) else "\n| ")
 
@@ -96,6 +113,7 @@ class EightPuzzleState(State):
     # returns the value of the heuristic for the current state
     # note that you can alternatively call heuristic1() and heuristic2() to test both heuristics with A*
     def heuristic(self):
+        # Loads the proper heuristic for the test
         return self.heuristic1() if heuristic else self.heuristic2()
 
     ## returns the value of your first heuristic for the current state
@@ -179,6 +197,7 @@ else:
     stop = timeit.default_timer()
     printResults('A*', solution, start, stop, nbvisited)
 
+    # Changes the heuristic being used to compute h2
     heuristic = False
 
     start = timeit.default_timer()

@@ -3,6 +3,7 @@
 ### Author: Hadi Abdi Ghavidel
 ### habdi.cnlp@gmail.com
 
+# Used to create a comparator for sorting
 import functools
 
 from operator import attrgetter
@@ -63,6 +64,7 @@ class PriorityQueue:
     def dequeue(self):
         if self.isEmpty():
             raise Exception("Nothing in queue")
+        # Re-organized the priority queue to ensure we pop the proper element
         self.items.sort(key=functools.cmp_to_key(self.comparator))
         return self.items.pop()
 
