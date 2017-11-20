@@ -60,12 +60,41 @@ class WumpusWorld:
         }
 
     def printBoard(self):
-        # TODO: Finish me
         # for row in self.board:
-        #     line = ""
+        #     c = len(row)
+        #     outsideline = "||"
         #     for col in row:
-        #         add = ""
-        #         line = line + "|"
+        #         print("\n" + str(len(col))+"\n")
+        #         print(outsideline +
+        #             str(list(col).__str__().replace('{','').replace('}','').replace('[','').replace(']','')),
+        #             end='')
+        #         # print(line)
+        print(len(list(self.board)))
+        height = len(list(self.board))-1
+        count = 0
+        print("=====================")
+        for row in self.board:
+            row_count = len(row)-1
+            print("|| ", end='')
+            for col in row:
+                # print(str(ccount))
+
+                print(str(list(col).__str__().replace('{','').replace('}','').replace('[','').replace(']','').replace(',','').replace("'",'')) + " |", end='')
+
+                # if (not ccount == (len(list(self.board)))):
+                #     print(str(list(col).__str__().replace('{','').replace('}','').replace('[','').replace(']','').replace(',','').replace("'",'')) + " | ", end='')
+                #     # print(" | ")
+                #     # print(col_count)
+
+                # else:
+                #     print(str(list(col).__str__().replace('{','').replace('}','').replace('[','').replace(']','')) + " ||
+            if (count == height):
+                print("|\n=====================")
+            else:
+                print("|\n---------------------")
+            # print(count)
+            count = count + 1
+        print("\n\n\n")
         for row in self.board:
             print(row)
 
@@ -75,5 +104,5 @@ class WumpusWorld:
 
 
 # Test Case
-a = WumpusWorld(5, 6)
+a = WumpusWorld(4, 4)
 a.printBoard()
