@@ -28,6 +28,7 @@ class WumpusWorld:
 
                 if col == self.agent['x'] and row == self.agent['y']:
                     self.board[row][col].add("A")
+                    pit = False
 
                 if col == self.gold['x'] and row == self.gold['y']:
                     self.board[row][col].add("G")
