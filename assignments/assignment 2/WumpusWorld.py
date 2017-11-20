@@ -61,39 +61,33 @@ class WumpusWorld:
         }
 
     def printBoard(self):
-        # for row in self.board:
-        #     c = len(row)
-        #     outsideline = "||"
-        #     for col in row:
-        #         print("\n" + str(len(col))+"\n")
-        #         print(outsideline +
-        #             str(list(col).__str__().replace('{','').replace('}','').replace('[','').replace(']','')),
-        #             end='')
-        #         # print(line)
-        print(len(list(self.board)))
-        height = len(list(self.board))-1
+        height = len(self.board)-1
         count = 0
-        print("=====================")
+        width = len(self.board[0])-1
+        wall = ""
+        room = ""
+        for i in range(len(self.board[0])):
+            wall = wall + "==========="
+            room = room + "-----------"
+        print(wall)
         for row in self.board:
-            row_count = len(row)-1
             print("|| ", end='')
             for col in row:
-                # print(str(ccount))
+                if(len(list(col)) == 0):
+                    print("         |", end='')
+                elif(len(list(col)) == 1):
+                    print("    " + str(list(col).__str__().replace('{','').replace('}','').replace('[','').replace(']','').replace(',','').replace("'",'')) + "    |", end='')
+                elif(len(list(col)) == 2):
+                    print("   " + str(list(col).__str__().replace('{','').replace('}','').replace('[','').replace(']','').replace(',','').replace("'",'')) + "   |", end='')
+                elif(len(list(col)) == 3):
+                    print("  " + str(list(col).__str__().replace('{','').replace('}','').replace('[','').replace(']','').replace(',','').replace("'",'')) + "  |", end='')
+                else:
+                    print(" " + str(list(col).__str__().replace('{','').replace('}','').replace('[','').replace(']','').replace(',','').replace("'",'')) + " |", end='')
 
-                print(str(list(col).__str__().replace('{','').replace('}','').replace('[','').replace(']','').replace(',','').replace("'",'')) + " |", end='')
-
-                # if (not ccount == (len(list(self.board)))):
-                #     print(str(list(col).__str__().replace('{','').replace('}','').replace('[','').replace(']','').replace(',','').replace("'",'')) + " | ", end='')
-                #     # print(" | ")
-                #     # print(col_count)
-
-                # else:
-                #     print(str(list(col).__str__().replace('{','').replace('}','').replace('[','').replace(']','')) + " ||
             if (count == height):
-                print("|\n=====================")
+                print("|\n" + wall)
             else:
-                print("|\n---------------------")
-            # print(count)
+                print("|\n" + room)
             count = count + 1
         print("\n\n\n")
         for row in self.board:
