@@ -2,7 +2,7 @@ import random
 
 
 class WumpusWorld:
-    def __init__(self):
+    def __init__(self, simulationNumber):
 
         self.agent = {
             "x": 0,
@@ -11,12 +11,24 @@ class WumpusWorld:
             "arrows": 1
         }
 
-        self.gold = self.__randspot()
+        if simulationNumber == 0:
+            self.gold ={
+                "x": 1,
+                "y": 1
+            }
+        else:
+            self.gold = self.__randspot()
 
         while self.gold['x'] == 0 and self.gold['y'] == 3:
             self.gold = self.__randspot()
 
-        self.wumpus = self.__randspot()
+        if simulationNumber == 0:
+            self.wumpus ={
+                "x": 0,
+                "y": 1
+            }
+        else:
+            self.wumpus = self.__randspot()
 
         while (self.wumpus['x'] == 0 and self.wumpus['y'] == 3) \
                 or (self.wumpus['x'] == self.gold['x'] and self.wumpus['y'] == self.gold['y']):
@@ -45,7 +57,9 @@ class WumpusWorld:
                 elif col == self.wumpus['x'] and (row == self.wumpus['y'] - 1 or row == self.wumpus['y'] + 1):
                     self.board[row][col].add("S")
 
-                if pit and random.uniform(0, 1) < 0.2:
+                check = simulationNumber == 0 and ((row == 0 and col ==3) or (row == 1 and col == 2) or (row == 3 and col == 2))
+
+                if check or (simulationNumber != 0 and pit and random.uniform(0, 1) < 0.2):
                     self.pits.append({
                         "x": col,
                         "y": row

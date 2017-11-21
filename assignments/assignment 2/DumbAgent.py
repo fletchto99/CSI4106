@@ -23,7 +23,7 @@ class DumbAgent:
             if 'G' in self.world.getLocationProperties():
                 self.actions.append('pickup')
                 if self.world.pickup():
-                    self.actions.append('winner')
+                    self.actions.append('pickup')
             elif not self.fired and 'S' in self.world.getLocationProperties():
                 self.actions.append('fire')
                 self.world.fireArrow()
@@ -56,7 +56,7 @@ class DumbAgent:
                     print('You Died!')
                 break
 
-            if self.actions[-1] == 'winner':
+            if self.actions[-1] == 'pickup':
                 if self.debug:
                     print('Winner winner chicken dinner')
                 break
@@ -66,7 +66,7 @@ class DumbAgent:
 
         score = 0
         for action in self.actions:
-            if action == 'winner':
+            if action == 'pickup':
                 score = score + 1000
             elif action == 'dead':
                 score = score - 1000
