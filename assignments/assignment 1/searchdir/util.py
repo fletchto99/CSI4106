@@ -41,7 +41,7 @@ class Queue:
         return item in self.items
 
 
-#Priority Queue Implementation of the data structure PriorityQueue
+#Priority Queue Implementation of the data structure PriorityQueue.py
 class PriorityQueue:
     # initializes the data structure
     def __init__(self, fct):

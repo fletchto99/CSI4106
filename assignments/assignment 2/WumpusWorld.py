@@ -6,28 +6,30 @@ class WumpusWorld:
 
         self.agent = {
             "x": 0,
-            "y": 0
+            "y": 3,
+            "heading": ">",
+            "arrows": 1
         }
 
         self.gold = self.__randspot()
 
-        while self.gold['x'] == 0 and self.gold['y'] == 0:
+        while self.gold['x'] == 0 and self.gold['y'] == 3:
             self.gold = self.__randspot()
 
         self.wumpus = self.__randspot()
 
-        while (self.wumpus['x'] == 0 and self.wumpus['y'] == 0)\
+        while (self.wumpus['x'] == 0 and self.wumpus['y'] == 3) \
                 or (self.wumpus['x'] == self.gold['x'] and self.wumpus['y'] == self.gold['y']):
-            self.gold = self.__randspot()
+            self.wumpus = self.__randspot()
 
         self.board = [[set() for _ in range(4)] for _ in range(4)]
+        self.pits = []
 
         for row in range(0, 4):
             for col in range(0, 4):
                 pit = True
 
                 if col == self.agent['x'] and row == self.agent['y']:
-                    self.board[row][col].add("A")
                     pit = False
 
                 if col == self.gold['x'] and row == self.gold['y']:
@@ -44,6 +46,10 @@ class WumpusWorld:
                     self.board[row][col].add("S")
 
                 if pit and random.uniform(0, 1) < 0.2:
+                    self.pits.append({
+                        "x": col,
+                        "y": row
+                    })
                     self.board[row][col].add("P")
                     if col > 0:
                         self.board[row][col - 1].add("B")
@@ -56,41 +62,123 @@ class WumpusWorld:
 
     def __randspot(self):
         return {
-            "x": random.randint(0, 4 - 1),
-            "y": random.randint(0, 4 - 1)
+            "x": random.randint(0, 3),
+            "y": random.randint(0, 3)
         }
 
     def printBoard(self):
         count = 0
         print("============================================")
-        for row in self.board:
+        for i in range(0, 4):
             print("|| ", end='')
-            for col in row:
-                if(len(list(col)) == 0):
+            for j in range(0, 4):
+
+                props = list(self.board[i][j])
+
+                if self.agent['y'] == i and self.agent['x'] == j:
+                    props.append(self.agent['heading'])
+
+                if len(props) == 0:
                     print("         |", end='')
-                elif(len(list(col)) == 1):
-                    print("    " + str(list(col).__str__().replace('{','').replace('}','').replace('[','').replace(']','').replace(',','').replace("'",'')) + "    |", end='')
-                elif(len(list(col)) == 2):
-                    print("   " + str(list(col).__str__().replace('{','').replace('}','').replace('[','').replace(']','').replace(',','').replace("'",'')) + "   |", end='')
-                elif(len(list(col)) == 3):
-                    print("  " + str(list(col).__str__().replace('{','').replace('}','').replace('[','').replace(']','').replace(',','').replace("'",'')) + "  |", end='')
+                elif len(props) == 1:
+                    print("    " + str(
+                        props.__str__().replace('{', '').replace('}', '').replace('[', '').replace(']', '').replace(
+                            ',', '').replace("'", '')) + "    |", end='')
+                elif len(props) == 2:
+                    print("   " + str(
+                        props.__str__().replace('{', '').replace('}', '').replace('[', '').replace(']', '').replace(
+                            ',', '').replace("'", '')) + "   |", end='')
+                elif len(props) == 3:
+                    print("  " + str(
+                        props.__str__().replace('{', '').replace('}', '').replace('[', '').replace(']', '').replace(
+                            ',', '').replace("'", '')) + "  |", end='')
                 else:
-                    print(" " + str(list(col).__str__().replace('{','').replace('}','').replace('[','').replace(']','').replace(',','').replace("'",'')) + " |", end='')
+                    print(" " + str(
+                        props.__str__().replace('{', '').replace('}', '').replace('[', '').replace(']', '').replace(
+                            ',', '').replace("'", '')) + " |", end='')
+
+
 
             if (count == 3):
                 print("|\n============================================")
             else:
                 print("|\n--------------------------------------------")
             count = count + 1
-        print("\n\n\n")
-        for row in self.board:
-            print(row)
 
-        print("\n\n\n")
-        print("W: " + str(self.wumpus))
-        print("G: " + str(self.gold))
+    def fireArrow(self):
+        if self.agent['arrows'] == 0:
+            return False
 
+        self.agent['arrows'] = self.agent['arrows'] -1
+        killed = False
+        if self.agent['heading'] == ">":
+            for i in range(self.agent['x'], 4):
+                if self.agent['y'] == self.wumpus['y'] and i == self.wumpus['x']:
+                    killed = True
+        elif self.agent['heading'] == "<":
+            for i in range(0, self.agent['x']):
+                if self.agent['y'] == self.wumpus['y'] and i == self.wumpus['x']:
+                    killed = True
+        elif self.agent['heading'] == "v":
+            for i in range(self.agent['y'], 4):
+                if self.agent['x'] == self.wumpus['x'] and i == self.wumpus['y']:
+                    killed = True
+        elif self.agent['heading'] == "^":
+            for i in range(0, self.agent['y']):
+                if self.agent['x'] == self.wumpus['x'] and i == self.wumpus['y']:
+                    killed = True
 
-# Test Case
-a = WumpusWorld()
-a.printBoard()
+        if killed:
+            for row in range(4):
+                for col in range(4):
+                    if "S" in self.board[row][col]:
+                        self.board[row][col].remove("S")
+                    if "W" in self.board[row][col]:
+                        self.board[row][col].remove("W")
+            return True
+        return False
+
+    def turnRight(self):
+        for i in range(3):
+            self.turnLeft()
+
+    def turnLeft(self):
+        if self.agent['heading'] == "^":
+            self.agent['heading'] = "<"
+        elif self.agent['heading'] == "<":
+            self.agent['heading'] = "v"
+        elif self.agent['heading'] == "v":
+            self.agent['heading'] = ">"
+        elif self.agent['heading'] == ">":
+            self.agent['heading'] = "^"
+
+    def step(self):
+        if self.agent['heading'] == "^":
+            if self.agent['y'] == 0:
+                return 'bump'
+            self.agent['y'] = self.agent['y'] - 1
+        elif self.agent['heading'] == "<":
+            if self.agent['x'] == 0:
+                return 'bump'
+            self.agent['x'] = self.agent['x'] - 1
+        elif self.agent['heading'] == "v":
+            if self.agent['y'] == 3:
+                return 'bump'
+            self.agent['y'] = self.agent['y'] + 1
+        elif self.agent['heading'] == ">":
+            if self.agent['x'] == 3:
+                return 'bump'
+            self.agent['x'] = self.agent['x'] + 1
+
+        if (self.agent['x'] == self.wumpus['x'] and self.agent['y'] == self.wumpus['y']) \
+                or {"x": self.agent['x'], "y": self.agent['y']} in self.pits:
+            return 'dead'
+        return 'success'
+
+    def pickup(self):
+        if self.agent['x'] == self.gold['x'] and self.agent['y'] == self.gold['y']:
+            return True
+        return False
+
+    def getLocationProperties(self):
+        return self.board[self.agent['y']][self.agent['x']]
