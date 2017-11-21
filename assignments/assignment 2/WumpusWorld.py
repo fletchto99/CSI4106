@@ -68,9 +68,10 @@ class WumpusWorld:
 
     def printBoard(self):
         count = 0
-        print("============================================")
+        rcount = 4
+        print("  ============================================")
         for i in range(0, 4):
-            print("|| ", end='')
+            print(str(rcount) + " || ", end='')
             for j in range(0, 4):
 
                 props = list(self.board[i][j])
@@ -97,12 +98,12 @@ class WumpusWorld:
                         props.__str__().replace('{', '').replace('}', '').replace('[', '').replace(']', '').replace(
                             ',', '').replace("'", '')) + " |", end='')
 
-
-
             if (count == 3):
-                print("|\n============================================")
+                print("|\n  ============================================")
+                print("          1         2         3         4")
             else:
-                print("|\n--------------------------------------------")
+                print("|\n  --------------------------------------------")
+            rcount = rcount - 1
             count = count + 1
 
     def fireArrow(self):
