@@ -10,7 +10,7 @@ class DumbAgent:
         self.actions = []
         self.debug = debug
 
-    def play(self):
+    def navigate(self):
         if self.debug:
             print('Starting world')
             self.world.printBoard()
@@ -81,4 +81,3 @@ class DumbAgent:
             "optimal": False,
             "complete": False
         }
-        # TODO: computations

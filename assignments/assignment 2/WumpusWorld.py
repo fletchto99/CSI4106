@@ -1,7 +1,10 @@
 import random
 
+from PriorityQueue import PriorityQueue
+
 
 class WumpusWorld:
+
     def __init__(self, simulationNumber):
 
         self.agent = {
@@ -197,3 +200,46 @@ class WumpusWorld:
 
     def getLocationProperties(self):
         return self.board[self.agent['y']][self.agent['x']]
+
+    def getAgentLocation(self):
+        return self.agent
+
+    def __heuristic(self, coord1, coord2):
+        return abs(coord1[0] - coord2[0]) + abs(coord1[1] - coord2[1])
+
+    # Expand the frontier to only nodes which don't contain pits
+    def __expand(self, coord):
+        values = []
+
+        if coord[0] > 0 and 'P' not in self.board[coord[1]][coord[0] - 1]:
+            values.append((coord[0] - 1, coord[1]))
+        if coord[0] < 3 and 'P' not in self.board[coord[1]][coord[0] + 1]:
+            values.append((coord[0] + 1, coord[1]))
+        if coord[1] > 0 and 'P' not in self.board[coord[1] - 1][coord[0]]:
+            values.append((coord[0], coord[1] - 1))
+        if coord[1] < 3 and 'P' not in self.board[coord[1] + 1][coord[0]]:
+            values.append((coord[0], coord[1] + 1))
+        return values
+
+    def solvable(self):
+
+        agent = (self.agent['x'], self.agent['y'])
+        gold = (self.gold['x'], self.gold['y'])
+
+        open_nodes = PriorityQueue()
+        open_nodes.enqueue((self.__heuristic(agent, gold), agent, None))
+        closed = set()
+
+        while not open_nodes.is_empty():
+            current_node = open_nodes.dequeue()
+            if current_node[1] == gold:
+                while current_node is not None:
+                    current_node = current_node[2]
+                return True
+
+            closed.add(current_node[1])
+            for child in self.__expand(current_node[1]):
+                if child not in closed:
+                    open_nodes.enqueue((self.__heuristic(child, gold), child, current_node))
+
+        return False
