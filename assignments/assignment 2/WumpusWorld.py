@@ -16,8 +16,8 @@ class WumpusWorld:
 
         self.wumpus = self.__randspot()
 
-        while (self.wumpus['x'] == 0 and self.wumpus['y'] == 0) or (
-                self.wumpus['x'] == self.gold['y'] and self.wumpus['y'] == self.gold['y']):
+        while self.wumpus['x'] == 0 and self.wumpus['y'] == 0\
+                and self.wumpus['x'] == self.gold['y'] and self.wumpus['y'] == self.gold['y']:
             self.gold = self.__randspot()
 
         self.board = [[set() for _ in range(4)] for _ in range(4)]
