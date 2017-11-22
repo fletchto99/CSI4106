@@ -20,13 +20,19 @@ class IntelligentAgent:
         start = int(round(time.time() * 1000))
         while True:
             # TODO: Implement intelligent agent loop here
-            percepts = self.world.getLocationProperties()
-            for percept in percepts:
+            perceptions = self.world.getLocationProperties()
+            if 'G' in self.world.getLocationProperties():
+                self.actions.append('pickup')
+                if self.world.pickup():
+                    self.actions.append('pickup')
+            for perception in perceptions:
                 self.kb.tell({
                     "x": self.world.getAgentLocation()['x'],
                     "y": self.world.getAgentLocation()['y'],
-                    "percept": str(percept)
+                    "perception": str(perception)
                 })
+            # if (ask_generator(self, ) :
+            #     print(x, y, perception)
 
             # TODO: Break when the goal state is reached or the person has died
             break

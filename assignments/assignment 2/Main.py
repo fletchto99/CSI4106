@@ -41,7 +41,7 @@ totalScore = 0
 totalDepth = 0
 totalTime = 0
 
-print('Dumb Agent\n\n')
+print('Intelligent Agent\n\n')
 
 for i in range(iterations):
     # Generate a world, where the 0th world is the one from the assignment
@@ -52,10 +52,10 @@ for i in range(iterations):
         world = WumpusWorld(iterations)
 
     # Agent without debugging (if debugging is enabled it will print out the map)
-    agent = IntelligentAgent(world, False)
+    agent = IntelligentAgent(world, True)
 
     # Invoke the method to navigate the world
-    result = agent.navigate()
+    # result = agent.navigate()
 
     # Statistics to report
     totalScore = totalScore + result['score']

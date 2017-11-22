@@ -57,7 +57,7 @@ class DumbAgent:
 
             if self.actions[-1] == 'pickup':
                 if self.debug:
-                    print('Winner winner chicken dinner')
+                    print('The gold has been found!')
                 break
 
         if self.debug:
