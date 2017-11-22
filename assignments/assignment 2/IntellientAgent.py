@@ -1,6 +1,5 @@
-import random
 import time
-from WumpusWorld import WumpusWorld
+
 from aima.logic import *
 
 
@@ -20,6 +19,7 @@ class IntelligentAgent:
 
         start = int(round(time.time() * 1000))
         while True:
+            # TODO: Implement intelligent agent loop here
             percepts = self.world.getLocationProperties()
             for percept in percepts:
                 self.kb.tell({
@@ -28,6 +28,7 @@ class IntelligentAgent:
                     "percept": str(percept)
                 })
 
+            # TODO: Break when the goal state is reached or the person has died
             break
 
         if self.debug:

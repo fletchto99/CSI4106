@@ -1,6 +1,5 @@
 import random
 import time
-from WumpusWorld import WumpusWorld
 
 
 class DumbAgent:
