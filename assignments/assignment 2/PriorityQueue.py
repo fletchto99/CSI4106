@@ -1,36 +1,36 @@
-from heapq import heappush, heappop
+import functools
 
-
+#Priority Queue Implementation of the data structure PriorityQueue.py
 class PriorityQueue:
-    """Implementation of the PriorityQueue data structure."""
-
-    def __init__(self):
-        """Initializes the PriorityQueue"""
-        self.h = []  # Heap stored as list
-        return
+    # initializes the data structure
+    def __init__(self, fct):
+        self.items = []
+        self.comparator = fct
 
     # returns the elements of the current data structure
     def show(self):
-        """Returns a list containing the elements in the queue, heapified."""
-        return self.h
+        return self.items
 
-    def is_empty(self):
-        """Returns True if the priority queue is empty."""
-        return len(self.h) == 0
+    # returns a boolean indicating whether the current data structure is empty or not
+    def isEmpty(self):
+        return not self.items
 
-    def enqueue(self, node):
-        """Adds an element to the priority queue."""
-        heappush(self.h, node)
-        return
+    # add the element item to the current data structure
+    def enqueue(self, item):
+        self.items.insert(0, item)
 
+    # removes an element from the current data structure
     def dequeue(self):
-        """Removes an element from the priority queue."""
-        return heappop(self.h)
+        if self.isEmpty():
+            raise Exception("Nothing in queue")
+        # Re-organized the priority queue to ensure we pop the proper element
+        self.items.sort(key=functools.cmp_to_key(self.comparator))
+        return self.items.pop()
 
+    # returns the size of the current data structure (the number of elements)
     def size(self):
-        """Returns the number of elements in the priority queue."""
-        return len(self.h)
+        return len(self.items)
 
+    # returns a boolean value that indicates if the element item is contained in the current data structure
     def __contains__(self, item):
-        """Overloads the 'in' Python operator."""
-        return item in self.h
+        return item in self.items

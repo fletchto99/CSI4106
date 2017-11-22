@@ -226,11 +226,11 @@ class WumpusWorld:
         agent = (self.agent['x'], self.agent['y'])
         gold = (self.gold['x'], self.gold['y'])
 
-        open_nodes = PriorityQueue()
+        open_nodes = PriorityQueue((lambda x, y: y[0] - x[0]))
         open_nodes.enqueue((self.__heuristic(agent, gold), agent, None))
         closed = set()
 
-        while not open_nodes.is_empty():
+        while not open_nodes.isEmpty():
             current_node = open_nodes.dequeue()
             if current_node[1] == gold:
                 while current_node is not None:
