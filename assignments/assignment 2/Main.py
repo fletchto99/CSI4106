@@ -52,7 +52,7 @@ for i in range(iterations):
         world = WumpusWorld(i)
 
     # Agent without debugging (if debugging is enabled it will print out the map)
-    agent = IntelligentAgent(world, True)
+    agent = IntelligentAgent(world, False)
 
     # Invoke the method to navigate the world
     # result = agent.navigate()
