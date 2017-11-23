@@ -1,4 +1,5 @@
 import time
+import functools
 
 from aima.logic import *
 from PriorityQueue import *
@@ -32,29 +33,25 @@ class IntelligentAgent:
             result = ''
             location = self.world.getAgentLocation()
 
-            # Check if we found the gold, if so apply the pickup action
-            if 'G' in self.world.getLocationProperties():
-                # Attempt to pickup the gold
-                if self.world.pickup():
-                    self.actions.append('pickup')
-
             # Find the percepts for the current location
             perceptions = self.world.getLocationProperties()
 
-            grid = self.board[location['y']][location['x']]
-
             # Add the percepts to a knowledge base using AIMA open source libraries (as recommended in the assignment)
             # Only add the percepts if we haven't visited this grid location yet
-            if grid[1] == '':
+            if self.board[location['y']][location['x']][1] == '':
                 for perception in perceptions:
+                    # Build a propositional knowledge database with the information we have about this tile
                     self.kb.tell('{}{}{}'.format(str(perception), location['x'], location['y']))
 
+                # Check the knowledge base if the current tile is safe using propositional logic
                 res = 'u' if self.kb.ask('B{}{}^S{}{}'.format(location['x'], location['y'],location['x'], location['y'])) else 's'
 
                 # Mark the current grid location as visited and tell the user if it + the squares around it are safe
                 self.board[location['y']][location['x']][0] = True
                 self.board[location['y']][location['x']][1] = res
 
+                # If our current tile is safe then we know that we can at least travel to tiles in all directions
+                # surrounding this tile, since they too will be safe
                 if res == 's':
                     if location['x'] > 0 and self.board[location['y']][location['x'] - 1][1] == '':
                         self.board[location['y']][location['x'] - 1][1] = 's'
@@ -65,29 +62,37 @@ class IntelligentAgent:
                     if location['y'] < 3 and self.board[location['y'] + 1][location['x']][1] == '':
                         self.board[location['y'] + 1][location['x']][1] = 's'
 
+            # Find possible tiles to traverse to
+            grid_as_tuple = (location['x'], location['y'])
+            safe_tiles = []
+            for row in range(0,4):
+                for col in range(0, 4):
+                    if self.board[row][col][1] == 's' and not self.board[row][col][0]:
+                        safe_tiles.append((row, col))
 
+            # Find closest, unvisited, safe tile
+            safe_tiles.sort(key=functools.cmp_to_key(lambda a, b: self.__heuristic(a, grid_as_tuple) - self.__heuristic(b, grid_as_tuple)))
 
+            # Find the shortest path to the nearest known safe tile
+            path = self.astart_closest(grid_as_tuple, safe_tiles[0])
 
-
-            # Check if we found the gold, if so apply the pickup action
+            # First check for the gold, if we've found it then pick it up
             if 'G' in perceptions:
                 # Attempt to pickup the gold
                 if self.world.pickup():
                     self.actions.append('pickup')
 
             # Attempt to fire the bow if we detect a stench and we didn't just fire the bow
+            elif len(path) == 0:
+                # TODO: Uh oh, we need to traverse to a tile which could potentially be unsafe..
+                # TODO: Travel to the nearest stench and fire an arrow in the direction of another stench
+                # TODO: Update the KB stating that the wumpus was likely killed
+                # TODO: if the arrow has been fired, then travel to the nearest unsafe tile
+                stenches = self.kb.ask("s")
+                pass
             else:
-
-                if location['x'] == unsafePath['x'] and location['y'] == unsafePath['y']:
-                    # Turn around if we're heading on an unsafe path to bo back to a known safe ares
-                    # the goal is to map out all safe areas before exploring unknone areas (i.e. find
-                    # the wumpus an kill it)
-                    self.world.turnRight()
-                    self.actions.append('right')
-                    self.world.turnRight()
-                    self.actions.append('right')
-                    self.world.step()
-                    self.actions.append('step')
+                # TODO: Traverse the path of known safe tiles
+                pass
 
             if self.debug:
                 # prints out some details about the current run
@@ -141,20 +146,20 @@ class IntelligentAgent:
         return abs(coord1[0] - coord2[0]) + abs(coord1[1] - coord2[1])
 
     # Expand the frontier to only nodes which don't contain pits. All other tiles are valid to traverse to
-    def __expand(self, coord):
+    def __expand(self, coord, board):
         values = []
 
-        if coord[0] > 0 and 'P' not in self.board[coord[1]][coord[0] - 1]:
+        if coord[0] > 0 and 's' == board[coord[1]][coord[0] - 1]:
             values.append((coord[0] - 1, coord[1]))
-        if coord[0] < 3 and 'P' not in self.board[coord[1]][coord[0] + 1]:
+        if coord[0] < 3 and 's' == board[coord[1]][coord[0] + 1]:
             values.append((coord[0] + 1, coord[1]))
-        if coord[1] > 0 and 'P' not in self.board[coord[1] - 1][coord[0]]:
+        if coord[1] > 0 and 's' == board[coord[1] - 1][coord[0]]:
             values.append((coord[0], coord[1] - 1))
-        if coord[1] < 3 and 'P' not in self.board[coord[1] + 1][coord[0]]:
+        if coord[1] < 3 and 's' == board[coord[1] + 1][coord[0]]:
             values.append((coord[0], coord[1] + 1))
         return values
 
-    def astart_closest(self, startState, endState):
+    def astart_closest(self, startState, board, endState):
 
         pq_open = PriorityQueue((lambda x, y: y[0] - x[0]))
         pq_open.enqueue((self.__heuristic(startState, endState), startState, None))
@@ -171,7 +176,7 @@ class IntelligentAgent:
                 return path
 
             closed.add(current_node[1])
-            for child in self.__expand(current_node[1]):
+            for child in self.__expand(current_node[1], board):
                 if child not in closed:
                     pq_open.enqueue((self.__heuristic(startState, endState), child, current_node))
 
