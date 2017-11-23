@@ -231,6 +231,14 @@
 
 \section*{Question 1}
 
+To complete this assignment the only file requiring modifications was the state. We've renamed \code{EightPuzzleState.py} to \code{BonusState.py}. This new bonus state implements the successor function for the missionaries and cannibals problem (see \code{possibleActions(self)}) for the new implementation. When running the missionaries cannibals solver the output looks like:
+
+\codefile{Text}{output.txt}
+
+As you can see in the output both BFS and A* were able to find solutions, however A* took a slightly different path. For our heuristic in A* we chose to look at how many people were remaining on the left bank for the number of trips which are still required - 1, since each trip will require the boat to go both ways. Therefore this heuristic is admissible since it will never be greater than then number of trips required to solve the problem.\\
+
+To represent our state we need to store 3 pieces of information: the number of missionaries on the right bank, the number of cantabiles on the right bank and the bank which the boat is currently on. These 3 pieces of information allow us to deduce all required information to solve for the next expansion states. To solve for how many missionaries / cannibals are left to bring over we just need to take 3 and subtract the number of missionaries / cannibals which have already arrived on the right bank.
+
 
 
 \end{document}
