@@ -12,18 +12,21 @@ from searchdir.state import *
 
 
 class BonusState(State):
-    # initializes the eight puzzle with the configuration passed in parameter (numbers)
+    # initializes the Missionaries and Cannibals problem with the configuration passed in parameter
+    #([<# of missionaries>,<# of Cannibals>,<0=left side,1=right side>])
     def __init__(self, startState):
         self.state = startState
 
     # returns a boolean value that indicates if the current configuration is the same as the goal configuration
     def isGoal(self):
-        # We've reached the goal when every item in the array has the same value as its index
+        # We've reached the goal when all missionaries(state[0]=3) and cannibals(state[1]=3) are on the right side (state[2]=1)
         return self.state == [3, 3, 1]
 
+    #check if missionaries are not outnumbered by cannibals
     def isValid(self, state):
+        #edge cases to make sure there arent "negative" humans
         if state[0] >= 0 and state[1] >= 0 and 3 - state[1] >= 0 and 3 - state[1] >= 0 \
-                and (state[0] == 0 or state[0] >= state[1]) and (3 - state[0] == 0 or 3 - state[0] >= 3 - state[1]):
+                and (state[0] == 0 or state[0] >= state[1]) and (3 - state[0] == 0 or 3 - state[0] >= 3 - state[1]): #check if missionaries arent outnumbered
             return True
         else:
             return False
@@ -32,45 +35,48 @@ class BonusState(State):
     def possibleActions(self):
 
         states = []
-
+        #Boat is on left side
         if self.state[2] == 0:
+            #1 missionary moves
             state = [self.state[0] + 1, self.state[1], 1]
             if self.isValid(state):
                 states.append(state)
-
+            #2 missionaries moves
             state = [self.state[0] + 2, self.state[1], 1]
             if self.isValid(state):
                 states.append(state)
-
+            #1 cannibal moves
             state = [self.state[0], self.state[1] + 1, 1]
             if self.isValid(state):
                 states.append(state)
-
+            #2 cannibals moves
             state = [self.state[0], self.state[1] + 2, 1]
             if self.isValid(state):
                 states.append(state)
-
+            #1 missionary 1 cannibal moves
             state = [self.state[0] + 1, self.state[1] + 1, 1]
             if self.isValid(state):
                 states.append(state)
 
+        #boat is on right side
         elif self.state[2] == 1:
+            #1 missionary moves
             state = [self.state[0] - 1, self.state[1], 0]
             if self.isValid(state):
                 states.append(state)
-
+            #2 missionaries moves
             state = [self.state[0] - 2, self.state[1], 0]
             if self.isValid(state):
                 states.append(state)
-
+            #1 cannibal moves
             state = [self.state[0], self.state[1] - 1, 0]
             if self.isValid(state):
                 states.append(state)
-
+            #2 cannibals moves
             state = [self.state[0], self.state[1] - 2, 0]
             if self.isValid(state):
                 states.append(state)
-
+            #1 missionary 1 cannibal moves
             state = [self.state[0] - 1, self.state[1] - 1, 0]
             if self.isValid(state):
                 states.append(state)
@@ -108,10 +114,11 @@ class BonusState(State):
     # returns the value of the heuristic for the current state
     # note that you can alternatively call heuristic1() and heuristic2() to test both heuristics with A*
     def heuristic(self):
-        # Loads the proper heuristic for the test
+        #number of people on left side (starting side) subtracted by 1
         return (3 - self.state[0]) + (3 - self.state[1])
 
-
+#state representation of Problem
+#[<# of missionaries>,<# of Cannibals>,<0=left side,1=right side>]
 MISSIONARY_DATA = [0, 0, 0]
 
 puzzle = BonusState(MISSIONARY_DATA)
