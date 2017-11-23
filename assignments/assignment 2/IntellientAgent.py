@@ -3,7 +3,7 @@ import time
 from aima.logic import *
 
 
-# The dumb agent based off of propositional logic
+# The intelligent agent based off of propositional logic
 class IntelligentAgent:
     def __init__(self, WumpusWorld, debug):
         self.world = WumpusWorld
@@ -12,6 +12,7 @@ class IntelligentAgent:
         self.debug = debug
         self.kb = PropKB()
         self.locations = []
+        self.board = [[set() for _ in range(4)] for _ in range(4)]
 
     # Navigates through the world, returning some statistics about its journey
     def navigate(self):
@@ -42,6 +43,8 @@ class IntelligentAgent:
             # Find the percepts for the current location
             perceptions = self.world.getLocationProperties()
 
+            tell('P{}{}').format(x,y)
+
             # Add the percepts to a knowledge base using AIMA open source libraries (as recommended in the assignment)
             for perception in perceptions:
                 self.kb.tell({
@@ -49,6 +52,14 @@ class IntelligentAgent:
                     "y": self.world.getAgentLocation()['y'],
                     "perception": str(perception)
                 })
+
+            agent = self.world.getAgentLocation()
+            self.board[agent["y"]][agent["x"]] = self.world.getLocationProperties()
+            for perception in perceptions:
+                self.kb.ask({
+
+                    })
+
 
             # Look for rooms which lead to potentially unsafe rooms
             unsafePath = self.kb.ask({

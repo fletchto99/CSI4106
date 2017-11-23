@@ -5,7 +5,7 @@ from IntellientAgent import IntelligentAgent
 print('Running...\n\n')
 
 # The entrypoint for the application
-iterations = 10000
+iterations = 2
 
 # Used for statistics
 totalScore = 0
@@ -21,7 +21,7 @@ for i in range(iterations):
         world = WumpusWorld(i)
 
     # Agent without debugging (if debugging is enabled it will print out the map)
-    agent = DumbAgent(world, False)
+    agent = DumbAgent(world, True)
 
     # Invoke the method to navigate the world
     result = agent.navigate()
