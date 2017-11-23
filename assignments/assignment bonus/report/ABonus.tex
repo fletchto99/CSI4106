@@ -28,12 +28,12 @@
 \newcommand{\university}{University of Ottawa}
 \newcommand{\name}{Matt Langlois}
 \newcommand{\studentNumber}{7731813}
-\newcommand{\nameTwo}{Alexandre Billard}
-\newcommand{\studentNumberTwo}{6812210}
+\newcommand{\nameTwo}{Joey Wang}
+\newcommand{\studentNumberTwo}{7814617}
 \newcommand{\semester}{Fall 2017}
-\newcommand{\assignmentType}{Assignment}
-\newcommand{\assignmentNumber}{1}
-\newcommand{\dueDate}{Oct. 10}
+\newcommand{\assignmentType}{Bonus Assignment}
+\newcommand{\assignmentNumber}{Bonus}
+\newcommand{\dueDate}{Nov. 23}
 \newcommand{\courseCode}{CSI4106}
 \newcommand{\courseTitle}{Intro to AI}
 \newcommand{\essayTitle}{<Title>} % only for essays %
@@ -88,8 +88,8 @@
 \fancypagestyle{assignment}{
     \fancyhf{}
     \renewcommand{\footrulewidth}{0.1mm}
-    \fancyfoot[R]{\assignmentType \assignmentNumber}
-    \fancyfoot[C]{\thepage \hspace{1pt} of \pageref{LastPage}}
+    \fancyfoot[R]{\assignmentType}
+    \fancyfoot[C]{\thepage \hspace{1pt} of \pageref*{LastPage}}
     \fancyfoot[L]{\courseCode}
     \renewcommand{\headrulewidth}{0mm}
 }
@@ -98,8 +98,8 @@
 \fancypagestyle{frontmatter}{
     \fancyhf{}
     \renewcommand{\footrulewidth}{0.1mm}
-    \fancyfoot[R]{\assignmentType \assignmentNumber}
-    \fancyfoot[C]{\thepage \hspace{1pt} of \pageref{EndFrontMatter}}
+    \fancyfoot[R]{\assignmentType}
+    \fancyfoot[C]{\thepage \hspace{1pt} of \pageref*{EndFrontMatter}}
     \fancyfoot[L]{\courseCode}
     \fancyhead[L]{\name}
     \fancyhead[R]{\studentNumber}
@@ -109,8 +109,8 @@
 \fancypagestyle{body}{
     \fancyhf{}
     \renewcommand{\footrulewidth}{0.1mm}
-    \fancyfoot[R]{\assignmentType \assignmentNumber}
-    \fancyfoot[C]{\thepage \hspace{1pt} of \pageref{LastPage}}
+    \fancyfoot[R]{\assignmentType}
+    \fancyfoot[C]{\thepage \hspace{1pt} of \pageref*{LastPage}}
     \fancyfoot[L]{\courseCode}
     \fancyhead[L]{\name}
     \fancyhead[R]{\studentNumber}
@@ -119,8 +119,8 @@
 % Page header and footers %
 \fancyhf{}
 \renewcommand{\footrulewidth}{0.1mm}
-\fancyfoot[R]{\assignmentType \assignmentNumber}
-\fancyfoot[C]{\thepage \hspace{1pt} of \pageref{LastPage}}
+\fancyfoot[R]{\assignmentType}
+\fancyfoot[C]{\thepage \hspace{1pt} of \pageref*{LastPage}}
 \fancyfoot[L]{\courseCode}
 \fancyhead[L]{\name\text{ - }\studentNumber}
 \fancyhead[R]{\nameTwo\text{ - }\studentNumberTwo}
@@ -140,7 +140,7 @@
     \courseTitle \hfill \university\\
     \courseCode \hfill \semester
     \begin{center}
-        \textbf{\assignmentType\text{ }\#\assignmentNumber}\\
+        \textbf{\assignmentType}\\
         \name \hspace{1pt} - \studentNumber\\
         \nameTwo \hspace{1pt} - \studentNumberTwo\\
         \dueDate\\
@@ -231,71 +231,6 @@
 
 \section*{Question 1}
 
-For our assignment we used the specified version of Python. No specific environment variables were set and all testing was done via the command line using Python3. The output from \code{python --version} is \code{Python 3.6.2}. All testing was done on Mac OS X with python 3 installed via homebrew.
 
-\section{Question 2}
-
-\subsection*{Dataset 1 (EIGHT\_PUZZLE\_DATA[1])}
-
-\begin{tabular}{|c|c|c|c|c|c|}
-    \hline
-        Algo & Depth & Cost & Nodes Visited & Time & Completes  \\\hline
-        BFS  & 1 & 1 & 8 & 0.005 seconds & Yes \\\hline
-        DFS  & 1 & 1 & 4 & 0.002 seconds & Yes \\\hline
-        A* (H1)  & 1 & 1 & 2 & 0.002 seconds & Yes \\\hline
-        A* (H2)  & 1 & 1 & 2 & 0.003 seconds & Yes \\
-    \hline
-\end{tabular}
-
-\subsection*{Dataset 2 (EIGHT\_PUZZLE\_DATA[6])}
-
-\begin{tabular}{|c|c|c|c|c|c|}
-    \hline
-        Algo & Depth & Cost & Nodes Visited & Time & Completes  \\\hline
-        BFS  & 14 & 14 & 3264 & 0.244 seconds & Yes \\\hline
-        DFS  & 63304 & 63304 & 131426 & 9.411 seconds & Yes \\\hline
-        A* (H1)  & 14 & 14 & 284 & 0.164 seconds & Yes \\\hline
-        A* (H2)  & 14 & 14 & 59 & 0.015 seconds & Yes \\
-    \hline
-\end{tabular}
-
-\subsection*{Dataset 3 (EIGHT\_PUZZLE\_DATA[3])}
-
-\begin{tabular}{|c|c|c|c|c|c|}
-    \hline
-        Algo & Depth & Cost & Nodes Visited & Time & Completes  \\\hline
-        BFS  & 19 & 19 & 29926 & 2.388 seconds & Yes \\\hline
-        DFS  & 39449 & 39449 & 167747 & 13.818 seconds & Yes \\\hline
-        A* (H1)  & 19 & 19 & 2700 & 9.136 seconds & Yes \\\hline
-        A* (H2)  & 19 & 19 & 292 & 0.185 seconds & Yes \\
-    \hline
-\end{tabular}
-
-\section*{Question 3}
-
-\begin{enumerate}[a)]
-    \item
-        Heuristic Descriptions:
-        \begin{enumerate}[1)]
-            \item
-                Heuristic h1 computes the number of tiles which are in the wrong location. It does not compute how far they are from the correct position thus it can severely underestimate the true distance to the proper location.
-            \item
-                Heuristic h2 computes the Manhattan distance to the proper location. This is a more accurate estimate compared to h1 heuristic since it is computing not only if it is in the wrong position but how far of from the correct position the tile is.
-        \end{enumerate}
-    \item
-        Admissibility:
-        \begin{enumerate}[1)]
-            \item
-                H1 will never overestimate how many moves are required. Worst case it will only estimate how many tiles there are, if all tiles are moved. Thus it cannot overestimate.
-            \item
-                H2 is admissible because it estimates the distance every tile needs to travel to get back to its original position. This is the bare minimum a tile will need to move, this h2 will never over estimate and is admissable.
-        \end{enumerate}
-    \item
-        Heuristic H2 dominates in all cases. We believe this is because H2 is a more accurate representation of how far a tile will need to move without over estimating the distance. H1 just checks if its in the wrong location stating it needs to move which essentially. This means the maximum value it will ever be for this question is 8, which can be way off compared to the total distance all tiles will need to move. This is why H2 is a much stronger approach.
-\end{enumerate}
-
-\section*{Question 4}
-
-Given the best possible admissible heuristic then A* appears to be the best approach. Through our tests it appears that A* using the Manhattan heuristic was the best approach for this case. It was also noticed that DFS would sometimes generate extremely long sets of moves to get to the solution. For example in Dataset 3 DFS required 39449 moves while A* only required 19 moves. Overall A* appears to be the best algroithm for this task.
 
 \end{document}
