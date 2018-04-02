@@ -1,0 +1,40 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.ZeroR
+Relation:     C__movie_review_polarity-weka.filters.unsupervised.attribute.StringToWordVector-R1-W1000-prune-rate-1.0-C-N0-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Null-M1-tokenizerweka.core.tokenizers.WordTokenizer -delimiters " \r\n\t.,;:\'\"()?!"
+Instances:    2000
+Attributes:   1166
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+ZeroR predicts class value: neg
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1000               50      %
+Incorrectly Classified Instances      1000               50      %
+Kappa statistic                          0
+Mean absolute error                      0.5
+Root mean squared error                  0.5
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances             2000
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.500      1.000    0.667      0.000    0.500     0.500     neg
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.500     0.500     pos
+Weighted Avg.    0.500    0.500    0.250      0.500    0.333      0.000    0.500     0.500
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 1000   0 |   a = neg
+ 1000   0 |   b = pos
+

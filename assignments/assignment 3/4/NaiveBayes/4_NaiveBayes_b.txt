@@ -1,0 +1,7126 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes
+Relation:     C__movie_review_polarity-weka.filters.unsupervised.attribute.StringToWordVector-R1-W1000-prune-rate-1.0-C-T-I-N1-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Null-M5-tokenizerweka.core.tokenizers.NGramTokenizer -max 3 -min 1 -delimiters " \r\n\t.,;:\'\"()?!"
+Instances:    2000
+Attributes:   1181
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                    Class
+Attribute             neg     pos
+                    (0.5)   (0.5)
+==================================
+&
+  mean               0.184  0.1892
+  std. dev.         0.7793  0.7806
+  weight sum          1000    1000
+  precision         0.0572  0.0572
+
+*
+  mean              0.4415  0.2791
+  std. dev.           1.25  0.9228
+  weight sum          1000    1000
+  precision         0.0339  0.0339
+
+* *
+  mean              0.1767  0.1201
+  std. dev.         0.9945  0.7602
+  weight sum          1000    1000
+  precision         0.1266  0.1266
+
+* * *
+  mean              0.1507  0.0938
+  std. dev.         0.9055  0.6909
+  weight sum          1000    1000
+  precision          0.147   0.147
+
+-
+  mean              0.3926   0.451
+  std. dev.         0.8862  0.8922
+  weight sum          1000    1000
+  precision         0.0148  0.0148
+
+--
+  mean              0.4134  0.3609
+  std. dev.         0.9359  0.9262
+  weight sum          1000    1000
+  precision         0.0169  0.0169
+
+1
+  mean              0.2353  0.1551
+  std. dev.          0.827  0.6334
+  weight sum          1000    1000
+  precision         0.0432  0.0432
+
+2
+  mean              0.2334  0.1821
+  std. dev.         0.6972  0.6103
+  weight sum          1000    1000
+  precision         0.0246  0.0246
+
+3
+  mean              0.1935  0.1264
+  std. dev.         0.8163  0.6033
+  weight sum          1000    1000
+  precision         0.0696  0.0696
+
+a
+  mean              0.0059   0.006
+  std. dev.         0.0011  0.0011
+  weight sum          1000    1000
+  precision              0       0
+
+a bad
+  mean              0.2678  0.1079
+  std. dev.         0.7306  0.4442
+  weight sum          1000    1000
+  precision         0.0302  0.0302
+
+a big
+  mean              0.2287  0.1742
+  std. dev.          0.697  0.5918
+  weight sum          1000    1000
+  precision         0.0269  0.0269
+
+a bit
+  mean              0.1616  0.2524
+  std. dev.         0.4747  0.6073
+  weight sum          1000    1000
+  precision         0.0126  0.0126
+
+a couple
+  mean              0.1926  0.1557
+  std. dev.         0.5488  0.4816
+  weight sum          1000    1000
+  precision         0.0171  0.0171
+
+a few
+  mean               0.274  0.2715
+  std. dev.         0.4786  0.4802
+  weight sum          1000    1000
+  precision         0.0043  0.0043
+
+a film
+  mean              0.2552  0.2552
+  std. dev.         0.5067  0.5016
+  weight sum          1000    1000
+  precision         0.0058  0.0058
+
+a good
+  mean              0.2687  0.2506
+  std. dev.         0.5352  0.4903
+  weight sum          1000    1000
+  precision         0.0104  0.0104
+
+a great
+  mean              0.1686  0.2765
+  std. dev.         0.4557  0.6058
+  weight sum          1000    1000
+  precision         0.0117  0.0117
+
+a little
+  mean               0.212  0.2909
+  std. dev.         0.4733  0.5406
+  weight sum          1000    1000
+  precision         0.0063  0.0063
+
+a lot
+  mean              0.2514   0.266
+  std. dev.         0.5004  0.5047
+  weight sum          1000    1000
+  precision         0.0054  0.0054
+
+a lot of
+  mean              0.2192   0.216
+  std. dev.         0.5226  0.5097
+  weight sum          1000    1000
+  precision         0.0094  0.0094
+
+a man
+  mean              0.1642  0.2397
+  std. dev.         0.4782  0.5871
+  weight sum          1000    1000
+  precision         0.0148  0.0148
+
+a movie
+  mean              0.3006  0.2582
+  std. dev.         0.5454  0.5303
+  weight sum          1000    1000
+  precision         0.0061  0.0061
+
+a very
+  mean              0.1798    0.26
+  std. dev.         0.4757  0.5887
+  weight sum          1000    1000
+  precision         0.0108  0.0108
+
+able
+  mean              0.1637  0.2314
+  std. dev.         0.4585  0.5431
+  weight sum          1000    1000
+  precision         0.0117  0.0117
+
+able to
+  mean              0.1638  0.2234
+  std. dev.         0.4589  0.5442
+  weight sum          1000    1000
+  precision         0.0124  0.0124
+
+about
+  mean              0.2638  0.2445
+  std. dev.         0.1917  0.1855
+  weight sum          1000    1000
+  precision         0.0006  0.0006
+
+about a
+  mean              0.2163    0.21
+  std. dev.         0.6806  0.6694
+  weight sum          1000    1000
+  precision         0.0235  0.0235
+
+about the
+  mean              0.2607  0.2773
+  std. dev.         0.5078  0.5054
+  weight sum          1000    1000
+  precision         0.0061  0.0061
+
+across
+  mean              0.2152  0.2007
+  std. dev.         0.6746  0.6525
+  weight sum          1000    1000
+  precision         0.0259  0.0259
+
+act
+  mean                0.18  0.1832
+  std. dev.         0.5339  0.5339
+  weight sum          1000    1000
+  precision         0.0148  0.0148
+
+acting
+  mean              0.3136  0.2524
+  std. dev.         0.5384  0.4731
+  weight sum          1000    1000
+  precision         0.0048  0.0048
+
+action
+  mean              0.3939  0.2971
+  std. dev.         0.6865  0.5994
+  weight sum          1000    1000
+  precision         0.0073  0.0073
+
+actor
+  mean              0.2425   0.259
+  std. dev.         0.5327  0.5381
+  weight sum          1000    1000
+  precision         0.0096  0.0096
+
+actors
+  mean              0.2903  0.2648
+  std. dev.         0.5293  0.4776
+  weight sum          1000    1000
+  precision         0.0055  0.0055
+
+actually
+  mean              0.3046  0.2651
+  std. dev.         0.4955  0.4617
+  weight sum          1000    1000
+  precision         0.0039  0.0039
+
+after
+  mean              0.3018  0.3078
+  std. dev.         0.3184  0.3211
+  weight sum          1000    1000
+  precision         0.0013  0.0013
+
+after the
+  mean              0.1598  0.1965
+  std. dev.         0.4989  0.5542
+  weight sum          1000    1000
+  precision         0.0172  0.0172
+
+again
+  mean                0.27  0.2744
+  std. dev.         0.4966  0.5003
+  weight sum          1000    1000
+  precision         0.0046  0.0046
+
+against
+  mean              0.1745   0.245
+  std. dev.         0.4793  0.5689
+  weight sum          1000    1000
+  precision         0.0106  0.0106
+
+alien
+  mean              0.1567  0.1897
+  std. dev.         0.6855  0.7797
+  weight sum          1000    1000
+  precision          0.058   0.058
+
+all
+  mean              0.2209  0.2107
+  std. dev.         0.1407  0.1331
+  weight sum          1000    1000
+  precision         0.0004  0.0004
+
+all of
+  mean              0.2359  0.2368
+  std. dev.         0.5228  0.5173
+  weight sum          1000    1000
+  precision         0.0071  0.0071
+
+all the
+  mean              0.2752  0.2769
+  std. dev.         0.4613  0.4531
+  weight sum          1000    1000
+  precision         0.0041  0.0041
+
+almost
+  mean                0.27  0.2985
+  std. dev.         0.4665  0.4878
+  weight sum          1000    1000
+  precision         0.0049  0.0049
+
+alone
+  mean              0.2254  0.1996
+  std. dev.         0.7464  0.6529
+  weight sum          1000    1000
+  precision         0.0374  0.0374
+
+along
+  mean              0.2425  0.2582
+  std. dev.         0.4999  0.5053
+  weight sum          1000    1000
+  precision         0.0084  0.0084
+
+already
+  mean              0.2038  0.1594
+  std. dev.         0.5282  0.4512
+  weight sum          1000    1000
+  precision         0.0113  0.0113
+
+also
+  mean              0.2626  0.3653
+  std. dev.         0.3104  0.3397
+  weight sum          1000    1000
+  precision         0.0016  0.0016
+
+although
+  mean              0.2456  0.3467
+  std. dev.         0.4932  0.5639
+  weight sum          1000    1000
+  precision          0.005   0.005
+
+always
+  mean              0.2078   0.302
+  std. dev.         0.4638  0.5631
+  weight sum          1000    1000
+  precision         0.0072  0.0072
+
+am
+  mean              0.2041   0.156
+  std. dev.         0.6878  0.6212
+  weight sum          1000    1000
+  precision         0.0413  0.0413
+
+american
+  mean              0.1934   0.331
+  std. dev.         0.5835  0.7538
+  weight sum          1000    1000
+  precision         0.0161  0.0161
+
+an
+  mean              0.1339  0.1393
+  std. dev.         0.0679  0.0682
+  weight sum          1000    1000
+  precision         0.0002  0.0002
+
+and
+  mean              0.0028  0.0029
+  std. dev.         0.0005  0.0005
+  weight sum          1000    1000
+  precision              0       0
+
+and a
+  mean              0.2998  0.3026
+  std. dev.         0.4201    0.43
+  weight sum          1000    1000
+  precision         0.0027  0.0027
+
+and even
+  mean              0.1535  0.1903
+  std. dev.         0.4732  0.5069
+  weight sum          1000    1000
+  precision         0.0125  0.0125
+
+and he
+  mean              0.1632  0.2576
+  std. dev.         0.4503  0.5615
+  weight sum          1000    1000
+  precision         0.0106  0.0106
+
+and his
+  mean              0.2356  0.3219
+  std. dev.         0.4999  0.5344
+  weight sum          1000    1000
+  precision         0.0065  0.0065
+
+and i
+  mean              0.2523  0.2251
+  std. dev.         0.5502  0.5182
+  weight sum          1000    1000
+  precision         0.0123  0.0123
+
+and in
+  mean              0.1491  0.1848
+  std. dev.         0.4777  0.5335
+  weight sum          1000    1000
+  precision         0.0146  0.0146
+
+and is
+  mean               0.202  0.2257
+  std. dev.         0.4942  0.5288
+  weight sum          1000    1000
+  precision         0.0106  0.0106
+
+and it
+  mean                0.21  0.2999
+  std. dev.         0.4564  0.5165
+  weight sum          1000    1000
+  precision         0.0048  0.0048
+
+and that
+  mean              0.2019  0.2214
+  std. dev.         0.4851  0.5101
+  weight sum          1000    1000
+  precision         0.0108  0.0108
+
+and the
+  mean              0.2492  0.2883
+  std. dev.         0.2271  0.2221
+  weight sum          1000    1000
+  precision         0.0008  0.0008
+
+and then
+  mean              0.2488  0.1785
+  std. dev.         0.5785  0.4866
+  weight sum          1000    1000
+  precision         0.0096  0.0096
+
+and you
+  mean              0.2105  0.1926
+  std. dev.         0.6408  0.6356
+  weight sum          1000    1000
+  precision         0.0192  0.0192
+
+annoying
+  mean              0.2257  0.1163
+  std. dev.         0.7234  0.4931
+  weight sum          1000    1000
+  precision         0.0321  0.0321
+
+another
+  mean              0.3072  0.2937
+  std. dev.         0.4063  0.4001
+  weight sum          1000    1000
+  precision         0.0025  0.0025
+
+any
+  mean              0.3475  0.2748
+  std. dev.         0.3812  0.3313
+  weight sum          1000    1000
+  precision         0.0021  0.0021
+
+any of
+  mean              0.2148  0.1394
+  std. dev.         0.6577  0.5145
+  weight sum          1000    1000
+  precision         0.0209  0.0209
+
+anyone
+  mean              0.2545  0.2015
+  std. dev.         0.5378  0.4734
+  weight sum          1000    1000
+  precision         0.0076  0.0076
+
+anything
+  mean              0.2916  0.2345
+  std. dev.         0.5173  0.4471
+  weight sum          1000    1000
+  precision         0.0061  0.0061
+
+anyway
+  mean              0.2356  0.1101
+  std. dev.         0.6809  0.4461
+  weight sum          1000    1000
+  precision          0.023   0.023
+
+apparently
+  mean              0.2318  0.1448
+  std. dev.          0.676  0.5323
+  weight sum          1000    1000
+  precision          0.021   0.021
+
+appears
+  mean              0.2658  0.1777
+  std. dev.         0.7446  0.5908
+  weight sum          1000    1000
+  precision         0.0188  0.0188
+
+are
+  mean              0.1468  0.1506
+  std. dev.          0.074  0.0737
+  weight sum          1000    1000
+  precision         0.0002  0.0002
+
+are a
+  mean              0.2244  0.2146
+  std. dev.         0.6663  0.6444
+  weight sum          1000    1000
+  precision         0.0214  0.0214
+
+are the
+  mean              0.1808  0.2081
+  std. dev.         0.5015   0.549
+  weight sum          1000    1000
+  precision         0.0141  0.0141
+
+aren
+  mean              0.1914  0.1511
+  std. dev.         0.5085  0.4483
+  weight sum          1000    1000
+  precision          0.011   0.011
+
+aren t
+  mean              0.1914  0.1511
+  std. dev.         0.5085  0.4483
+  weight sum          1000    1000
+  precision          0.011   0.011
+
+around
+  mean              0.3039  0.2745
+  std. dev.         0.4417  0.4191
+  weight sum          1000    1000
+  precision         0.0031  0.0031
+
+as
+  mean               0.069  0.0769
+  std. dev.         0.0277  0.0256
+  weight sum          1000    1000
+  precision         0.0001  0.0001
+
+as a
+  mean              0.3006  0.3265
+  std. dev.         0.3453  0.3476
+  weight sum          1000    1000
+  precision         0.0017  0.0017
+
+as an
+  mean              0.1824  0.1904
+  std. dev.         0.5155  0.5262
+  weight sum          1000    1000
+  precision         0.0136  0.0136
+
+as i
+  mean              0.1915  0.2008
+  std. dev.         0.6099  0.6711
+  weight sum          1000    1000
+  precision         0.0287  0.0287
+
+as if
+  mean              0.2438  0.1782
+  std. dev.         0.7024  0.5939
+  weight sum          1000    1000
+  precision         0.0238  0.0238
+
+as it
+  mean              0.1919    0.22
+  std. dev.         0.4994  0.5174
+  weight sum          1000    1000
+  precision          0.013   0.013
+
+as the
+  mean              0.2621  0.3694
+  std. dev.         0.3437   0.372
+  weight sum          1000    1000
+  precision         0.0018  0.0018
+
+as well
+  mean              0.1908  0.2686
+  std. dev.         0.4563  0.5516
+  weight sum          1000    1000
+  precision         0.0075  0.0075
+
+at
+  mean              0.1668  0.1607
+  std. dev.         0.0893  0.0891
+  weight sum          1000    1000
+  precision         0.0003  0.0003
+
+at a
+  mean              0.2242  0.2133
+  std. dev.         0.5202  0.5076
+  weight sum          1000    1000
+  precision         0.0102  0.0102
+
+at all
+  mean              0.2155  0.1476
+  std. dev.         0.5593  0.4508
+  weight sum          1000    1000
+  precision         0.0138  0.0138
+
+at least
+  mean              0.3104  0.1828
+  std. dev.         0.5442  0.4296
+  weight sum          1000    1000
+  precision         0.0071  0.0071
+
+at the
+  mean              0.2827  0.3274
+  std. dev.         0.3609  0.3795
+  weight sum          1000    1000
+  precision         0.0024  0.0024
+
+attempt
+  mean               0.286  0.1432
+  std. dev.         0.7294  0.5025
+  weight sum          1000    1000
+  precision         0.0221  0.0221
+
+attempt to
+  mean              0.2085  0.1047
+  std. dev.         0.6528  0.4664
+  weight sum          1000    1000
+  precision         0.0338  0.0338
+
+attempts
+  mean               0.254  0.1458
+  std. dev.         0.7238  0.5338
+  weight sum          1000    1000
+  precision          0.022   0.022
+
+audience
+  mean              0.3123   0.287
+  std. dev.         0.4875   0.466
+  weight sum          1000    1000
+  precision         0.0037  0.0037
+
+away
+  mean              0.2625  0.2717
+  std. dev.         0.4851  0.4871
+  weight sum          1000    1000
+  precision         0.0057  0.0057
+
+awful
+  mean              0.2161  0.0394
+  std. dev.         0.6726  0.2884
+  weight sum          1000    1000
+  precision         0.0383  0.0383
+
+back
+  mean              0.2832  0.3144
+  std. dev.          0.422  0.4418
+  weight sum          1000    1000
+  precision         0.0033  0.0033
+
+back to
+  mean              0.1498  0.1694
+  std. dev.          0.485   0.519
+  weight sum          1000    1000
+  precision         0.0244  0.0244
+
+bad
+  mean              0.4822   0.193
+  std. dev.          0.547   0.356
+  weight sum          1000    1000
+  precision         0.0033  0.0033
+
+based
+  mean               0.197  0.2436
+  std. dev.         0.5076  0.5354
+  weight sum          1000    1000
+  precision         0.0088  0.0088
+
+based on
+  mean              0.1802  0.2271
+  std. dev.         0.5119  0.5412
+  weight sum          1000    1000
+  precision         0.0111  0.0111
+
+basically
+  mean               0.232   0.159
+  std. dev.         0.7301  0.5904
+  weight sum          1000    1000
+  precision         0.0258  0.0258
+
+batman
+  mean              0.1946  0.0672
+  std. dev.         0.9726  0.5187
+  weight sum          1000    1000
+  precision         0.1396  0.1396
+
+be
+  mean              0.1504  0.1395
+  std. dev.         0.0714  0.0718
+  weight sum          1000    1000
+  precision         0.0002  0.0002
+
+be a
+  mean              0.2687  0.2567
+  std. dev.         0.4888  0.4685
+  weight sum          1000    1000
+  precision         0.0044  0.0044
+
+be the
+  mean              0.2041  0.2192
+  std. dev.         0.4913  0.5008
+  weight sum          1000    1000
+  precision         0.0075  0.0075
+
+because
+  mean              0.3303  0.3223
+  std. dev.         0.3945  0.3909
+  weight sum          1000    1000
+  precision         0.0019  0.0019
+
+because it
+  mean                0.16  0.1819
+  std. dev.         0.5168  0.5253
+  weight sum          1000    1000
+  precision         0.0195  0.0195
+
+become
+  mean              0.2027  0.2825
+  std. dev.         0.4688  0.5411
+  weight sum          1000    1000
+  precision         0.0078  0.0078
+
+becomes
+  mean              0.2527  0.2559
+  std. dev.         0.5372  0.5265
+  weight sum          1000    1000
+  precision         0.0073  0.0073
+
+been
+  mean              0.3304   0.293
+  std. dev.         0.3346  0.3121
+  weight sum          1000    1000
+  precision         0.0017  0.0017
+
+before
+  mean              0.2864  0.2976
+  std. dev.         0.4187  0.4187
+  weight sum          1000    1000
+  precision         0.0036  0.0036
+
+beginning
+  mean              0.1661  0.1781
+  std. dev.         0.4966  0.4993
+  weight sum          1000    1000
+  precision          0.015   0.015
+
+begins
+  mean              0.1779   0.259
+  std. dev.         0.4962  0.5568
+  weight sum          1000    1000
+  precision           0.01    0.01
+
+behind
+  mean              0.1812  0.2348
+  std. dev.         0.4804  0.5504
+  weight sum          1000    1000
+  precision         0.0106  0.0106
+
+being
+  mean               0.299  0.3284
+  std. dev.         0.3917  0.4175
+  weight sum          1000    1000
+  precision         0.0026  0.0026
+
+believe
+  mean              0.1864  0.2234
+  std. dev.         0.5006  0.5293
+  weight sum          1000    1000
+  precision         0.0143  0.0143
+
+best
+  mean              0.2631  0.3663
+  std. dev.         0.3855   0.424
+  weight sum          1000    1000
+  precision         0.0022  0.0022
+
+better
+  mean               0.335  0.2442
+  std. dev.         0.4666  0.3928
+  weight sum          1000    1000
+  precision         0.0033  0.0033
+
+between
+  mean              0.2635  0.3362
+  std. dev.         0.4393  0.4838
+  weight sum          1000    1000
+  precision         0.0068  0.0068
+
+big
+  mean              0.3387  0.2808
+  std. dev.         0.5466   0.491
+  weight sum          1000    1000
+  precision         0.0056  0.0056
+
+bit
+  mean              0.2318  0.2816
+  std. dev.         0.4871  0.5676
+  weight sum          1000    1000
+  precision          0.007   0.007
+
+black
+  mean              0.2366  0.2409
+  std. dev.         0.6392  0.6668
+  weight sum          1000    1000
+  precision         0.0202  0.0202
+
+body
+  mean              0.1829  0.1859
+  std. dev.         0.5631  0.5713
+  weight sum          1000    1000
+  precision         0.0176  0.0176
+
+book
+  mean              0.1939  0.2024
+  std. dev.         0.6178  0.6321
+  weight sum          1000    1000
+  precision         0.0269  0.0269
+
+boring
+  mean              0.3334  0.0838
+  std. dev.         0.7856  0.3984
+  weight sum          1000    1000
+  precision         0.0228  0.0228
+
+both
+  mean              0.2316  0.3702
+  std. dev.         0.4367  0.5162
+  weight sum          1000    1000
+  precision         0.0042  0.0042
+
+boy
+  mean              0.1914  0.2358
+  std. dev.         0.6283  0.7017
+  weight sum          1000    1000
+  precision         0.0259  0.0259
+
+bring
+  mean              0.1559  0.1736
+  std. dev.         0.5005   0.505
+  weight sum          1000    1000
+  precision         0.0149  0.0149
+
+brother
+  mean              0.1819  0.1819
+  std. dev.         0.6652  0.6239
+  weight sum          1000    1000
+  precision         0.0299  0.0299
+
+brothers
+  mean              0.2056  0.1827
+  std. dev.         0.8907  0.7799
+  weight sum          1000    1000
+  precision         0.0603  0.0603
+
+bunch
+  mean              0.2167  0.1047
+  std. dev.         0.6934  0.5054
+  weight sum          1000    1000
+  precision         0.0404  0.0404
+
+but
+  mean              0.0768  0.0771
+  std. dev.         0.0287   0.028
+  weight sum          1000    1000
+  precision         0.0001  0.0001
+
+but he
+  mean              0.1689  0.1926
+  std. dev.          0.471  0.4953
+  weight sum          1000    1000
+  precision         0.0107  0.0107
+
+but i
+  mean              0.2327  0.1961
+  std. dev.         0.5201  0.5015
+  weight sum          1000    1000
+  precision         0.0097  0.0097
+
+but it
+  mean              0.2453  0.3071
+  std. dev.         0.4418  0.4643
+  weight sum          1000    1000
+  precision         0.0033  0.0033
+
+but it s
+  mean              0.1522   0.177
+  std. dev.         0.4933  0.5234
+  weight sum          1000    1000
+  precision          0.016   0.016
+
+but that
+  mean              0.1995    0.17
+  std. dev.         0.6278  0.5781
+  weight sum          1000    1000
+  precision         0.0209  0.0209
+
+but the
+  mean              0.2999  0.2591
+  std. dev.         0.4874  0.4441
+  weight sum          1000    1000
+  precision         0.0045  0.0045
+
+but they
+  mean              0.2208  0.1961
+  std. dev.         0.6873  0.6299
+  weight sum          1000    1000
+  precision         0.0283  0.0283
+
+by
+  mean               0.139  0.1509
+  std. dev.         0.0717  0.0749
+  weight sum          1000    1000
+  precision         0.0002  0.0002
+
+by a
+  mean              0.2109  0.2549
+  std. dev.         0.5008  0.5371
+  weight sum          1000    1000
+  precision         0.0077  0.0077
+
+by the
+  mean              0.2894  0.3157
+  std. dev.         0.3987  0.4131
+  weight sum          1000    1000
+  precision         0.0027  0.0027
+
+called
+  mean              0.2345  0.1868
+  std. dev.         0.5549  0.5102
+  weight sum          1000    1000
+  precision         0.0095  0.0095
+
+camera
+  mean              0.2135  0.1938
+  std. dev.         0.5919  0.5575
+  weight sum          1000    1000
+  precision         0.0167  0.0167
+
+can
+  mean              0.2763  0.2589
+  std. dev.         0.2156  0.2121
+  weight sum          1000    1000
+  precision         0.0008  0.0008
+
+can be
+  mean              0.1873  0.2215
+  std. dev.         0.4855  0.5337
+  weight sum          1000    1000
+  precision          0.014   0.014
+
+can t
+  mean              0.3048  0.2262
+  std. dev.         0.5231  0.4542
+  weight sum          1000    1000
+  precision         0.0057  0.0057
+
+car
+  mean              0.2291   0.165
+  std. dev.         0.6296  0.5498
+  weight sum          1000    1000
+  precision         0.0205  0.0205
+
+care
+  mean              0.2124  0.1667
+  std. dev.         0.5468  0.4853
+  weight sum          1000    1000
+  precision         0.0137  0.0137
+
+career
+  mean              0.2473  0.1966
+  std. dev.         0.7354  0.6397
+  weight sum          1000    1000
+  precision         0.0277  0.0277
+
+case
+  mean              0.2285  0.2236
+  std. dev.         0.5525  0.5714
+  weight sum          1000    1000
+  precision         0.0107  0.0107
+
+cast
+  mean              0.2829   0.301
+  std. dev.         0.5138  0.5111
+  weight sum          1000    1000
+  precision         0.0051  0.0051
+
+certainly
+  mean              0.2058  0.2207
+  std. dev.          0.543   0.536
+  weight sum          1000    1000
+  precision         0.0133  0.0133
+
+chance
+  mean               0.166  0.1616
+  std. dev.         0.5362  0.5184
+  weight sum          1000    1000
+  precision         0.0175  0.0175
+
+character
+  mean              0.3177  0.3317
+  std. dev.         0.3461  0.3535
+  weight sum          1000    1000
+  precision         0.0015  0.0015
+
+character is
+  mean               0.198  0.1842
+  std. dev.         0.6592  0.6445
+  weight sum          1000    1000
+  precision         0.0325  0.0325
+
+characters
+  mean              0.3337  0.3409
+  std. dev.          0.394  0.3957
+  weight sum          1000    1000
+  precision         0.0019  0.0019
+
+characters are
+  mean              0.2372  0.1881
+  std. dev.         0.7159  0.5939
+  weight sum          1000    1000
+  precision         0.0267  0.0267
+
+children
+  mean              0.1796  0.2234
+  std. dev.         0.5996  0.6549
+  weight sum          1000    1000
+  precision         0.0241  0.0241
+
+city
+  mean              0.2132  0.2466
+  std. dev.         0.6523  0.7089
+  weight sum          1000    1000
+  precision         0.0202  0.0202
+
+classic
+  mean              0.1524  0.2261
+  std. dev.         0.5663   0.602
+  weight sum          1000    1000
+  precision         0.0422  0.0422
+
+close
+  mean              0.1586  0.1782
+  std. dev.         0.5359  0.5462
+  weight sum          1000    1000
+  precision         0.0228  0.0228
+
+come
+  mean              0.2741  0.2779
+  std. dev.         0.4435  0.4611
+  weight sum          1000    1000
+  precision         0.0038  0.0038
+
+comedy
+  mean              0.3488  0.3085
+  std. dev.         0.6439   0.627
+  weight sum          1000    1000
+  precision         0.0073  0.0073
+
+comes
+  mean              0.2686  0.2832
+  std. dev.         0.4608  0.4554
+  weight sum          1000    1000
+  precision         0.0037  0.0037
+
+comic
+  mean               0.199  0.2321
+  std. dev.         0.5744  0.6256
+  weight sum          1000    1000
+  precision         0.0158  0.0158
+
+coming
+  mean              0.1722   0.176
+  std. dev.         0.4944  0.5069
+  weight sum          1000    1000
+  precision         0.0157  0.0157
+
+complete
+  mean              0.2046  0.1583
+  std. dev.         0.6478  0.5587
+  weight sum          1000    1000
+  precision         0.0329  0.0329
+
+completely
+  mean              0.2444  0.2061
+  std. dev.         0.5364  0.4855
+  weight sum          1000    1000
+  precision         0.0073  0.0073
+
+cool
+  mean              0.2013  0.1658
+  std. dev.           0.71   0.642
+  weight sum          1000    1000
+  precision         0.0386  0.0386
+
+could
+  mean              0.3502  0.2813
+  std. dev.         0.4102  0.3625
+  weight sum          1000    1000
+  precision          0.002   0.002
+
+could be
+  mean               0.202  0.1542
+  std. dev.         0.6471  0.5466
+  weight sum          1000    1000
+  precision         0.0238  0.0238
+
+could have
+  mean               0.272  0.1728
+  std. dev.         0.5941  0.4571
+  weight sum          1000    1000
+  precision         0.0109  0.0109
+
+could have been
+  mean              0.2378    0.11
+  std. dev.         0.7011  0.4533
+  weight sum          1000    1000
+  precision          0.026   0.026
+
+couldn
+  mean              0.2197  0.1475
+  std. dev.         0.6781  0.5646
+  weight sum          1000    1000
+  precision         0.0275  0.0275
+
+couldn t
+  mean              0.2197  0.1475
+  std. dev.         0.6781  0.5646
+  weight sum          1000    1000
+  precision         0.0275  0.0275
+
+couple
+  mean              0.2322  0.2188
+  std. dev.         0.5908  0.5328
+  weight sum          1000    1000
+  precision         0.0141  0.0141
+
+couple of
+  mean              0.2133  0.1849
+  std. dev.         0.6993  0.6167
+  weight sum          1000    1000
+  precision         0.0277  0.0277
+
+course
+  mean              0.2758  0.2497
+  std. dev.          0.494  0.4718
+  weight sum          1000    1000
+  precision         0.0047  0.0047
+
+credits
+  mean              0.2197  0.1657
+  std. dev.         0.7099  0.5917
+  weight sum          1000    1000
+  precision         0.0249  0.0249
+
+crew
+  mean              0.2027  0.1901
+  std. dev.         0.8189  0.7786
+  weight sum          1000    1000
+  precision          0.051   0.051
+
+d
+  mean              0.3199  0.1986
+  std. dev.         0.6367  0.4719
+  weight sum          1000    1000
+  precision         0.0111  0.0111
+
+daughter
+  mean              0.1999   0.201
+  std. dev.         0.6558  0.6256
+  weight sum          1000    1000
+  precision         0.0237  0.0237
+
+david
+  mean              0.1902   0.258
+  std. dev.         0.5863  0.6629
+  weight sum          1000    1000
+  precision         0.0177  0.0177
+
+day
+  mean              0.2421  0.2911
+  std. dev.         0.5254  0.5675
+  weight sum          1000    1000
+  precision         0.0087  0.0087
+
+days
+  mean              0.1965  0.2229
+  std. dev.          0.575  0.6387
+  weight sum          1000    1000
+  precision          0.022   0.022
+
+dead
+  mean              0.2265   0.201
+  std. dev.          0.585   0.562
+  weight sum          1000    1000
+  precision         0.0136  0.0136
+
+death
+  mean              0.2019  0.2662
+  std. dev.         0.5723  0.6692
+  weight sum          1000    1000
+  precision         0.0162  0.0162
+
+deep
+  mean              0.1625  0.1771
+  std. dev.         0.6343  0.6069
+  weight sum          1000    1000
+  precision         0.0379  0.0379
+
+despite
+  mean              0.1673  0.2463
+  std. dev.         0.4938  0.5848
+  weight sum          1000    1000
+  precision         0.0121  0.0121
+
+dialogue
+  mean              0.2962  0.1986
+  std. dev.         0.5706  0.4771
+  weight sum          1000    1000
+  precision         0.0068  0.0068
+
+did
+  mean              0.3082  0.2539
+  std. dev.         0.5301  0.4803
+  weight sum          1000    1000
+  precision         0.0057  0.0057
+
+didn
+  mean              0.3005  0.2085
+  std. dev.         0.5589  0.4722
+  weight sum          1000    1000
+  precision         0.0071  0.0071
+
+didn t
+  mean              0.2995  0.2085
+  std. dev.         0.5546  0.4723
+  weight sum          1000    1000
+  precision         0.0064  0.0064
+
+different
+  mean              0.1592  0.2902
+  std. dev.         0.4402  0.5837
+  weight sum          1000    1000
+  precision         0.0091  0.0091
+
+directed
+  mean              0.2041  0.2083
+  std. dev.          0.536   0.531
+  weight sum          1000    1000
+  precision         0.0093  0.0093
+
+direction
+  mean              0.1627  0.2125
+  std. dev.         0.4863  0.5391
+  weight sum          1000    1000
+  precision         0.0123  0.0123
+
+director
+  mean              0.3284  0.2762
+  std. dev.         0.4085  0.3795
+  weight sum          1000    1000
+  precision         0.0024  0.0024
+
+do
+  mean              0.3351  0.2862
+  std. dev.         0.3349  0.3138
+  weight sum          1000    1000
+  precision         0.0016  0.0016
+
+does
+  mean              0.2845  0.3377
+  std. dev.         0.3511  0.3598
+  weight sum          1000    1000
+  precision         0.0015  0.0015
+
+does not
+  mean              0.1705  0.2257
+  std. dev.         0.5508  0.5934
+  weight sum          1000    1000
+  precision         0.0163  0.0163
+
+doesn
+  mean              0.3334  0.2889
+  std. dev.         0.4214  0.3892
+  weight sum          1000    1000
+  precision         0.0022  0.0022
+
+doesn t
+  mean              0.3338  0.2888
+  std. dev.          0.422  0.3898
+  weight sum          1000    1000
+  precision         0.0022  0.0022
+
+dog
+  mean               0.177  0.1328
+  std. dev.         0.6581  0.6441
+  weight sum          1000    1000
+  precision         0.0593  0.0593
+
+doing
+  mean              0.2148   0.187
+  std. dev.         0.5344  0.4926
+  weight sum          1000    1000
+  precision          0.012   0.012
+
+don
+  mean              0.3454  0.2741
+  std. dev.         0.4279  0.3786
+  weight sum          1000    1000
+  precision         0.0022  0.0022
+
+don t
+  mean              0.3438  0.2714
+  std. dev.         0.4383  0.3883
+  weight sum          1000    1000
+  precision         0.0025  0.0025
+
+done
+  mean              0.2055  0.2545
+  std. dev.         0.4997  0.5283
+  weight sum          1000    1000
+  precision         0.0093  0.0093
+
+down
+  mean              0.3024  0.2866
+  std. dev.         0.4721  0.4614
+  weight sum          1000    1000
+  precision         0.0044  0.0044
+
+dr
+  mean               0.168   0.152
+  std. dev.         0.6462  0.6561
+  weight sum          1000    1000
+  precision         0.0522  0.0522
+
+drama
+  mean              0.1699  0.2245
+  std. dev.         0.5477  0.6167
+  weight sum          1000    1000
+  precision         0.0184  0.0184
+
+dull
+  mean               0.213  0.0478
+  std. dev.         0.7088  0.3275
+  weight sum          1000    1000
+  precision         0.0484  0.0484
+
+dumb
+  mean              0.1994  0.0868
+  std. dev.         0.7328  0.5026
+  weight sum          1000    1000
+  precision         0.0528  0.0528
+
+during
+  mean              0.2364  0.2996
+  std. dev.         0.4828  0.5248
+  weight sum          1000    1000
+  precision         0.0059  0.0059
+
+during the
+  mean              0.1591  0.2201
+  std. dev.          0.475   0.544
+  weight sum          1000    1000
+  precision         0.0139  0.0139
+
+each
+  mean              0.2397  0.3247
+  std. dev.         0.5166  0.5974
+  weight sum          1000    1000
+  precision         0.0069  0.0069
+
+each other
+  mean              0.1667  0.2341
+  std. dev.         0.5597  0.6128
+  weight sum          1000    1000
+  precision         0.0198  0.0198
+
+early
+  mean              0.2043  0.1754
+  std. dev.         0.5518   0.504
+  weight sum          1000    1000
+  precision         0.0133  0.0133
+
+earth
+  mean              0.1966  0.1642
+  std. dev.         0.6987  0.6115
+  weight sum          1000    1000
+  precision         0.0333  0.0333
+
+effects
+  mean              0.2742  0.2665
+  std. dev.         0.6461  0.6405
+  weight sum          1000    1000
+  precision         0.0118  0.0118
+
+either
+  mean              0.2508   0.177
+  std. dev.         0.5541  0.4447
+  weight sum          1000    1000
+  precision         0.0082  0.0082
+
+elements
+  mean              0.1485  0.1747
+  std. dev.         0.4733  0.5445
+  weight sum          1000    1000
+  precision         0.0192  0.0192
+
+else
+  mean              0.2526  0.1769
+  std. dev.         0.5614  0.4541
+  weight sum          1000    1000
+  precision          0.009   0.009
+
+end
+  mean              0.3102   0.292
+  std. dev.         0.4394  0.4213
+  weight sum          1000    1000
+  precision         0.0032  0.0032
+
+end of
+  mean              0.1905  0.1637
+  std. dev.         0.5533  0.4843
+  weight sum          1000    1000
+  precision         0.0146  0.0146
+
+ending
+  mean              0.1857  0.2616
+  std. dev.         0.5412   0.606
+  weight sum          1000    1000
+  precision          0.013   0.013
+
+ends
+  mean              0.1885  0.1714
+  std. dev.         0.5193  0.5028
+  weight sum          1000    1000
+  precision         0.0154  0.0154
+
+enough
+  mean              0.3141  0.2711
+  std. dev.         0.4757  0.4226
+  weight sum          1000    1000
+  precision         0.0036  0.0036
+
+enough to
+  mean              0.2226  0.1656
+  std. dev.         0.5436  0.4839
+  weight sum          1000    1000
+  precision         0.0117  0.0117
+
+entertaining
+  mean              0.1595   0.235
+  std. dev.         0.4762   0.592
+  weight sum          1000    1000
+  precision         0.0133  0.0133
+
+entire
+  mean              0.1985  0.2369
+  std. dev.         0.4958  0.5295
+  weight sum          1000    1000
+  precision         0.0082  0.0082
+
+especially
+  mean               0.177   0.287
+  std. dev.         0.4528  0.5502
+  weight sum          1000    1000
+  precision         0.0065  0.0065
+
+even
+  mean               0.302  0.2526
+  std. dev.         0.2462  0.2247
+  weight sum          1000    1000
+  precision         0.0008  0.0008
+
+even the
+  mean              0.2488  0.1602
+  std. dev.          0.715   0.555
+  weight sum          1000    1000
+  precision         0.0193  0.0193
+
+ever
+  mean              0.2623  0.2924
+  std. dev.         0.4767  0.4851
+  weight sum          1000    1000
+  precision         0.0044  0.0044
+
+every
+  mean              0.3079  0.2875
+  std. dev.         0.4662  0.4374
+  weight sum          1000    1000
+  precision         0.0035  0.0035
+
+everyone
+  mean               0.229  0.2514
+  std. dev.         0.5278   0.521
+  weight sum          1000    1000
+  precision         0.0083  0.0083
+
+everything
+  mean              0.2217  0.2681
+  std. dev.         0.4951  0.5408
+  weight sum          1000    1000
+  precision         0.0066  0.0066
+
+evil
+  mean              0.2246   0.227
+  std. dev.         0.6335  0.6637
+  weight sum          1000    1000
+  precision         0.0222  0.0222
+
+exactly
+  mean              0.1762  0.2003
+  std. dev.         0.4875  0.5219
+  weight sum          1000    1000
+  precision         0.0151  0.0151
+
+example
+  mean               0.195  0.1845
+  std. dev.         0.5182  0.5033
+  weight sum          1000    1000
+  precision         0.0119  0.0119
+
+except
+  mean              0.2359  0.1496
+  std. dev.         0.6807  0.5431
+  weight sum          1000    1000
+  precision         0.0235  0.0235
+
+eyes
+  mean              0.1695  0.2001
+  std. dev.          0.533   0.558
+  weight sum          1000    1000
+  precision         0.0191  0.0191
+
+face
+  mean              0.1944  0.1953
+  std. dev.         0.5193  0.5347
+  weight sum          1000    1000
+  precision         0.0134  0.0134
+
+fact
+  mean              0.2799  0.2763
+  std. dev.         0.4724  0.4576
+  weight sum          1000    1000
+  precision         0.0042  0.0042
+
+fact that
+  mean              0.2102  0.1808
+  std. dev.         0.5194  0.4788
+  weight sum          1000    1000
+  precision         0.0094  0.0094
+
+fails
+  mean              0.2264  0.0789
+  std. dev.         0.7475  0.4529
+  weight sum          1000    1000
+  precision         0.0609  0.0609
+
+fall
+  mean              0.1641  0.1748
+  std. dev.         0.4997  0.5184
+  weight sum          1000    1000
+  precision         0.0141  0.0141
+
+falls
+  mean              0.2544  0.1835
+  std. dev.         0.7243  0.5958
+  weight sum          1000    1000
+  precision         0.0244  0.0244
+
+family
+  mean              0.2131  0.3771
+  std. dev.         0.5823  0.8104
+  weight sum          1000    1000
+  precision         0.0185  0.0185
+
+fans
+  mean              0.1657  0.1559
+  std. dev.         0.5953  0.5697
+  weight sum          1000    1000
+  precision          0.031   0.031
+
+far
+  mean              0.2593  0.2646
+  std. dev.         0.5065  0.4933
+  weight sum          1000    1000
+  precision         0.0056  0.0056
+
+father
+  mean              0.1966  0.2956
+  std. dev.         0.5311  0.6666
+  weight sum          1000    1000
+  precision         0.0127  0.0127
+
+features
+  mean              0.1635  0.1649
+  std. dev.         0.5695  0.5561
+  weight sum          1000    1000
+  precision         0.0261  0.0261
+
+feel
+  mean              0.2046  0.2531
+  std. dev.         0.4875   0.529
+  weight sum          1000    1000
+  precision         0.0099  0.0099
+
+few
+  mean              0.2949  0.3024
+  std. dev.          0.441   0.443
+  weight sum          1000    1000
+  precision         0.0035  0.0035
+
+fight
+  mean              0.1924  0.1966
+  std. dev.         0.6349  0.6157
+  weight sum          1000    1000
+  precision         0.0302  0.0302
+
+figure
+  mean              0.2143  0.1353
+  std. dev.         0.6963  0.5153
+  weight sum          1000    1000
+  precision         0.0341  0.0341
+
+film
+  mean              0.1879  0.2015
+  std. dev.         0.1032  0.0962
+  weight sum          1000    1000
+  precision         0.0003  0.0003
+
+film and
+  mean              0.1712  0.2211
+  std. dev.          0.468  0.5133
+  weight sum          1000    1000
+  precision         0.0113  0.0113
+
+film is
+  mean              0.2564   0.331
+  std. dev.          0.437  0.4642
+  weight sum          1000    1000
+  precision         0.0046  0.0046
+
+film s
+  mean              0.2454  0.2731
+  std. dev.         0.5308   0.544
+  weight sum          1000    1000
+  precision         0.0095  0.0095
+
+film that
+  mean              0.1914  0.2161
+  std. dev.          0.511  0.5322
+  weight sum          1000    1000
+  precision         0.0102  0.0102
+
+film the
+  mean              0.1635  0.1814
+  std. dev.         0.5042  0.5133
+  weight sum          1000    1000
+  precision         0.0141  0.0141
+
+filmmakers
+  mean              0.2235  0.1193
+  std. dev.         0.6907  0.4901
+  weight sum          1000    1000
+  precision         0.0292  0.0292
+
+films
+  mean              0.3057  0.3665
+  std. dev.         0.4233  0.4563
+  weight sum          1000    1000
+  precision         0.0025  0.0025
+
+final
+  mean              0.1803  0.2402
+  std. dev.         0.5037  0.5719
+  weight sum          1000    1000
+  precision         0.0131  0.0131
+
+finally
+  mean              0.1898  0.2212
+  std. dev.         0.5002  0.5301
+  weight sum          1000    1000
+  precision         0.0105  0.0105
+
+find
+  mean              0.2668  0.3012
+  std. dev.         0.4686  0.4944
+  weight sum          1000    1000
+  precision         0.0046  0.0046
+
+finds
+  mean              0.1714  0.2541
+  std. dev.         0.5138  0.5926
+  weight sum          1000    1000
+  precision          0.014   0.014
+
+fine
+  mean              0.1586  0.2282
+  std. dev.         0.4923  0.6207
+  weight sum          1000    1000
+  precision          0.019   0.019
+
+first
+  mean              0.2928   0.327
+  std. dev.         0.3376  0.3501
+  weight sum          1000    1000
+  precision         0.0017  0.0017
+
+five
+  mean               0.186   0.156
+  std. dev.         0.5653  0.5208
+  weight sum          1000    1000
+  precision         0.0193  0.0193
+
+for
+  mean               0.064  0.0652
+  std. dev.         0.0232  0.0221
+  weight sum          1000    1000
+  precision         0.0001  0.0001
+
+for a
+  mean              0.3079  0.2963
+  std. dev.         0.4283  0.4079
+  weight sum          1000    1000
+  precision         0.0029  0.0029
+
+for his
+  mean              0.1707  0.2303
+  std. dev.         0.4931  0.5693
+  weight sum          1000    1000
+  precision         0.0122  0.0122
+
+for the
+  mean              0.2881  0.3025
+  std. dev.         0.2983  0.2917
+  weight sum          1000    1000
+  precision         0.0014  0.0014
+
+for this
+  mean              0.1741  0.1792
+  std. dev.         0.5079  0.4918
+  weight sum          1000    1000
+  precision         0.0129  0.0129
+
+found
+  mean              0.2078  0.2364
+  std. dev.         0.5148  0.5494
+  weight sum          1000    1000
+  precision         0.0121  0.0121
+
+four
+  mean              0.1603  0.2064
+  std. dev.         0.5459  0.6134
+  weight sum          1000    1000
+  precision         0.0217  0.0217
+
+friend
+  mean              0.2126  0.2391
+  std. dev.         0.5378  0.5818
+  weight sum          1000    1000
+  precision         0.0133  0.0133
+
+friends
+  mean              0.1937  0.2586
+  std. dev.         0.5892   0.628
+  weight sum          1000    1000
+  precision         0.0156  0.0156
+
+from
+  mean              0.1684  0.1785
+  std. dev.         0.0959  0.0966
+  weight sum          1000    1000
+  precision         0.0003  0.0003
+
+from a
+  mean              0.2068  0.2282
+  std. dev.         0.4853  0.5113
+  weight sum          1000    1000
+  precision         0.0083  0.0083
+
+from the
+  mean              0.2892  0.3078
+  std. dev.         0.3449  0.3494
+  weight sum          1000    1000
+  precision         0.0019  0.0019
+
+full
+  mean              0.1933  0.2073
+  std. dev.         0.5143  0.5723
+  weight sum          1000    1000
+  precision         0.0197  0.0197
+
+fun
+  mean              0.2356  0.2906
+  std. dev.         0.5045  0.5894
+  weight sum          1000    1000
+  precision         0.0084  0.0084
+
+funny
+  mean              0.3422  0.2931
+  std. dev.         0.6245  0.5691
+  weight sum          1000    1000
+  precision         0.0058  0.0058
+
+game
+  mean              0.1783  0.2049
+  std. dev.         0.6346   0.644
+  weight sum          1000    1000
+  precision         0.0272  0.0272
+
+get
+  mean              0.3283  0.2853
+  std. dev.         0.3316  0.3014
+  weight sum          1000    1000
+  precision         0.0014  0.0014
+
+get the
+  mean              0.2045  0.1679
+  std. dev.         0.6316  0.5824
+  weight sum          1000    1000
+  precision         0.0204  0.0204
+
+gets
+  mean               0.311  0.2757
+  std. dev.          0.466  0.4478
+  weight sum          1000    1000
+  precision         0.0043  0.0043
+
+getting
+  mean                0.23  0.2123
+  std. dev.          0.532  0.5087
+  weight sum          1000    1000
+  precision         0.0131  0.0131
+
+girl
+  mean              0.2472  0.2121
+  std. dev.         0.6339  0.5683
+  weight sum          1000    1000
+  precision         0.0159  0.0159
+
+girlfriend
+  mean               0.223  0.1763
+  std. dev.         0.7616  0.6313
+  weight sum          1000    1000
+  precision         0.0378  0.0378
+
+girls
+  mean               0.202  0.1281
+  std. dev.          0.913  0.7195
+  weight sum          1000    1000
+  precision         0.0971  0.0971
+
+give
+  mean              0.2842  0.2196
+  std. dev.         0.5147  0.4674
+  weight sum          1000    1000
+  precision         0.0059  0.0059
+
+given
+  mean              0.2706  0.2129
+  std. dev.         0.5411  0.4765
+  weight sum          1000    1000
+  precision         0.0079  0.0079
+
+gives
+  mean              0.1854  0.3001
+  std. dev.         0.4563  0.5825
+  weight sum          1000    1000
+  precision         0.0082  0.0082
+
+giving
+  mean              0.2181  0.1773
+  std. dev.         0.6489  0.6113
+  weight sum          1000    1000
+  precision         0.0259  0.0259
+
+go
+  mean              0.3101  0.2979
+  std. dev.         0.4449  0.4321
+  weight sum          1000    1000
+  precision         0.0049  0.0049
+
+god
+  mean               0.158  0.1722
+  std. dev.         0.5723  0.6305
+  weight sum          1000    1000
+  precision         0.0349  0.0349
+
+godzilla
+  mean               0.113  0.0321
+  std. dev.         0.9122  0.3286
+  weight sum          1000    1000
+  precision          0.353   0.353
+
+goes
+  mean              0.2866   0.256
+  std. dev.         0.5035  0.4702
+  weight sum          1000    1000
+  precision         0.0046  0.0046
+
+going
+  mean              0.3114  0.2656
+  std. dev.          0.483  0.4401
+  weight sum          1000    1000
+  precision         0.0051  0.0051
+
+going to
+  mean              0.2461  0.1929
+  std. dev.         0.5807  0.5045
+  weight sum          1000    1000
+  precision         0.0161  0.0161
+
+good
+  mean              0.3158  0.3161
+  std. dev.         0.3112  0.3119
+  weight sum          1000    1000
+  precision         0.0015  0.0015
+
+got
+  mean              0.2795  0.1883
+  std. dev.         0.5709  0.5004
+  weight sum          1000    1000
+  precision         0.0112  0.0112
+
+great
+  mean              0.2438  0.3948
+  std. dev.         0.4167  0.5351
+  weight sum          1000    1000
+  precision         0.0039  0.0039
+
+group
+  mean               0.204  0.2299
+  std. dev.         0.5648  0.6208
+  weight sum          1000    1000
+  precision         0.0168  0.0168
+
+guess
+  mean              0.2573  0.1252
+  std. dev.         0.7031  0.4886
+  weight sum          1000    1000
+  precision         0.0213  0.0213
+
+guy
+  mean               0.301   0.246
+  std. dev.         0.6206  0.5655
+  weight sum          1000    1000
+  precision         0.0098  0.0098
+
+guys
+  mean              0.2057  0.1593
+  std. dev.         0.6039  0.5206
+  weight sum          1000    1000
+  precision         0.0223  0.0223
+
+had
+  mean              0.3393  0.2959
+  std. dev.         0.4024  0.3747
+  weight sum          1000    1000
+  precision         0.0027  0.0027
+
+had a
+  mean              0.2013  0.1639
+  std. dev.         0.6573  0.5702
+  weight sum          1000    1000
+  precision         0.0245  0.0245
+
+half
+  mean              0.2362  0.2039
+  std. dev.         0.5882  0.5485
+  weight sum          1000    1000
+  precision         0.0144  0.0144
+
+hand
+  mean              0.2045  0.2013
+  std. dev.         0.5604  0.5284
+  weight sum          1000    1000
+  precision         0.0142  0.0142
+
+happen
+  mean              0.2142  0.1904
+  std. dev.         0.6866  0.6591
+  weight sum          1000    1000
+  precision         0.0359  0.0359
+
+happens
+  mean              0.2559  0.1838
+  std. dev.         0.6985  0.5978
+  weight sum          1000    1000
+  precision         0.0214  0.0214
+
+hard
+  mean              0.2654  0.2347
+  std. dev.          0.588  0.5138
+  weight sum          1000    1000
+  precision         0.0106  0.0106
+
+hard to
+  mean              0.2166  0.1919
+  std. dev.         0.7009  0.6365
+  weight sum          1000    1000
+  precision         0.0288  0.0288
+
+harry
+  mean              0.1732  0.0775
+  std. dev.         1.0181  0.6238
+  weight sum          1000    1000
+  precision         0.1972  0.1972
+
+has
+  mean              0.2091  0.2255
+  std. dev.         0.1389  0.1324
+  weight sum          1000    1000
+  precision         0.0004  0.0004
+
+has a
+  mean              0.2566  0.2792
+  std. dev.         0.4695  0.4684
+  weight sum          1000    1000
+  precision         0.0051  0.0051
+
+has been
+  mean              0.2108  0.2606
+  std. dev.          0.461  0.5181
+  weight sum          1000    1000
+  precision         0.0078  0.0078
+
+has to
+  mean              0.1847  0.1736
+  std. dev.         0.5237  0.4894
+  weight sum          1000    1000
+  precision         0.0123  0.0123
+
+have
+  mean              0.2274  0.1856
+  std. dev.         0.1231  0.1228
+  weight sum          1000    1000
+  precision         0.0004  0.0004
+
+have a
+  mean              0.2316  0.2078
+  std. dev.         0.5008  0.4757
+  weight sum          1000    1000
+  precision         0.0069  0.0069
+
+have been
+  mean              0.3525  0.2203
+  std. dev.         0.5332  0.4017
+  weight sum          1000    1000
+  precision         0.0041  0.0041
+
+have to
+  mean              0.2508  0.1963
+  std. dev.         0.5539  0.4673
+  weight sum          1000    1000
+  precision         0.0088  0.0088
+
+having
+  mean              0.2634  0.2396
+  std. dev.         0.5271    0.48
+  weight sum          1000    1000
+  precision         0.0073  0.0073
+
+he
+  mean              0.2226  0.2427
+  std. dev.         0.1348  0.1426
+  weight sum          1000    1000
+  precision         0.0004  0.0004
+
+he can
+  mean              0.1611  0.1744
+  std. dev.          0.502   0.532
+  weight sum          1000    1000
+  precision         0.0195  0.0195
+
+he has
+  mean               0.227  0.2492
+  std. dev.         0.5212  0.5289
+  weight sum          1000    1000
+  precision         0.0101  0.0101
+
+he is
+  mean              0.2216  0.3938
+  std. dev.         0.4465  0.5863
+  weight sum          1000    1000
+  precision          0.005   0.005
+
+he s
+  mean              0.3518  0.3277
+  std. dev.         0.5596  0.5657
+  weight sum          1000    1000
+  precision         0.0046  0.0046
+
+he was
+  mean               0.195  0.1952
+  std. dev.           0.53  0.5384
+  weight sum          1000    1000
+  precision         0.0128  0.0128
+
+head
+  mean              0.2197  0.2109
+  std. dev.         0.5519  0.5465
+  weight sum          1000    1000
+  precision         0.0119  0.0119
+
+hell
+  mean              0.2204  0.1763
+  std. dev.         0.7376  0.6252
+  weight sum          1000    1000
+  precision         0.0478  0.0478
+
+help
+  mean              0.2329  0.2621
+  std. dev.         0.4955  0.5037
+  weight sum          1000    1000
+  precision          0.007   0.007
+
+her
+  mean              0.4353  0.4645
+  std. dev.          0.497  0.4922
+  weight sum          1000    1000
+  precision         0.0023  0.0023
+
+here
+  mean              0.3453  0.2714
+  std. dev.         0.4389  0.3896
+  weight sum          1000    1000
+  precision         0.0028  0.0028
+
+hero
+  mean              0.1828  0.1659
+  std. dev.         0.6216  0.5577
+  weight sum          1000    1000
+  precision         0.0241  0.0241
+
+high
+  mean              0.2383  0.2672
+  std. dev.         0.5988  0.6194
+  weight sum          1000    1000
+  precision         0.0124  0.0124
+
+him
+  mean              0.3133  0.3716
+  std. dev.         0.3445   0.357
+  weight sum          1000    1000
+  precision         0.0017  0.0017
+
+him to
+  mean              0.1508  0.2015
+  std. dev.         0.4839  0.5369
+  weight sum          1000    1000
+  precision         0.0143  0.0143
+
+himself
+  mean              0.2452  0.2998
+  std. dev.         0.4873  0.5356
+  weight sum          1000    1000
+  precision         0.0054  0.0054
+
+his
+  mean              0.1777  0.2043
+  std. dev.         0.1008   0.105
+  weight sum          1000    1000
+  precision         0.0003  0.0003
+
+his own
+  mean              0.1618  0.2229
+  std. dev.         0.4759  0.5562
+  weight sum          1000    1000
+  precision         0.0119  0.0119
+
+his wife
+  mean               0.145  0.2122
+  std. dev.         0.5013  0.6237
+  weight sum          1000    1000
+  precision         0.0204  0.0204
+
+hit
+  mean              0.2051  0.1672
+  std. dev.         0.5886  0.5131
+  weight sum          1000    1000
+  precision          0.018   0.018
+
+hollywood
+  mean              0.2597   0.268
+  std. dev.         0.5632  0.6083
+  weight sum          1000    1000
+  precision         0.0128  0.0128
+
+home
+  mean              0.2407  0.2784
+  std. dev.         0.5508  0.5846
+  weight sum          1000    1000
+  precision         0.0095  0.0095
+
+hope
+  mean              0.1813  0.1772
+  std. dev.         0.5372  0.5267
+  weight sum          1000    1000
+  precision         0.0206  0.0206
+
+horror
+  mean              0.2225  0.2408
+  std. dev.         0.6976   0.757
+  weight sum          1000    1000
+  precision          0.024   0.024
+
+hour
+  mean              0.2197  0.1712
+  std. dev.         0.6111  0.5607
+  weight sum          1000    1000
+  precision         0.0219  0.0219
+
+hours
+  mean              0.1758  0.1769
+  std. dev.         0.5593  0.5486
+  weight sum          1000    1000
+  precision         0.0235  0.0235
+
+house
+  mean              0.2125  0.2254
+  std. dev.          0.659  0.6204
+  weight sum          1000    1000
+  precision         0.0189  0.0189
+
+how
+  mean              0.3309  0.2976
+  std. dev.         0.3886  0.3705
+  weight sum          1000    1000
+  precision         0.0023  0.0023
+
+however
+  mean              0.2869  0.3343
+  std. dev.          0.479  0.4875
+  weight sum          1000    1000
+  precision         0.0042  0.0042
+
+human
+  mean              0.1705  0.2576
+  std. dev.         0.4965  0.6165
+  weight sum          1000    1000
+  precision         0.0146  0.0146
+
+humor
+  mean              0.2492  0.2152
+  std. dev.         0.6401  0.5713
+  weight sum          1000    1000
+  precision          0.016   0.016
+
+i
+  mean              0.3239  0.2837
+  std. dev.         0.2041   0.208
+  weight sum          1000    1000
+  precision         0.0006  0.0006
+
+i can
+  mean              0.2159  0.1852
+  std. dev.         0.5412   0.484
+  weight sum          1000    1000
+  precision         0.0108  0.0108
+
+i don
+  mean              0.1896  0.1561
+  std. dev.         0.5245  0.4731
+  weight sum          1000    1000
+  precision         0.0131  0.0131
+
+i don t
+  mean              0.1896  0.1561
+  std. dev.         0.5245  0.4731
+  weight sum          1000    1000
+  precision         0.0131  0.0131
+
+i had
+  mean               0.208  0.1716
+  std. dev.         0.6966  0.6114
+  weight sum          1000    1000
+  precision         0.0336  0.0336
+
+i have
+  mean              0.1888  0.2021
+  std. dev.         0.5326   0.533
+  weight sum          1000    1000
+  precision         0.0126  0.0126
+
+i m
+  mean              0.3114  0.2273
+  std. dev.         0.6202  0.5194
+  weight sum          1000    1000
+  precision         0.0106  0.0106
+
+i m not
+  mean              0.1978  0.1263
+  std. dev.         0.6955  0.4969
+  weight sum          1000    1000
+  precision         0.0563  0.0563
+
+i think
+  mean              0.1858  0.1525
+  std. dev.         0.5641  0.4884
+  weight sum          1000    1000
+  precision         0.0171  0.0171
+
+i ve
+  mean              0.1877  0.2353
+  std. dev.         0.5167  0.5805
+  weight sum          1000    1000
+  precision          0.015   0.015
+
+i was
+  mean              0.2534  0.2408
+  std. dev.         0.5675   0.557
+  weight sum          1000    1000
+  precision         0.0097  0.0097
+
+idea
+  mean              0.2501  0.1768
+  std. dev.         0.5652  0.4932
+  weight sum          1000    1000
+  precision         0.0118  0.0118
+
+if
+  mean              0.2971  0.2418
+  std. dev.         0.2194  0.2159
+  weight sum          1000    1000
+  precision         0.0008  0.0008
+
+if he
+  mean              0.2168  0.1651
+  std. dev.         0.6459  0.5795
+  weight sum          1000    1000
+  precision         0.0223  0.0223
+
+if it
+  mean              0.2392  0.1709
+  std. dev.         0.6679  0.5423
+  weight sum          1000    1000
+  precision         0.0179  0.0179
+
+if the
+  mean              0.2588  0.1499
+  std. dev.         0.6681  0.5035
+  weight sum          1000    1000
+  precision         0.0174  0.0174
+
+if you
+  mean              0.3054  0.2713
+  std. dev.         0.5399  0.5345
+  weight sum          1000    1000
+  precision         0.0067  0.0067
+
+in
+  mean               0.007  0.0072
+  std. dev.         0.0014  0.0014
+  weight sum          1000    1000
+  precision              0       0
+
+in a
+  mean              0.2733  0.2856
+  std. dev.           0.25  0.2504
+  weight sum          1000    1000
+  precision          0.001   0.001
+
+in an
+  mean               0.194  0.2216
+  std. dev.         0.5178  0.5423
+  weight sum          1000    1000
+  precision         0.0124  0.0124
+
+in fact
+  mean              0.2033  0.2141
+  std. dev.         0.5251  0.5155
+  weight sum          1000    1000
+  precision         0.0113  0.0113
+
+in her
+  mean              0.2093  0.1993
+  std. dev.         0.6973  0.6531
+  weight sum          1000    1000
+  precision         0.0361  0.0361
+
+in his
+  mean              0.2253  0.3029
+  std. dev.         0.4636  0.5335
+  weight sum          1000    1000
+  precision         0.0065  0.0065
+
+in the
+  mean              0.1444   0.148
+  std. dev.         0.0732  0.0727
+  weight sum          1000    1000
+  precision         0.0002  0.0002
+
+in the film
+  mean              0.2525  0.2555
+  std. dev.           0.51  0.5132
+  weight sum          1000    1000
+  precision          0.006   0.006
+
+in the movie
+  mean              0.2598   0.177
+  std. dev.         0.7347  0.5927
+  weight sum          1000    1000
+  precision         0.0226  0.0226
+
+in this
+  mean               0.329    0.26
+  std. dev.         0.4648  0.4276
+  weight sum          1000    1000
+  precision         0.0037  0.0037
+
+in this film
+  mean              0.1993  0.1595
+  std. dev.         0.5625  0.4796
+  weight sum          1000    1000
+  precision         0.0157  0.0157
+
+in this movie
+  mean              0.2129  0.1417
+  std. dev.         0.6792  0.5877
+  weight sum          1000    1000
+  precision          0.035   0.035
+
+in which
+  mean              0.2019   0.234
+  std. dev.          0.535  0.5643
+  weight sum          1000    1000
+  precision         0.0122  0.0122
+
+including
+  mean              0.1737  0.2313
+  std. dev.         0.4813  0.5496
+  weight sum          1000    1000
+  precision         0.0112  0.0112
+
+instead
+  mean              0.2573  0.2414
+  std. dev.         0.5014  0.4693
+  weight sum          1000    1000
+  precision         0.0065  0.0065
+
+instead of
+  mean              0.1724  0.1598
+  std. dev.         0.5106  0.4871
+  weight sum          1000    1000
+  precision         0.0151  0.0151
+
+interest
+  mean               0.236  0.1947
+  std. dev.         0.6932  0.6253
+  weight sum          1000    1000
+  precision         0.0201  0.0201
+
+interesting
+  mean              0.2811   0.247
+  std. dev.          0.516  0.4862
+  weight sum          1000    1000
+  precision         0.0066  0.0066
+
+into
+  mean              0.2757  0.2806
+  std. dev.         0.2389   0.233
+  weight sum          1000    1000
+  precision         0.0008  0.0008
+
+into a
+  mean                0.26  0.2387
+  std. dev.         0.5152  0.4818
+  weight sum          1000    1000
+  precision         0.0064  0.0064
+
+into the
+  mean              0.2584  0.2978
+  std. dev.         0.4584  0.4718
+  weight sum          1000    1000
+  precision         0.0047  0.0047
+
+involved
+  mean              0.1713  0.1786
+  std. dev.         0.5312   0.529
+  weight sum          1000    1000
+  precision         0.0166  0.0166
+
+involving
+  mean              0.1728  0.1778
+  std. dev.         0.5426  0.5414
+  weight sum          1000    1000
+  precision         0.0194  0.0194
+
+is
+  mean              0.0061  0.0064
+  std. dev.         0.0013  0.0013
+  weight sum          1000    1000
+  precision              0       0
+
+is a
+  mean              0.2301  0.2795
+  std. dev.         0.1879  0.2015
+  weight sum          1000    1000
+  precision         0.0006  0.0006
+
+is also
+  mean              0.1358  0.2594
+  std. dev.         0.4329  0.5676
+  weight sum          1000    1000
+  precision         0.0103  0.0103
+
+is an
+  mean              0.1985  0.2977
+  std. dev.           0.44  0.5338
+  weight sum          1000    1000
+  precision         0.0061  0.0061
+
+is in
+  mean              0.1699  0.2219
+  std. dev.         0.4753  0.5349
+  weight sum          1000    1000
+  precision         0.0103  0.0103
+
+is it
+  mean              0.2062  0.1265
+  std. dev.         0.6623  0.5209
+  weight sum          1000    1000
+  precision         0.0289  0.0289
+
+is just
+  mean              0.1945  0.1794
+  std. dev.         0.5372  0.5113
+  weight sum          1000    1000
+  precision         0.0161  0.0161
+
+is no
+  mean              0.1846  0.1742
+  std. dev.         0.5273  0.4903
+  weight sum          1000    1000
+  precision         0.0165  0.0165
+
+is not
+  mean              0.2711  0.2956
+  std. dev.         0.4649  0.4918
+  weight sum          1000    1000
+  precision         0.0065  0.0065
+
+is one
+  mean              0.1933  0.2544
+  std. dev.         0.5076  0.5436
+  weight sum          1000    1000
+  precision         0.0113  0.0113
+
+is so
+  mean              0.2248  0.1708
+  std. dev.         0.5634  0.4832
+  weight sum          1000    1000
+  precision         0.0119  0.0119
+
+is that
+  mean              0.2825  0.2589
+  std. dev.         0.4983  0.4629
+  weight sum          1000    1000
+  precision         0.0043  0.0043
+
+is the
+  mean              0.2781  0.3299
+  std. dev.         0.3123  0.3351
+  weight sum          1000    1000
+  precision         0.0016  0.0016
+
+is to
+  mean              0.1872  0.1799
+  std. dev.          0.506  0.4993
+  weight sum          1000    1000
+  precision          0.012   0.012
+
+isn
+  mean              0.3368  0.2579
+  std. dev.         0.5148  0.4398
+  weight sum          1000    1000
+  precision         0.0041  0.0041
+
+isn t
+  mean              0.3368  0.2579
+  std. dev.         0.5148  0.4398
+  weight sum          1000    1000
+  precision         0.0041  0.0041
+
+it
+  mean              0.0333  0.0334
+  std. dev.         0.0096  0.0088
+  weight sum          1000    1000
+  precision              0       0
+
+it doesn
+  mean              0.2262  0.2007
+  std. dev.         0.6712  0.6203
+  weight sum          1000    1000
+  precision         0.0231  0.0231
+
+it doesn t
+  mean              0.2262  0.2007
+  std. dev.         0.6712  0.6203
+  weight sum          1000    1000
+  precision         0.0231  0.0231
+
+it is
+  mean              0.2994  0.3756
+  std. dev.         0.3788  0.4077
+  weight sum          1000    1000
+  precision         0.0023  0.0023
+
+it s
+  mean              0.3471  0.3296
+  std. dev.         0.2855  0.3013
+  weight sum          1000    1000
+  precision          0.001   0.001
+
+it s a
+  mean              0.2314   0.278
+  std. dev.         0.4977   0.564
+  weight sum          1000    1000
+  precision         0.0076  0.0076
+
+it s not
+  mean              0.2153  0.1868
+  std. dev.         0.5289  0.5048
+  weight sum          1000    1000
+  precision         0.0124  0.0124
+
+it seems
+  mean              0.1571  0.1613
+  std. dev.         0.4904  0.4904
+  weight sum          1000    1000
+  precision         0.0152  0.0152
+
+it was
+  mean              0.2653  0.2788
+  std. dev.         0.5144  0.5367
+  weight sum          1000    1000
+  precision         0.0064  0.0064
+
+it would
+  mean              0.1584  0.1733
+  std. dev.         0.4964  0.4996
+  weight sum          1000    1000
+  precision         0.0191  0.0191
+
+its
+  mean              0.3214  0.3653
+  std. dev.         0.3655  0.3719
+  weight sum          1000    1000
+  precision         0.0022  0.0022
+
+itself
+  mean              0.2121  0.2301
+  std. dev.         0.5156   0.532
+  weight sum          1000    1000
+  precision         0.0089  0.0089
+
+jack
+  mean              0.1831  0.1943
+  std. dev.         0.7367  0.8037
+  weight sum          1000    1000
+  precision         0.0499  0.0499
+
+james
+  mean              0.2241  0.2532
+  std. dev.          0.622  0.6432
+  weight sum          1000    1000
+  precision         0.0156  0.0156
+
+job
+  mean              0.2038   0.308
+  std. dev.         0.4901  0.5886
+  weight sum          1000    1000
+  precision         0.0103  0.0103
+
+joe
+  mean              0.1509  0.1941
+  std. dev.         0.7495  0.8157
+  weight sum          1000    1000
+  precision         0.0714  0.0714
+
+john
+  mean              0.2909  0.3178
+  std. dev.         0.5905  0.6311
+  weight sum          1000    1000
+  precision         0.0103  0.0103
+
+jokes
+  mean                0.27  0.1575
+  std. dev.         0.8241  0.6548
+  weight sum          1000    1000
+  precision         0.0359  0.0359
+
+just
+  mean              0.3044  0.2619
+  std. dev.          0.241  0.2254
+  weight sum          1000    1000
+  precision         0.0009  0.0009
+
+keep
+  mean              0.2071  0.2308
+  std. dev.         0.5252  0.5338
+  weight sum          1000    1000
+  precision         0.0121  0.0121
+
+kevin
+  mean              0.2126  0.1676
+  std. dev.         0.7307  0.6361
+  weight sum          1000    1000
+  precision         0.0328  0.0328
+
+kids
+  mean              0.2013  0.2061
+  std. dev.         0.6351  0.6288
+  weight sum          1000    1000
+  precision         0.0255  0.0255
+
+kill
+  mean              0.2171  0.1475
+  std. dev.         0.5964  0.4947
+  weight sum          1000    1000
+  precision         0.0181  0.0181
+
+killed
+  mean              0.2243  0.1609
+  std. dev.         0.7087  0.5886
+  weight sum          1000    1000
+  precision          0.032   0.032
+
+killer
+  mean               0.192    0.17
+  std. dev.         0.7163  0.6589
+  weight sum          1000    1000
+  precision         0.0373  0.0373
+
+kind
+  mean              0.2413  0.2461
+  std. dev.         0.5095   0.517
+  weight sum          1000    1000
+  precision         0.0073  0.0073
+
+kind of
+  mean              0.2187  0.2314
+  std. dev.         0.5136  0.5312
+  weight sum          1000    1000
+  precision         0.0094  0.0094
+
+king
+  mean              0.1572  0.1775
+  std. dev.         0.7144  0.7074
+  weight sum          1000    1000
+  precision         0.0571  0.0571
+
+know
+  mean              0.3347  0.2895
+  std. dev.         0.4609  0.4282
+  weight sum          1000    1000
+  precision         0.0032  0.0032
+
+known
+  mean              0.1541   0.207
+  std. dev.         0.5062  0.5422
+  weight sum          1000    1000
+  precision         0.0143  0.0143
+
+knows
+  mean               0.162  0.2015
+  std. dev.         0.4841  0.5385
+  weight sum          1000    1000
+  precision         0.0144  0.0144
+
+lack
+  mean              0.2389  0.2039
+  std. dev.          0.705  0.6515
+  weight sum          1000    1000
+  precision         0.0216  0.0216
+
+lack of
+  mean              0.2177  0.1686
+  std. dev.          0.682  0.6078
+  weight sum          1000    1000
+  precision         0.0264  0.0264
+
+last
+  mean              0.2962  0.2937
+  std. dev.         0.4937  0.4908
+  weight sum          1000    1000
+  precision         0.0045  0.0045
+
+late
+  mean              0.2309   0.197
+  std. dev.         0.6633   0.632
+  weight sum          1000    1000
+  precision         0.0211  0.0211
+
+later
+  mean              0.2036  0.2209
+  std. dev.         0.4825  0.5091
+  weight sum          1000    1000
+  precision         0.0087  0.0087
+
+laugh
+  mean              0.2432  0.1738
+  std. dev.         0.7085  0.6348
+  weight sum          1000    1000
+  precision         0.0296  0.0296
+
+laughs
+  mean              0.1715   0.183
+  std. dev.         0.5783  0.6077
+  weight sum          1000    1000
+  precision         0.0283  0.0283
+
+lead
+  mean              0.1677  0.1828
+  std. dev.         0.4915  0.5361
+  weight sum          1000    1000
+  precision          0.017   0.017
+
+least
+  mean               0.332  0.2073
+  std. dev.          0.523  0.4255
+  weight sum          1000    1000
+  precision         0.0064  0.0064
+
+lee
+  mean              0.2046  0.1728
+  std. dev.         0.7607  0.6932
+  weight sum          1000    1000
+  precision         0.0515  0.0515
+
+left
+  mean              0.2138  0.2245
+  std. dev.         0.4809  0.4842
+  weight sum          1000    1000
+  precision         0.0066  0.0066
+
+less
+  mean              0.2218  0.2475
+  std. dev.         0.5302  0.5558
+  weight sum          1000    1000
+  precision         0.0103  0.0103
+
+let
+  mean              0.2525  0.2037
+  std. dev.         0.5457  0.5076
+  weight sum          1000    1000
+  precision         0.0088  0.0088
+
+level
+  mean              0.1702  0.1605
+  std. dev.         0.5264  0.5077
+  weight sum          1000    1000
+  precision         0.0221  0.0221
+
+life
+  mean              0.2646  0.4468
+  std. dev.         0.4452  0.5554
+  weight sum          1000    1000
+  precision         0.0043  0.0043
+
+like
+  mean              0.2668  0.2383
+  std. dev.         0.1821  0.1831
+  weight sum          1000    1000
+  precision         0.0006  0.0006
+
+like a
+  mean              0.2786   0.217
+  std. dev.         0.5426  0.4753
+  weight sum          1000    1000
+  precision         0.0078  0.0078
+
+like the
+  mean              0.2063  0.2247
+  std. dev.         0.5144  0.5358
+  weight sum          1000    1000
+  precision         0.0102  0.0102
+
+like this
+  mean              0.2503  0.1851
+  std. dev.         0.7069  0.6147
+  weight sum          1000    1000
+  precision         0.0209  0.0209
+
+line
+  mean              0.2279  0.2136
+  std. dev.         0.5377  0.5296
+  weight sum          1000    1000
+  precision         0.0134  0.0134
+
+lines
+  mean              0.2241  0.1618
+  std. dev.           0.55  0.4657
+  weight sum          1000    1000
+  precision         0.0104  0.0104
+
+little
+  mean              0.3173  0.3114
+  std. dev.         0.3831  0.3804
+  weight sum          1000    1000
+  precision         0.0027  0.0027
+
+live
+  mean              0.1857   0.209
+  std. dev.         0.5174  0.5473
+  weight sum          1000    1000
+  precision         0.0159  0.0159
+
+lives
+  mean              0.1755  0.2324
+  std. dev.         0.5151  0.5892
+  weight sum          1000    1000
+  precision         0.0141  0.0141
+
+ll
+  mean               0.282  0.2399
+  std. dev.         0.5551  0.5167
+  weight sum          1000    1000
+  precision         0.0067  0.0067
+
+long
+  mean              0.2892   0.277
+  std. dev.         0.4889   0.458
+  weight sum          1000    1000
+  precision         0.0045  0.0045
+
+look
+  mean              0.3082  0.2658
+  std. dev.         0.4785   0.464
+  weight sum          1000    1000
+  precision         0.0047  0.0047
+
+looking
+  mean              0.2429  0.2159
+  std. dev.         0.5631  0.5166
+  weight sum          1000    1000
+  precision         0.0127  0.0127
+
+looks
+  mean              0.2977  0.1615
+  std. dev.         0.5861  0.4304
+  weight sum          1000    1000
+  precision         0.0085  0.0085
+
+lost
+  mean              0.2262  0.2116
+  std. dev.         0.6229  0.5502
+  weight sum          1000    1000
+  precision         0.0178  0.0178
+
+lot
+  mean               0.269  0.2684
+  std. dev.         0.4976  0.4862
+  weight sum          1000    1000
+  precision         0.0046  0.0046
+
+lot of
+  mean              0.2306  0.2174
+  std. dev.         0.5292   0.504
+  weight sum          1000    1000
+  precision         0.0087  0.0087
+
+love
+  mean               0.293  0.3775
+  std. dev.         0.4983  0.5933
+  weight sum          1000    1000
+  precision         0.0068  0.0068
+
+m
+  mean              0.3117   0.249
+  std. dev.         0.6009  0.5257
+  weight sum          1000    1000
+  precision         0.0089  0.0089
+
+m not
+  mean              0.1979  0.1276
+  std. dev.          0.696  0.4985
+  weight sum          1000    1000
+  precision          0.056   0.056
+
+made
+  mean              0.3137  0.2802
+  std. dev.         0.4518  0.4034
+  weight sum          1000    1000
+  precision         0.0034  0.0034
+
+main
+  mean               0.226  0.2149
+  std. dev.         0.5375  0.5061
+  weight sum          1000    1000
+  precision         0.0101  0.0101
+
+major
+  mean              0.1725  0.1963
+  std. dev.         0.5126  0.5356
+  weight sum          1000    1000
+  precision         0.0179  0.0179
+
+make
+  mean              0.3136  0.2883
+  std. dev.         0.3401  0.3241
+  weight sum          1000    1000
+  precision         0.0016  0.0016
+
+make a
+  mean              0.2661  0.1743
+  std. dev.         0.7113  0.5657
+  weight sum          1000    1000
+  precision         0.0224  0.0224
+
+makes
+  mean              0.2656  0.3274
+  std. dev.           0.41   0.436
+  weight sum          1000    1000
+  precision         0.0027  0.0027
+
+making
+  mean              0.2355  0.2662
+  std. dev.         0.4857  0.4912
+  weight sum          1000    1000
+  precision         0.0078  0.0078
+
+man
+  mean              0.3062  0.3594
+  std. dev.          0.446  0.4729
+  weight sum          1000    1000
+  precision         0.0028  0.0028
+
+manages
+  mean              0.1681  0.1869
+  std. dev.         0.5135  0.5417
+  weight sum          1000    1000
+  precision         0.0163  0.0163
+
+manages to
+  mean              0.1621  0.1833
+  std. dev.         0.5066  0.5447
+  weight sum          1000    1000
+  precision         0.0175  0.0175
+
+many
+  mean              0.2598  0.3716
+  std. dev.         0.3972  0.4504
+  weight sum          1000    1000
+  precision         0.0023  0.0023
+
+mars
+  mean              0.1398  0.0642
+  std. dev.         0.9554  0.5556
+  weight sum          1000    1000
+  precision         0.2497  0.2497
+
+material
+  mean              0.2632  0.1653
+  std. dev.         0.7342  0.5747
+  weight sum          1000    1000
+  precision         0.0223  0.0223
+
+matter
+  mean              0.1889  0.1979
+  std. dev.         0.5205  0.5228
+  weight sum          1000    1000
+  precision         0.0115  0.0115
+
+may
+  mean              0.2551  0.3319
+  std. dev.         0.4811  0.5095
+  weight sum          1000    1000
+  precision          0.005   0.005
+
+may be
+  mean              0.1447  0.2066
+  std. dev.         0.5002  0.5575
+  weight sum          1000    1000
+  precision         0.0166  0.0166
+
+maybe
+  mean              0.2634  0.1398
+  std. dev.         0.5936  0.4573
+  weight sum          1000    1000
+  precision         0.0135  0.0135
+
+me
+  mean              0.3686  0.3156
+  std. dev.         0.4955  0.4725
+  weight sum          1000    1000
+  precision         0.0028  0.0028
+
+mean
+  mean              0.2302  0.1687
+  std. dev.         0.6853  0.5896
+  weight sum          1000    1000
+  precision         0.0223  0.0223
+
+meet
+  mean              0.1467  0.1952
+  std. dev.          0.532  0.6232
+  weight sum          1000    1000
+  precision         0.0334  0.0334
+
+men
+  mean              0.2186  0.3048
+  std. dev.         0.6129  0.7367
+  weight sum          1000    1000
+  precision         0.0145  0.0145
+
+mess
+  mean              0.2406  0.0561
+  std. dev.         0.6947  0.3338
+  weight sum          1000    1000
+  precision         0.0271  0.0271
+
+michael
+  mean              0.2345  0.2278
+  std. dev.         0.6208  0.6513
+  weight sum          1000    1000
+  precision         0.0174  0.0174
+
+middle
+  mean              0.2155  0.1658
+  std. dev.         0.6885  0.5988
+  weight sum          1000    1000
+  precision         0.0247  0.0247
+
+might
+  mean              0.2904  0.2314
+  std. dev.         0.5155  0.4463
+  weight sum          1000    1000
+  precision         0.0055  0.0055
+
+mind
+  mean              0.1886  0.2536
+  std. dev.         0.4808  0.5426
+  weight sum          1000    1000
+  precision         0.0116  0.0116
+
+minutes
+  mean              0.3189  0.2266
+  std. dev.         0.5591  0.4753
+  weight sum          1000    1000
+  precision         0.0059  0.0059
+
+mission
+  mean              0.1925  0.1571
+  std. dev.          0.759  0.7344
+  weight sum          1000    1000
+  precision         0.0652  0.0652
+
+moment
+  mean              0.2031  0.1916
+  std. dev.         0.5443  0.5123
+  weight sum          1000    1000
+  precision         0.0118  0.0118
+
+moments
+  mean              0.2183   0.258
+  std. dev.         0.5312  0.5807
+  weight sum          1000    1000
+  precision         0.0111  0.0111
+
+money
+  mean              0.2667  0.2374
+  std. dev.         0.5995  0.5773
+  weight sum          1000    1000
+  precision         0.0127  0.0127
+
+more
+  mean               0.236  0.2507
+  std. dev.         0.1745  0.1751
+  weight sum          1000    1000
+  precision         0.0006  0.0006
+
+more than
+  mean              0.2302  0.2753
+  std. dev.          0.477  0.4961
+  weight sum          1000    1000
+  precision         0.0067  0.0067
+
+most
+  mean              0.2617  0.3343
+  std. dev.         0.2679  0.2856
+  weight sum          1000    1000
+  precision          0.001   0.001
+
+most of
+  mean              0.2424   0.239
+  std. dev.         0.4965  0.4809
+  weight sum          1000    1000
+  precision         0.0059  0.0059
+
+most of the
+  mean              0.1949   0.176
+  std. dev.         0.5115  0.4832
+  weight sum          1000    1000
+  precision         0.0124  0.0124
+
+mostly
+  mean              0.1729   0.169
+  std. dev.         0.5349  0.5062
+  weight sum          1000    1000
+  precision         0.0176  0.0176
+
+mother
+  mean              0.1689  0.2847
+  std. dev.         0.5429  0.6933
+  weight sum          1000    1000
+  precision         0.0174  0.0174
+
+movie
+  mean              0.3034  0.2558
+  std. dev.         0.2009  0.2004
+  weight sum          1000    1000
+  precision         0.0006  0.0006
+
+movie and
+  mean              0.2132  0.1889
+  std. dev.         0.6761  0.6272
+  weight sum          1000    1000
+  precision         0.0232  0.0232
+
+movie is
+  mean              0.2698  0.2381
+  std. dev.         0.5896  0.5658
+  weight sum          1000    1000
+  precision         0.0099  0.0099
+
+movie s
+  mean              0.2368  0.1947
+  std. dev.          0.732   0.652
+  weight sum          1000    1000
+  precision         0.0261  0.0261
+
+movie that
+  mean              0.2262  0.2058
+  std. dev.         0.6774  0.6871
+  weight sum          1000    1000
+  precision         0.0289  0.0289
+
+movies
+  mean              0.3226  0.3328
+  std. dev.         0.4685   0.478
+  weight sum          1000    1000
+  precision         0.0027  0.0027
+
+mr
+  mean               0.191  0.1793
+  std. dev.            0.7  0.6717
+  weight sum          1000    1000
+  precision         0.0371  0.0371
+
+much
+  mean              0.3072   0.299
+  std. dev.         0.3101  0.2934
+  weight sum          1000    1000
+  precision         0.0012  0.0012
+
+much of
+  mean              0.1793   0.172
+  std. dev.         0.5273  0.5036
+  weight sum          1000    1000
+  precision         0.0175  0.0175
+
+murder
+  mean              0.1766  0.1806
+  std. dev.         0.6262  0.6023
+  weight sum          1000    1000
+  precision         0.0278  0.0278
+
+music
+  mean              0.2157  0.2793
+  std. dev.         0.5804  0.6668
+  weight sum          1000    1000
+  precision         0.0137  0.0137
+
+must
+  mean              0.2483  0.2704
+  std. dev.         0.4805  0.5011
+  weight sum          1000    1000
+  precision         0.0053  0.0053
+
+my
+  mean              0.3678  0.3127
+  std. dev.         0.4953  0.4633
+  weight sum          1000    1000
+  precision         0.0033  0.0033
+
+name
+  mean              0.2412  0.1937
+  std. dev.         0.5597  0.4996
+  weight sum          1000    1000
+  precision         0.0129  0.0129
+
+named
+  mean              0.1948  0.2379
+  std. dev.         0.5314  0.5832
+  weight sum          1000    1000
+  precision         0.0121  0.0121
+
+nearly
+  mean              0.1791  0.1956
+  std. dev.          0.504  0.5119
+  weight sum          1000    1000
+  precision         0.0116  0.0116
+
+need
+  mean              0.2126  0.1814
+  std. dev.         0.5483  0.5052
+  weight sum          1000    1000
+  precision         0.0131  0.0131
+
+needs
+  mean              0.2161  0.1839
+  std. dev.         0.6644  0.5979
+  weight sum          1000    1000
+  precision         0.0215  0.0215
+
+never
+  mean               0.309  0.3235
+  std. dev.         0.4018  0.4075
+  weight sum          1000    1000
+  precision         0.0029  0.0029
+
+new
+  mean              0.3055  0.3625
+  std. dev.         0.4508  0.4825
+  weight sum          1000    1000
+  precision         0.0029  0.0029
+
+new york
+  mean              0.1644  0.1789
+  std. dev.          0.602  0.6421
+  weight sum          1000    1000
+  precision         0.0347  0.0347
+
+next
+  mean               0.238  0.2276
+  std. dev.          0.524  0.5124
+  weight sum          1000    1000
+  precision         0.0076  0.0076
+
+nice
+  mean              0.1895  0.2137
+  std. dev.         0.5406  0.5618
+  weight sum          1000    1000
+  precision         0.0163  0.0163
+
+night
+  mean              0.2232  0.2333
+  std. dev.         0.5551  0.5588
+  weight sum          1000    1000
+  precision         0.0125  0.0125
+
+no
+  mean              0.3477  0.2673
+  std. dev.         0.3032  0.2762
+  weight sum          1000    1000
+  precision         0.0011  0.0011
+
+no one
+  mean              0.2288   0.145
+  std. dev.         0.7143  0.5589
+  weight sum          1000    1000
+  precision         0.0296  0.0296
+
+none
+  mean              0.2605  0.1258
+  std. dev.         0.6713  0.4815
+  weight sum          1000    1000
+  precision         0.0188  0.0188
+
+none of
+  mean              0.2147  0.0899
+  std. dev.         0.6609  0.4314
+  weight sum          1000    1000
+  precision         0.0302  0.0302
+
+nor
+  mean              0.2111   0.141
+  std. dev.         0.6846  0.5328
+  weight sum          1000    1000
+  precision         0.0275  0.0275
+
+not
+  mean              0.1937  0.1987
+  std. dev.         0.1149  0.1114
+  weight sum          1000    1000
+  precision         0.0004  0.0004
+
+not a
+  mean              0.2162    0.19
+  std. dev.           0.52   0.485
+  weight sum          1000    1000
+  precision         0.0106  0.0106
+
+not only
+  mean              0.1718  0.2033
+  std. dev.         0.4978  0.5455
+  weight sum          1000    1000
+  precision         0.0151  0.0151
+
+not the
+  mean              0.1681  0.1634
+  std. dev.         0.4981  0.4934
+  weight sum          1000    1000
+  precision         0.0153  0.0153
+
+not to
+  mean              0.1682  0.1792
+  std. dev.         0.5096  0.5075
+  weight sum          1000    1000
+  precision         0.0143  0.0143
+
+note
+  mean              0.1447  0.1742
+  std. dev.         0.4868  0.5167
+  weight sum          1000    1000
+  precision         0.0217  0.0217
+
+nothing
+  mean              0.3562  0.2093
+  std. dev.         0.5243  0.3996
+  weight sum          1000    1000
+  precision         0.0055  0.0055
+
+now
+  mean              0.2992   0.302
+  std. dev.         0.4528   0.457
+  weight sum          1000    1000
+  precision         0.0038  0.0038
+
+number
+  mean              0.1547  0.1662
+  std. dev.         0.5273  0.5386
+  weight sum          1000    1000
+  precision         0.0194  0.0194
+
+o
+  mean              0.2253  0.1846
+  std. dev.         0.8475  0.7244
+  weight sum          1000    1000
+  precision         0.0481  0.0481
+
+obvious
+  mean              0.2226  0.1388
+  std. dev.         0.5513  0.4273
+  weight sum          1000    1000
+  precision         0.0115  0.0115
+
+obviously
+  mean              0.2312  0.1827
+  std. dev.         0.6574  0.6118
+  weight sum          1000    1000
+  precision         0.0228  0.0228
+
+of
+  mean              0.0028  0.0028
+  std. dev.         0.0005  0.0005
+  weight sum          1000    1000
+  precision              0       0
+
+of a
+  mean              0.2903  0.3029
+  std. dev.         0.3033  0.2925
+  weight sum          1000    1000
+  precision         0.0012  0.0012
+
+of all
+  mean               0.186  0.1672
+  std. dev.         0.5378  0.4961
+  weight sum          1000    1000
+  precision         0.0144  0.0144
+
+of an
+  mean              0.1894  0.1984
+  std. dev.         0.5222  0.5157
+  weight sum          1000    1000
+  precision         0.0134  0.0134
+
+of course
+  mean              0.2656  0.2353
+  std. dev.         0.5049  0.4813
+  weight sum          1000    1000
+  precision         0.0057  0.0057
+
+of her
+  mean              0.1785  0.2362
+  std. dev.           0.52  0.5818
+  weight sum          1000    1000
+  precision         0.0126  0.0126
+
+of his
+  mean              0.2673  0.3567
+  std. dev.         0.4494  0.5085
+  weight sum          1000    1000
+  precision         0.0041  0.0041
+
+of it
+  mean               0.203  0.1568
+  std. dev.          0.526   0.454
+  weight sum          1000    1000
+  precision         0.0154  0.0154
+
+of its
+  mean              0.1773  0.1867
+  std. dev.         0.5013  0.5093
+  weight sum          1000    1000
+  precision         0.0117  0.0117
+
+of the
+  mean              0.1008  0.1096
+  std. dev.         0.0439  0.0435
+  weight sum          1000    1000
+  precision         0.0001  0.0001
+
+of the film
+  mean              0.2736  0.3009
+  std. dev.         0.4645  0.4634
+  weight sum          1000    1000
+  precision         0.0036  0.0036
+
+of the movie
+  mean              0.2596  0.1752
+  std. dev.         0.5949   0.488
+  weight sum          1000    1000
+  precision         0.0105  0.0105
+
+of their
+  mean              0.2027  0.2154
+  std. dev.         0.5277  0.5073
+  weight sum          1000    1000
+  precision         0.0114  0.0114
+
+of them
+  mean              0.2346  0.2019
+  std. dev.          0.548  0.4851
+  weight sum          1000    1000
+  precision         0.0093  0.0093
+
+of this
+  mean              0.2772  0.2704
+  std. dev.         0.4933  0.4681
+  weight sum          1000    1000
+  precision         0.0046  0.0046
+
+of those
+  mean              0.1765  0.1653
+  std. dev.         0.5563  0.4991
+  weight sum          1000    1000
+  precision         0.0197  0.0197
+
+off
+  mean              0.3438  0.2808
+  std. dev.         0.4024  0.3589
+  weight sum          1000    1000
+  precision          0.002   0.002
+
+off the
+  mean              0.2172  0.2005
+  std. dev.         0.6722  0.6238
+  weight sum          1000    1000
+  precision         0.0187  0.0187
+
+often
+  mean              0.1632  0.2564
+  std. dev.         0.4684  0.5896
+  weight sum          1000    1000
+  precision         0.0122  0.0122
+
+oh
+  mean              0.2168  0.1376
+  std. dev.         0.6815  0.5239
+  weight sum          1000    1000
+  precision         0.0281  0.0281
+
+old
+  mean              0.2878  0.2879
+  std. dev.         0.5384  0.5256
+  weight sum          1000    1000
+  precision         0.0072  0.0072
+
+on
+  mean               0.103  0.0993
+  std. dev.         0.0432  0.0426
+  weight sum          1000    1000
+  precision         0.0001  0.0001
+
+on a
+  mean              0.2867   0.273
+  std. dev.         0.4675  0.4592
+  weight sum          1000    1000
+  precision         0.0041  0.0041
+
+on his
+  mean              0.1733  0.2019
+  std. dev.         0.5009  0.5435
+  weight sum          1000    1000
+  precision         0.0119  0.0119
+
+on the
+  mean              0.2747  0.2974
+  std. dev.          0.255  0.2606
+  weight sum          1000    1000
+  precision         0.0009  0.0009
+
+once
+  mean              0.2471    0.27
+  std. dev.         0.4798  0.4902
+  weight sum          1000    1000
+  precision         0.0055  0.0055
+
+one
+  mean              0.1518  0.1562
+  std. dev.         0.0813  0.0764
+  weight sum          1000    1000
+  precision         0.0002  0.0002
+
+one of
+  mean              0.2707  0.3452
+  std. dev.         0.3317   0.342
+  weight sum          1000    1000
+  precision         0.0017  0.0017
+
+one of the
+  mean              0.2502  0.3395
+  std. dev.         0.3971  0.4426
+  weight sum          1000    1000
+  precision         0.0026  0.0026
+
+only
+  mean              0.3014  0.2438
+  std. dev.         0.2381  0.2204
+  weight sum          1000    1000
+  precision         0.0008  0.0008
+
+opening
+  mean               0.189  0.1883
+  std. dev.         0.5408  0.5134
+  weight sum          1000    1000
+  precision         0.0139  0.0139
+
+or
+  mean              0.2884   0.258
+  std. dev.         0.2247  0.2124
+  weight sum          1000    1000
+  precision         0.0007  0.0007
+
+order
+  mean              0.1673  0.1943
+  std. dev.         0.4961  0.5284
+  weight sum          1000    1000
+  precision         0.0121  0.0121
+
+original
+  mean              0.2986  0.2765
+  std. dev.         0.6497  0.5683
+  weight sum          1000    1000
+  precision         0.0087  0.0087
+
+other
+  mean              0.2853  0.3172
+  std. dev.         0.3051  0.3046
+  weight sum          1000    1000
+  precision         0.0015  0.0015
+
+our
+  mean              0.2512  0.2756
+  std. dev.         0.5446   0.571
+  weight sum          1000    1000
+  precision         0.0084  0.0084
+
+out
+  mean              0.2395   0.222
+  std. dev.         0.1573  0.1634
+  weight sum          1000    1000
+  precision         0.0005  0.0005
+
+out of
+  mean              0.2952   0.294
+  std. dev.         0.4287  0.4419
+  weight sum          1000    1000
+  precision         0.0038  0.0038
+
+out of the
+  mean              0.2002  0.1996
+  std. dev.         0.6226  0.6303
+  weight sum          1000    1000
+  precision         0.0247  0.0247
+
+out the
+  mean              0.2165   0.184
+  std. dev.         0.6501  0.6189
+  weight sum          1000    1000
+  precision         0.0287  0.0287
+
+out to
+  mean              0.1878  0.1895
+  std. dev.         0.5181  0.5123
+  weight sum          1000    1000
+  precision         0.0121  0.0121
+
+over
+  mean              0.3069  0.3079
+  std. dev.          0.388  0.3822
+  weight sum          1000    1000
+  precision         0.0027  0.0027
+
+over the
+  mean              0.1867  0.2333
+  std. dev.          0.488    0.51
+  weight sum          1000    1000
+  precision         0.0086  0.0086
+
+own
+  mean              0.2396  0.3358
+  std. dev.         0.4323  0.5069
+  weight sum          1000    1000
+  precision          0.004   0.004
+
+part
+  mean              0.2627   0.276
+  std. dev.         0.4955  0.4832
+  weight sum          1000    1000
+  precision         0.0067  0.0067
+
+part of
+  mean              0.1881  0.1995
+  std. dev.         0.4913  0.4961
+  weight sum          1000    1000
+  precision         0.0105  0.0105
+
+past
+  mean              0.1825   0.222
+  std. dev.         0.5112  0.5443
+  weight sum          1000    1000
+  precision         0.0116  0.0116
+
+paul
+  mean              0.2399  0.1728
+  std. dev.         0.8153  0.6636
+  weight sum          1000    1000
+  precision         0.0443  0.0443
+
+people
+  mean              0.2977  0.3517
+  std. dev.         0.4013  0.4303
+  weight sum          1000    1000
+  precision         0.0025  0.0025
+
+performance
+  mean               0.241  0.3659
+  std. dev.         0.4619  0.5497
+  weight sum          1000    1000
+  precision         0.0051  0.0051
+
+performances
+  mean              0.1666  0.2999
+  std. dev.         0.4513  0.5683
+  weight sum          1000    1000
+  precision         0.0087  0.0087
+
+perhaps
+  mean               0.205  0.2591
+  std. dev.         0.4903  0.5396
+  weight sum          1000    1000
+  precision         0.0096  0.0096
+
+person
+  mean              0.1729  0.2285
+  std. dev.         0.4888  0.5687
+  weight sum          1000    1000
+  precision         0.0131  0.0131
+
+peter
+  mean              0.1808  0.1845
+  std. dev.         0.6145  0.6238
+  weight sum          1000    1000
+  precision         0.0356  0.0356
+
+picture
+  mean              0.2254  0.2985
+  std. dev.         0.5383  0.6036
+  weight sum          1000    1000
+  precision         0.0082  0.0082
+
+piece
+  mean              0.1604  0.1784
+  std. dev.         0.5128  0.5318
+  weight sum          1000    1000
+  precision         0.0212  0.0212
+
+place
+  mean              0.2336  0.2823
+  std. dev.         0.4725  0.5106
+  weight sum          1000    1000
+  precision         0.0058  0.0058
+
+planet
+  mean              0.2158  0.1495
+  std. dev.         0.8481   0.702
+  weight sum          1000    1000
+  precision         0.0688  0.0688
+
+play
+  mean              0.2314  0.2394
+  std. dev.         0.5652  0.5749
+  weight sum          1000    1000
+  precision         0.0112  0.0112
+
+played
+  mean              0.2967  0.2911
+  std. dev.         0.5167  0.5217
+  weight sum          1000    1000
+  precision         0.0055  0.0055
+
+played by
+  mean              0.2474   0.227
+  std. dev.         0.5882   0.584
+  weight sum          1000    1000
+  precision         0.0134  0.0134
+
+playing
+  mean              0.1981  0.2276
+  std. dev.         0.5112  0.5721
+  weight sum          1000    1000
+  precision         0.0154  0.0154
+
+plays
+  mean              0.2904   0.289
+  std. dev.         0.4827  0.4854
+  weight sum          1000    1000
+  precision         0.0048  0.0048
+
+plot
+  mean              0.3935  0.2603
+  std. dev.         0.4368  0.3713
+  weight sum          1000    1000
+  precision         0.0029  0.0029
+
+point
+  mean              0.3032   0.233
+  std. dev.         0.5266  0.4676
+  weight sum          1000    1000
+  precision         0.0051  0.0051
+
+police
+  mean              0.1807    0.17
+  std. dev.         0.6022   0.572
+  weight sum          1000    1000
+  precision         0.0296  0.0296
+
+poor
+  mean              0.2659  0.1015
+  std. dev.         0.7599  0.4416
+  weight sum          1000    1000
+  precision         0.0311  0.0311
+
+possible
+  mean              0.1718  0.1696
+  std. dev.         0.5086  0.5146
+  weight sum          1000    1000
+  precision         0.0175  0.0175
+
+potential
+  mean              0.2094  0.1202
+  std. dev.         0.7002  0.5124
+  weight sum          1000    1000
+  precision         0.0474  0.0474
+
+predictable
+  mean               0.232  0.1103
+  std. dev.         0.7146  0.4829
+  weight sum          1000    1000
+  precision         0.0341  0.0341
+
+premise
+  mean              0.2218  0.1762
+  std. dev.         0.7177   0.609
+  weight sum          1000    1000
+  precision         0.0318  0.0318
+
+presence
+  mean              0.1978  0.1782
+  std. dev.         0.6827  0.6256
+  weight sum          1000    1000
+  precision         0.0323  0.0323
+
+pretty
+  mean              0.2825  0.2066
+  std. dev.          0.555  0.4996
+  weight sum          1000    1000
+  precision         0.0074  0.0074
+
+probably
+  mean              0.2368  0.2481
+  std. dev.         0.4882  0.4998
+  weight sum          1000    1000
+  precision         0.0068  0.0068
+
+problem
+  mean              0.2693  0.1716
+  std. dev.          0.581  0.4703
+  weight sum          1000    1000
+  precision         0.0093  0.0093
+
+problems
+  mean               0.199  0.1749
+  std. dev.         0.5452   0.524
+  weight sum          1000    1000
+  precision         0.0187  0.0187
+
+production
+  mean              0.1753  0.2153
+  std. dev.         0.5494   0.574
+  weight sum          1000    1000
+  precision         0.0162  0.0162
+
+project
+  mean              0.2148  0.1142
+  std. dev.         0.6767  0.5195
+  weight sum          1000    1000
+  precision          0.035   0.035
+
+put
+  mean              0.2271  0.2204
+  std. dev.         0.5029     0.5
+  weight sum          1000    1000
+  precision         0.0096  0.0096
+
+question
+  mean               0.189  0.1832
+  std. dev.         0.5368  0.5145
+  weight sum          1000    1000
+  precision         0.0129  0.0129
+
+quickly
+  mean              0.1848  0.1617
+  std. dev.         0.5551  0.4849
+  weight sum          1000    1000
+  precision         0.0164  0.0164
+
+quite
+  mean              0.2194  0.3269
+  std. dev.         0.4772  0.5615
+  weight sum          1000    1000
+  precision         0.0062  0.0062
+
+rather
+  mean              0.2567  0.2811
+  std. dev.         0.5065  0.5245
+  weight sum          1000    1000
+  precision          0.006   0.006
+
+re
+  mean              0.3656  0.2613
+  std. dev.         0.5546  0.4683
+  weight sum          1000    1000
+  precision         0.0058  0.0058
+
+real
+  mean              0.2896  0.3017
+  std. dev.         0.5007  0.4969
+  weight sum          1000    1000
+  precision         0.0051  0.0051
+
+really
+  mean              0.3389  0.3141
+  std. dev.         0.4271  0.4045
+  weight sum          1000    1000
+  precision         0.0025  0.0025
+
+reason
+  mean               0.296  0.1604
+  std. dev.         0.5883  0.4181
+  weight sum          1000    1000
+  precision         0.0084  0.0084
+
+relationship
+  mean              0.1673  0.2612
+  std. dev.         0.5012  0.6459
+  weight sum          1000    1000
+  precision         0.0204  0.0204
+
+rest
+  mean              0.2456  0.2122
+  std. dev.         0.5275  0.4879
+  weight sum          1000    1000
+  precision         0.0086  0.0086
+
+rest of
+  mean              0.2276  0.1865
+  std. dev.          0.546  0.4873
+  weight sum          1000    1000
+  precision         0.0117  0.0117
+
+rest of the
+  mean              0.1999  0.1673
+  std. dev.         0.5382  0.4826
+  weight sum          1000    1000
+  precision         0.0122  0.0122
+
+result
+  mean              0.1728  0.1661
+  std. dev.         0.5539  0.5056
+  weight sum          1000    1000
+  precision         0.0203  0.0203
+
+review
+  mean              0.2169  0.1826
+  std. dev.         0.5996  0.5429
+  weight sum          1000    1000
+  precision         0.0208  0.0208
+
+ridiculous
+  mean              0.2174  0.0402
+  std. dev.         0.6491  0.2799
+  weight sum          1000    1000
+  precision         0.0281  0.0281
+
+right
+  mean              0.2526  0.3138
+  std. dev.         0.4539  0.5001
+  weight sum          1000    1000
+  precision         0.0059  0.0059
+
+robert
+  mean              0.1697  0.2145
+  std. dev.         0.5997  0.6447
+  weight sum          1000    1000
+  precision         0.0319  0.0319
+
+robin
+  mean              0.2138  0.1316
+  std. dev.         0.8616  0.6748
+  weight sum          1000    1000
+  precision         0.0662  0.0662
+
+role
+  mean              0.2737  0.3269
+  std. dev.         0.4659  0.5077
+  weight sum          1000    1000
+  precision         0.0043  0.0043
+
+roles
+  mean              0.1812  0.1929
+  std. dev.         0.5197  0.5237
+  weight sum          1000    1000
+  precision         0.0118  0.0118
+
+romantic
+  mean               0.183  0.1903
+  std. dev.         0.6746  0.7048
+  weight sum          1000    1000
+  precision         0.0357  0.0357
+
+room
+  mean              0.1709  0.1707
+  std. dev.         0.5435  0.5361
+  weight sum          1000    1000
+  precision         0.0237  0.0237
+
+run
+  mean              0.2025  0.1904
+  std. dev.         0.5748   0.587
+  weight sum          1000    1000
+  precision         0.0271  0.0271
+
+running
+  mean              0.2137  0.1777
+  std. dev.         0.5406  0.4937
+  weight sum          1000    1000
+  precision         0.0107  0.0107
+
+s
+  mean              0.0467   0.047
+  std. dev.         0.0147  0.0151
+  weight sum          1000    1000
+  precision         0.0001  0.0001
+
+s a
+  mean              0.3079  0.3196
+  std. dev.         0.4592  0.4735
+  weight sum          1000    1000
+  precision         0.0038  0.0038
+
+s character
+  mean              0.2171  0.1845
+  std. dev.         0.7232  0.6469
+  weight sum          1000    1000
+  precision         0.0297  0.0297
+
+s just
+  mean              0.2561  0.1563
+  std. dev.         0.7247  0.5391
+  weight sum          1000    1000
+  precision         0.0289  0.0289
+
+s not
+  mean              0.2694  0.2451
+  std. dev.         0.5048  0.4888
+  weight sum          1000    1000
+  precision         0.0058  0.0058
+
+s the
+  mean              0.2823  0.2152
+  std. dev.         0.5516  0.4766
+  weight sum          1000    1000
+  precision         0.0071  0.0071
+
+said
+  mean              0.2223  0.1884
+  std. dev.         0.5548  0.4899
+  weight sum          1000    1000
+  precision          0.013   0.013
+
+same
+  mean              0.2793   0.296
+  std. dev.         0.4472  0.4592
+  weight sum          1000    1000
+  precision         0.0038  0.0038
+
+save
+  mean              0.2803  0.1712
+  std. dev.         0.7116  0.5964
+  weight sum          1000    1000
+  precision         0.0195  0.0195
+
+saw
+  mean              0.2386   0.185
+  std. dev.         0.6899  0.6048
+  weight sum          1000    1000
+  precision         0.0237  0.0237
+
+say
+  mean              0.2919  0.2773
+  std. dev.         0.4859  0.4617
+  weight sum          1000    1000
+  precision         0.0038  0.0038
+
+says
+  mean              0.1757  0.1721
+  std. dev.         0.5298  0.5172
+  weight sum          1000    1000
+  precision         0.0175  0.0175
+
+scary
+  mean              0.1881  0.1268
+  std. dev.         0.8093  0.5915
+  weight sum          1000    1000
+  precision         0.0765  0.0765
+
+scene
+  mean              0.3251  0.3333
+  std. dev.         0.4523  0.4573
+  weight sum          1000    1000
+  precision         0.0039  0.0039
+
+scenes
+  mean              0.3234    0.32
+  std. dev.         0.4528  0.4438
+  weight sum          1000    1000
+  precision         0.0034  0.0034
+
+school
+  mean              0.2126   0.243
+  std. dev.         0.6874  0.7131
+  weight sum          1000    1000
+  precision         0.0224  0.0224
+
+scream
+  mean              0.1504  0.1183
+  std. dev.         0.7104  0.7253
+  weight sum          1000    1000
+  precision         0.0964  0.0964
+
+screen
+  mean              0.2513  0.2723
+  std. dev.         0.4684  0.4881
+  weight sum          1000    1000
+  precision         0.0051  0.0051
+
+screenplay
+  mean              0.2033  0.1731
+  std. dev.         0.5597  0.5083
+  weight sum          1000    1000
+  precision         0.0149  0.0149
+
+script
+  mean              0.3715  0.2281
+  std. dev.         0.5646  0.4799
+  weight sum          1000    1000
+  precision         0.0049  0.0049
+
+second
+  mean              0.2009  0.2091
+  std. dev.         0.5159  0.5232
+  weight sum          1000    1000
+  precision         0.0127  0.0127
+
+see
+  mean               0.294  0.3416
+  std. dev.          0.359  0.3683
+  weight sum          1000    1000
+  precision         0.0018  0.0018
+
+see the
+  mean               0.142  0.1897
+  std. dev.         0.4707  0.5422
+  weight sum          1000    1000
+  precision         0.0163  0.0163
+
+seeing
+  mean              0.1804  0.2182
+  std. dev.         0.4861  0.5234
+  weight sum          1000    1000
+  precision         0.0119  0.0119
+
+seem
+  mean              0.2552  0.2597
+  std. dev.         0.5225  0.4991
+  weight sum          1000    1000
+  precision          0.007   0.007
+
+seem to
+  mean              0.2128  0.1533
+  std. dev.          0.568  0.4794
+  weight sum          1000    1000
+  precision         0.0165  0.0165
+
+seemed
+  mean              0.2242  0.1628
+  std. dev.         0.7156  0.5862
+  weight sum          1000    1000
+  precision         0.0311  0.0311
+
+seems
+  mean              0.3154  0.3049
+  std. dev.         0.4735  0.4588
+  weight sum          1000    1000
+  precision         0.0033  0.0033
+
+seems to
+  mean              0.2415  0.2214
+  std. dev.          0.542  0.5149
+  weight sum          1000    1000
+  precision         0.0083  0.0083
+
+seen
+  mean              0.2564  0.3357
+  std. dev.         0.4457  0.4953
+  weight sum          1000    1000
+  precision         0.0046  0.0046
+
+sense
+  mean              0.2248  0.2774
+  std. dev.         0.4948  0.5629
+  weight sum          1000    1000
+  precision         0.0075  0.0075
+
+sequel
+  mean              0.2304  0.1256
+  std. dev.         0.8139  0.5859
+  weight sum          1000    1000
+  precision         0.0414  0.0414
+
+sequence
+  mean              0.1933  0.2127
+  std. dev.         0.5475  0.5418
+  weight sum          1000    1000
+  precision         0.0131  0.0131
+
+sequences
+  mean              0.2145  0.1687
+  std. dev.         0.5662  0.5038
+  weight sum          1000    1000
+  precision         0.0158  0.0158
+
+series
+  mean              0.2826  0.2184
+  std. dev.         0.6837  0.5753
+  weight sum          1000    1000
+  precision         0.0121  0.0121
+
+serious
+  mean              0.2156  0.1837
+  std. dev.         0.7042  0.6165
+  weight sum          1000    1000
+  precision         0.0244  0.0244
+
+seriously
+  mean              0.1926  0.1304
+  std. dev.         0.6413  0.5393
+  weight sum          1000    1000
+  precision         0.0288  0.0288
+
+set
+  mean              0.2315  0.2686
+  std. dev.         0.4851   0.503
+  weight sum          1000    1000
+  precision         0.0063  0.0063
+
+several
+  mean              0.1909  0.2645
+  std. dev.         0.4923  0.5889
+  weight sum          1000    1000
+  precision         0.0108  0.0108
+
+sex
+  mean              0.2759  0.2149
+  std. dev.         0.7473  0.6483
+  weight sum          1000    1000
+  precision         0.0252  0.0252
+
+she
+  mean              0.4455  0.4352
+  std. dev.          0.555  0.5423
+  weight sum          1000    1000
+  precision         0.0026  0.0026
+
+she is
+  mean              0.1905  0.2314
+  std. dev.         0.5426   0.594
+  weight sum          1000    1000
+  precision         0.0127  0.0127
+
+she s
+  mean              0.2524  0.1991
+  std. dev.         0.6417  0.5659
+  weight sum          1000    1000
+  precision         0.0184  0.0184
+
+ship
+  mean              0.1524  0.1569
+  std. dev.         0.7513   0.751
+  weight sum          1000    1000
+  precision         0.0717  0.0717
+
+short
+  mean              0.1765  0.1956
+  std. dev.         0.5013  0.5243
+  weight sum          1000    1000
+  precision         0.0132  0.0132
+
+shot
+  mean              0.1759  0.2159
+  std. dev.          0.507  0.6065
+  weight sum          1000    1000
+  precision         0.0185  0.0185
+
+should
+  mean              0.3387  0.2424
+  std. dev.         0.4789  0.4129
+  weight sum          1000    1000
+  precision         0.0031  0.0031
+
+should be
+  mean              0.1683  0.1687
+  std. dev.          0.513  0.4969
+  weight sum          1000    1000
+  precision         0.0167  0.0167
+
+should have
+  mean              0.2639  0.0799
+  std. dev.         0.7311  0.3909
+  weight sum          1000    1000
+  precision         0.0293  0.0293
+
+show
+  mean              0.2865  0.2732
+  std. dev.         0.5646  0.5825
+  weight sum          1000    1000
+  precision         0.0081  0.0081
+
+shows
+  mean              0.1821  0.2602
+  std. dev.         0.4834  0.5522
+  weight sum          1000    1000
+  precision         0.0092  0.0092
+
+side
+  mean              0.1634  0.2283
+  std. dev.         0.4922  0.5649
+  weight sum          1000    1000
+  precision         0.0115  0.0115
+
+simply
+  mean              0.2431  0.2107
+  std. dev.         0.5704  0.5196
+  weight sum          1000    1000
+  precision         0.0129  0.0129
+
+since
+  mean              0.2881  0.2735
+  std. dev.         0.5067  0.4652
+  weight sum          1000    1000
+  precision         0.0049  0.0049
+
+single
+  mean              0.2177  0.2057
+  std. dev.         0.6906  0.6528
+  weight sum          1000    1000
+  precision         0.0233  0.0233
+
+small
+  mean              0.1826  0.2722
+  std. dev.         0.4863  0.5931
+  weight sum          1000    1000
+  precision         0.0115  0.0115
+
+smith
+  mean              0.1511  0.1455
+  std. dev.         0.7962  0.7591
+  weight sum          1000    1000
+  precision         0.1006  0.1006
+
+so
+  mean              0.2692  0.2341
+  std. dev.         0.1845  0.1761
+  weight sum          1000    1000
+  precision         0.0005  0.0005
+
+so much
+  mean              0.1763  0.1727
+  std. dev.         0.5134  0.5061
+  weight sum          1000    1000
+  precision         0.0139  0.0139
+
+some
+  mean              0.2857  0.2572
+  std. dev.         0.2204  0.2184
+  weight sum          1000    1000
+  precision         0.0007  0.0007
+
+some of
+  mean              0.2229  0.2715
+  std. dev.         0.4844  0.5186
+  weight sum          1000    1000
+  precision          0.006   0.006
+
+some of the
+  mean              0.1771    0.24
+  std. dev.          0.478    0.53
+  weight sum          1000    1000
+  precision           0.01    0.01
+
+somehow
+  mean                 0.2  0.1954
+  std. dev.         0.6905  0.6642
+  weight sum          1000    1000
+  precision         0.0305  0.0305
+
+someone
+  mean              0.2574  0.1845
+  std. dev.         0.5572  0.4704
+  weight sum          1000    1000
+  precision         0.0088  0.0088
+
+something
+  mean              0.3026  0.2973
+  std. dev.          0.441  0.4252
+  weight sum          1000    1000
+  precision         0.0032  0.0032
+
+son
+  mean              0.1745  0.2554
+  std. dev.         0.5687  0.7201
+  weight sum          1000    1000
+  precision         0.0214  0.0214
+
+soon
+  mean              0.2079  0.2312
+  std. dev.         0.5187  0.5273
+  weight sum          1000    1000
+  precision         0.0089  0.0089
+
+sort
+  mean              0.1934  0.1656
+  std. dev.         0.5251  0.4945
+  weight sum          1000    1000
+  precision         0.0165  0.0165
+
+sort of
+  mean               0.226  0.1983
+  std. dev.         0.6673  0.6381
+  weight sum          1000    1000
+  precision         0.0258  0.0258
+
+sound
+  mean              0.1644  0.1764
+  std. dev.         0.5586  0.5419
+  weight sum          1000    1000
+  precision         0.0198  0.0198
+
+space
+  mean              0.1736  0.1481
+  std. dev.         0.6492   0.559
+  weight sum          1000    1000
+  precision         0.0348  0.0348
+
+special
+  mean              0.2475  0.2639
+  std. dev.         0.5778  0.5961
+  weight sum          1000    1000
+  precision           0.01    0.01
+
+special effects
+  mean              0.2195  0.1974
+  std. dev.          0.627  0.6018
+  weight sum          1000    1000
+  precision         0.0192  0.0192
+
+star
+  mean              0.2694  0.2784
+  std. dev.         0.5711  0.6333
+  weight sum          1000    1000
+  precision         0.0107  0.0107
+
+stars
+  mean              0.2413  0.2255
+  std. dev.         0.5723  0.5473
+  weight sum          1000    1000
+  precision          0.011   0.011
+
+start
+  mean              0.2105  0.1813
+  std. dev.         0.5301  0.5065
+  weight sum          1000    1000
+  precision         0.0126  0.0126
+
+starts
+  mean              0.1948  0.2108
+  std. dev.           0.53    0.57
+  weight sum          1000    1000
+  precision         0.0198  0.0198
+
+still
+  mean               0.275  0.3317
+  std. dev.          0.434   0.463
+  weight sum          1000    1000
+  precision         0.0039  0.0039
+
+stop
+  mean              0.1802  0.1617
+  std. dev.         0.5284  0.5029
+  weight sum          1000    1000
+  precision         0.0171  0.0171
+
+story
+  mean              0.3128  0.3604
+  std. dev.         0.3537  0.3653
+  weight sum          1000    1000
+  precision         0.0016  0.0016
+
+straight
+  mean              0.2078  0.1374
+  std. dev.          0.676  0.5423
+  weight sum          1000    1000
+  precision         0.0301  0.0301
+
+stuff
+  mean              0.2141   0.162
+  std. dev.         0.6708   0.595
+  weight sum          1000    1000
+  precision         0.0284  0.0284
+
+stupid
+  mean              0.3156  0.0695
+  std. dev.         0.7811  0.3727
+  weight sum          1000    1000
+  precision         0.0235  0.0235
+
+style
+  mean              0.1858  0.2022
+  std. dev.         0.5351  0.5451
+  weight sum          1000    1000
+  precision         0.0125  0.0125
+
+such
+  mean              0.3058  0.3185
+  std. dev.          0.422  0.4145
+  weight sum          1000    1000
+  precision         0.0028  0.0028
+
+such a
+  mean              0.2015  0.2037
+  std. dev.         0.5331  0.5059
+  weight sum          1000    1000
+  precision         0.0113  0.0113
+
+such as
+  mean              0.1846   0.205
+  std. dev.         0.5152  0.5501
+  weight sum          1000    1000
+  precision          0.013   0.013
+
+summer
+  mean              0.2077  0.1962
+  std. dev.         0.6662  0.6108
+  weight sum          1000    1000
+  precision         0.0275  0.0275
+
+supporting
+  mean              0.1537  0.2157
+  std. dev.         0.4711  0.5481
+  weight sum          1000    1000
+  precision         0.0137  0.0137
+
+supposed
+  mean              0.3377  0.1199
+  std. dev.         0.7624  0.4388
+  weight sum          1000    1000
+  precision         0.0185  0.0185
+
+supposed to
+  mean              0.3221  0.1152
+  std. dev.         0.7623  0.4413
+  weight sum          1000    1000
+  precision         0.0206  0.0206
+
+supposed to be
+  mean              0.2108  0.0761
+  std. dev.           0.65  0.3873
+  weight sum          1000    1000
+  precision         0.0292  0.0292
+
+sure
+  mean              0.2461  0.2393
+  std. dev.         0.5156  0.4892
+  weight sum          1000    1000
+  precision         0.0059  0.0059
+
+suspense
+  mean              0.2077  0.1507
+  std. dev.         0.7068  0.6373
+  weight sum          1000    1000
+  precision         0.0403  0.0403
+
+t
+  mean               0.224  0.1834
+  std. dev.         0.1127  0.1113
+  weight sum          1000    1000
+  precision         0.0003  0.0003
+
+t be
+  mean              0.1978  0.1502
+  std. dev.         0.6377  0.5466
+  weight sum          1000    1000
+  precision         0.0267  0.0267
+
+t even
+  mean              0.2547  0.0886
+  std. dev.         0.6968   0.407
+  weight sum          1000    1000
+  precision         0.0259  0.0259
+
+t have
+  mean              0.2747  0.1572
+  std. dev.         0.7274  0.5314
+  weight sum          1000    1000
+  precision         0.0204  0.0204
+
+t know
+  mean              0.2057  0.1794
+  std. dev.         0.6889  0.6427
+  weight sum          1000    1000
+  precision         0.0404  0.0404
+
+take
+  mean              0.2793  0.3036
+  std. dev.         0.4391   0.441
+  weight sum          1000    1000
+  precision         0.0032  0.0032
+
+takes
+  mean              0.2279   0.315
+  std. dev.           0.44  0.5105
+  weight sum          1000    1000
+  precision         0.0044  0.0044
+
+taking
+  mean              0.1505   0.182
+  std. dev.         0.4882  0.5477
+  weight sum          1000    1000
+  precision         0.0196  0.0196
+
+talent
+  mean              0.2497  0.1442
+  std. dev.         0.7209  0.5237
+  weight sum          1000    1000
+  precision         0.0274  0.0274
+
+talk
+  mean              0.2157  0.1881
+  std. dev.         0.7067   0.654
+  weight sum          1000    1000
+  precision         0.0337  0.0337
+
+team
+  mean              0.2049  0.1781
+  std. dev.         0.6727   0.603
+  weight sum          1000    1000
+  precision         0.0268  0.0268
+
+television
+  mean              0.2099  0.1822
+  std. dev.         0.7792  0.6868
+  weight sum          1000    1000
+  precision         0.0496  0.0496
+
+tell
+  mean               0.186  0.2087
+  std. dev.         0.5164  0.5031
+  weight sum          1000    1000
+  precision          0.011   0.011
+
+tells
+  mean              0.1537  0.1948
+  std. dev.         0.4874  0.5332
+  weight sum          1000    1000
+  precision         0.0136  0.0136
+
+terrible
+  mean              0.2181  0.0621
+  std. dev.         0.7137  0.3816
+  weight sum          1000    1000
+  precision         0.0417  0.0417
+
+than
+  mean              0.2841  0.2842
+  std. dev.         0.2467  0.2514
+  weight sum          1000    1000
+  precision         0.0011  0.0011
+
+than a
+  mean              0.1792  0.1793
+  std. dev.         0.5026  0.4866
+  weight sum          1000    1000
+  precision         0.0116  0.0116
+
+than the
+  mean              0.1723  0.2016
+  std. dev.          0.495  0.5179
+  weight sum          1000    1000
+  precision          0.011   0.011
+
+that
+  mean              0.0377  0.0372
+  std. dev.         0.0103  0.0101
+  weight sum          1000    1000
+  precision              0       0
+
+that he
+  mean              0.2424  0.3188
+  std. dev.         0.4658  0.5318
+  weight sum          1000    1000
+  precision         0.0049  0.0049
+
+that i
+  mean              0.2477  0.2289
+  std. dev.         0.5484  0.5163
+  weight sum          1000    1000
+  precision         0.0082  0.0082
+
+that is
+  mean              0.2512  0.2961
+  std. dev.         0.4802  0.5223
+  weight sum          1000    1000
+  precision         0.0047  0.0047
+
+that it
+  mean              0.2806  0.2638
+  std. dev.         0.4698  0.4462
+  weight sum          1000    1000
+  precision         0.0036  0.0036
+
+that it s
+  mean              0.2095  0.1362
+  std. dev.         0.6724  0.5259
+  weight sum          1000    1000
+  precision          0.024   0.024
+
+that s
+  mean              0.3202  0.2687
+  std. dev.         0.5318  0.4918
+  weight sum          1000    1000
+  precision         0.0055  0.0055
+
+that she
+  mean               0.178  0.1866
+  std. dev.         0.5369  0.5415
+  weight sum          1000    1000
+  precision         0.0159  0.0159
+
+that the
+  mean              0.3103  0.2921
+  std. dev.         0.4202  0.3849
+  weight sum          1000    1000
+  precision         0.0025  0.0025
+
+that they
+  mean              0.2234  0.2071
+  std. dev.         0.5435  0.5329
+  weight sum          1000    1000
+  precision         0.0112  0.0112
+
+that this
+  mean              0.1912  0.1943
+  std. dev.         0.4931  0.5183
+  weight sum          1000    1000
+  precision         0.0132  0.0132
+
+that was
+  mean               0.205  0.1365
+  std. dev.         0.6822  0.5318
+  weight sum          1000    1000
+  precision         0.0294  0.0294
+
+that you
+  mean              0.1702  0.1585
+  std. dev.         0.5148  0.4982
+  weight sum          1000    1000
+  precision         0.0204  0.0204
+
+the
+  mean              0.0018  0.0018
+  std. dev.         0.0003  0.0003
+  weight sum          1000    1000
+  precision              0       0
+
+the action
+  mean              0.2314  0.1725
+  std. dev.         0.7153  0.6296
+  weight sum          1000    1000
+  precision         0.0271  0.0271
+
+the actors
+  mean              0.2309  0.1958
+  std. dev.         0.6899   0.609
+  weight sum          1000    1000
+  precision         0.0198  0.0198
+
+the audience
+  mean              0.2749  0.2614
+  std. dev.         0.5327  0.5235
+  weight sum          1000    1000
+  precision         0.0066  0.0066
+
+the bad
+  mean              0.1996  0.0788
+  std. dev.         0.6791  0.4152
+  weight sum          1000    1000
+  precision         0.0362  0.0362
+
+the best
+  mean              0.1952  0.3352
+  std. dev.         0.4414  0.5536
+  weight sum          1000    1000
+  precision          0.006   0.006
+
+the big
+  mean               0.177  0.1954
+  std. dev.         0.5187  0.5781
+  weight sum          1000    1000
+  precision         0.0204  0.0204
+
+the characters
+  mean              0.2574  0.2528
+  std. dev.          0.536   0.524
+  weight sum          1000    1000
+  precision         0.0071  0.0071
+
+the director
+  mean              0.2342   0.187
+  std. dev.         0.7306  0.6397
+  weight sum          1000    1000
+  precision         0.0335  0.0335
+
+the end
+  mean              0.2913  0.2528
+  std. dev.          0.508  0.4669
+  weight sum          1000    1000
+  precision         0.0045  0.0045
+
+the end of
+  mean              0.2236  0.2011
+  std. dev.         0.6797   0.628
+  weight sum          1000    1000
+  precision         0.0212  0.0212
+
+the entire
+  mean               0.169  0.1934
+  std. dev.         0.4865   0.524
+  weight sum          1000    1000
+  precision         0.0128  0.0128
+
+the fact
+  mean              0.2069   0.189
+  std. dev.         0.5127  0.4928
+  weight sum          1000    1000
+  precision         0.0092  0.0092
+
+the fact that
+  mean              0.2019  0.1688
+  std. dev.         0.5229  0.4686
+  weight sum          1000    1000
+  precision         0.0107  0.0107
+
+the film
+  mean              0.2674   0.298
+  std. dev.         0.2127   0.208
+  weight sum          1000    1000
+  precision         0.0006  0.0006
+
+the film is
+  mean              0.2114  0.2895
+  std. dev.         0.4656  0.5269
+  weight sum          1000    1000
+  precision         0.0067  0.0067
+
+the film s
+  mean              0.2317  0.2654
+  std. dev.          0.535  0.5542
+  weight sum          1000    1000
+  precision          0.011   0.011
+
+the first
+  mean              0.2969  0.2858
+  std. dev.         0.4922  0.4816
+  weight sum          1000    1000
+  precision         0.0047  0.0047
+
+the last
+  mean              0.1798  0.2503
+  std. dev.         0.5083  0.6035
+  weight sum          1000    1000
+  precision         0.0146  0.0146
+
+the main
+  mean              0.1885  0.1673
+  std. dev.         0.5481  0.4954
+  weight sum          1000    1000
+  precision         0.0179  0.0179
+
+the most
+  mean              0.2481  0.3309
+  std. dev.          0.408  0.4608
+  weight sum          1000    1000
+  precision         0.0028  0.0028
+
+the movie
+  mean              0.4062  0.3471
+  std. dev.         0.4627  0.4373
+  weight sum          1000    1000
+  precision         0.0022  0.0022
+
+the movie is
+  mean              0.1847  0.1894
+  std. dev.         0.5667   0.552
+  weight sum          1000    1000
+  precision          0.016   0.016
+
+the next
+  mean              0.1617   0.177
+  std. dev.         0.5082   0.524
+  weight sum          1000    1000
+  precision         0.0173  0.0173
+
+the one
+  mean              0.1586  0.1702
+  std. dev.         0.4917  0.4943
+  weight sum          1000    1000
+  precision         0.0127  0.0127
+
+the only
+  mean              0.3302  0.2127
+  std. dev.         0.5158  0.4198
+  weight sum          1000    1000
+  precision         0.0046  0.0046
+
+the original
+  mean              0.2366  0.1736
+  std. dev.         0.7032  0.5906
+  weight sum          1000    1000
+  precision         0.0213  0.0213
+
+the other
+  mean              0.2361  0.2574
+  std. dev.         0.4855  0.4772
+  weight sum          1000    1000
+  precision         0.0072  0.0072
+
+the plot
+  mean              0.3166  0.2318
+  std. dev.         0.5696  0.4795
+  weight sum          1000    1000
+  precision         0.0064  0.0064
+
+the real
+  mean              0.1971  0.2117
+  std. dev.         0.7289  0.7015
+  weight sum          1000    1000
+  precision          0.038   0.038
+
+the rest
+  mean              0.2362  0.2035
+  std. dev.         0.5312  0.4922
+  weight sum          1000    1000
+  precision         0.0098  0.0098
+
+the rest of
+  mean              0.2272  0.1861
+  std. dev.          0.545  0.4878
+  weight sum          1000    1000
+  precision         0.0118  0.0118
+
+the same
+  mean              0.2718  0.2871
+  std. dev.         0.4565  0.4701
+  weight sum          1000    1000
+  precision         0.0044  0.0044
+
+the script
+  mean              0.2739  0.1751
+  std. dev.         0.5821  0.4814
+  weight sum          1000    1000
+  precision         0.0095  0.0095
+
+the story
+  mean               0.296  0.3261
+  std. dev.         0.4693   0.479
+  weight sum          1000    1000
+  precision         0.0033  0.0033
+
+the time
+  mean              0.1935  0.1987
+  std. dev.          0.509  0.5277
+  weight sum          1000    1000
+  precision         0.0114  0.0114
+
+the two
+  mean              0.1972  0.2946
+  std. dev.         0.4997  0.5953
+  weight sum          1000    1000
+  precision         0.0089  0.0089
+
+the way
+  mean              0.2297  0.2632
+  std. dev.         0.4671  0.4991
+  weight sum          1000    1000
+  precision         0.0064  0.0064
+
+the whole
+  mean              0.2251  0.1564
+  std. dev.         0.5968  0.4758
+  weight sum          1000    1000
+  precision          0.015   0.015
+
+the world
+  mean               0.188  0.2755
+  std. dev.         0.5156  0.6042
+  weight sum          1000    1000
+  precision         0.0127  0.0127
+
+the worst
+  mean              0.2896  0.0612
+  std. dev.           0.76  0.3296
+  weight sum          1000    1000
+  precision         0.0315  0.0315
+
+theater
+  mean              0.1612  0.1583
+  std. dev.          0.553  0.5162
+  weight sum          1000    1000
+  precision         0.0226  0.0226
+
+their
+  mean              0.2976  0.3216
+  std. dev.          0.273  0.2775
+  weight sum          1000    1000
+  precision          0.001   0.001
+
+them
+  mean              0.3167  0.3134
+  std. dev.          0.347  0.3352
+  weight sum          1000    1000
+  precision         0.0016  0.0016
+
+themselves
+  mean              0.1498  0.2102
+  std. dev.         0.4629  0.5284
+  weight sum          1000    1000
+  precision         0.0121  0.0121
+
+then
+  mean              0.3539  0.2839
+  std. dev.         0.4201  0.3872
+  weight sum          1000    1000
+  precision         0.0026  0.0026
+
+there
+  mean              0.2693   0.231
+  std. dev.         0.1831   0.175
+  weight sum          1000    1000
+  precision         0.0007  0.0007
+
+there are
+  mean              0.2743  0.2895
+  std. dev.         0.4884  0.4899
+  weight sum          1000    1000
+  precision         0.0049  0.0049
+
+there is
+  mean              0.3082  0.3006
+  std. dev.         0.5407  0.5299
+  weight sum          1000    1000
+  precision         0.0061  0.0061
+
+there s
+  mean               0.383   0.265
+  std. dev.         0.5816  0.4764
+  weight sum          1000    1000
+  precision         0.0048  0.0048
+
+there s a
+  mean              0.2378  0.1682
+  std. dev.         0.7187  0.5975
+  weight sum          1000    1000
+  precision         0.0299  0.0299
+
+these
+  mean              0.2982  0.3335
+  std. dev.         0.4086  0.4192
+  weight sum          1000    1000
+  precision         0.0023  0.0023
+
+they
+  mean              0.2869  0.2574
+  std. dev.          0.202  0.1989
+  weight sum          1000    1000
+  precision         0.0007  0.0007
+
+they are
+  mean              0.2384  0.2846
+  std. dev.         0.5256  0.5367
+  weight sum          1000    1000
+  precision         0.0072  0.0072
+
+they have
+  mean              0.2089  0.1933
+  std. dev.         0.6445  0.6297
+  weight sum          1000    1000
+  precision         0.0235  0.0235
+
+they re
+  mean              0.2726  0.1674
+  std. dev.         0.6381  0.4826
+  weight sum          1000    1000
+  precision         0.0195  0.0195
+
+thing
+  mean              0.3175  0.2522
+  std. dev.         0.4995    0.45
+  weight sum          1000    1000
+  precision         0.0056  0.0056
+
+things
+  mean              0.2803  0.2974
+  std. dev.          0.477  0.4891
+  weight sum          1000    1000
+  precision         0.0045  0.0045
+
+think
+  mean              0.3085   0.264
+  std. dev.         0.4968  0.4559
+  weight sum          1000    1000
+  precision         0.0042  0.0042
+
+this
+  mean               0.087  0.0808
+  std. dev.         0.0329  0.0326
+  weight sum          1000    1000
+  precision         0.0001  0.0001
+
+this film
+  mean              0.3513  0.3483
+  std. dev.         0.5011  0.4751
+  weight sum          1000    1000
+  precision         0.0033  0.0033
+
+this film is
+  mean              0.1652  0.1928
+  std. dev.         0.5352  0.5221
+  weight sum          1000    1000
+  precision         0.0258  0.0258
+
+this is
+  mean              0.3065  0.3203
+  std. dev.         0.4209  0.4285
+  weight sum          1000    1000
+  precision          0.003   0.003
+
+this is a
+  mean              0.1637  0.2095
+  std. dev.         0.4818  0.5446
+  weight sum          1000    1000
+  precision         0.0119  0.0119
+
+this movie
+  mean              0.3958  0.2786
+  std. dev.         0.6326  0.5586
+  weight sum          1000    1000
+  precision         0.0059  0.0059
+
+this one
+  mean               0.217  0.1637
+  std. dev.         0.5764  0.4916
+  weight sum          1000    1000
+  precision         0.0132  0.0132
+
+this time
+  mean              0.2118  0.1874
+  std. dev.          0.708  0.6301
+  weight sum          1000    1000
+  precision         0.0282  0.0282
+
+those
+  mean              0.2952  0.3121
+  std. dev.         0.4581  0.4634
+  weight sum          1000    1000
+  precision         0.0045  0.0045
+
+though
+  mean              0.2846  0.3204
+  std. dev.         0.4735  0.4801
+  weight sum          1000    1000
+  precision         0.0043  0.0043
+
+thought
+  mean              0.2405  0.1895
+  std. dev.         0.5632  0.4913
+  weight sum          1000    1000
+  precision         0.0092  0.0092
+
+three
+  mean              0.2676  0.2851
+  std. dev.         0.5491  0.6007
+  weight sum          1000    1000
+  precision         0.0089  0.0089
+
+thriller
+  mean              0.2665  0.1843
+  std. dev.         0.8111  0.6458
+  weight sum          1000    1000
+  precision         0.0272  0.0272
+
+through
+  mean              0.3038  0.3009
+  std. dev.         0.3899  0.4031
+  weight sum          1000    1000
+  precision         0.0028  0.0028
+
+through the
+  mean              0.2119  0.2141
+  std. dev.         0.5131  0.4957
+  weight sum          1000    1000
+  precision         0.0081  0.0081
+
+throughout
+  mean              0.1412  0.2373
+  std. dev.         0.4439  0.5606
+  weight sum          1000    1000
+  precision         0.0129  0.0129
+
+time
+  mean              0.2857  0.2904
+  std. dev.         0.2636  0.2622
+  weight sum          1000    1000
+  precision         0.0011  0.0011
+
+times
+  mean              0.2295  0.2882
+  std. dev.         0.4785  0.5309
+  weight sum          1000    1000
+  precision         0.0054  0.0054
+
+title
+  mean              0.2048    0.18
+  std. dev.         0.5594   0.509
+  weight sum          1000    1000
+  precision         0.0181  0.0181
+
+to
+  mean              0.0041  0.0041
+  std. dev.         0.0007  0.0007
+  weight sum          1000    1000
+  precision              0       0
+
+to a
+  mean              0.2567  0.3133
+  std. dev.         0.4337  0.4582
+  weight sum          1000    1000
+  precision         0.0037  0.0037
+
+to be
+  mean              0.2983  0.2498
+  std. dev.         0.2396  0.2168
+  weight sum          1000    1000
+  precision          0.001   0.001
+
+to be a
+  mean               0.218  0.2032
+  std. dev.         0.5163  0.4997
+  weight sum          1000    1000
+  precision         0.0087  0.0087
+
+to do
+  mean              0.3035  0.2187
+  std. dev.         0.5279  0.4463
+  weight sum          1000    1000
+  precision          0.005   0.005
+
+to find
+  mean              0.1978  0.1949
+  std. dev.         0.5237  0.5106
+  weight sum          1000    1000
+  precision         0.0132  0.0132
+
+to get
+  mean              0.2729  0.2513
+  std. dev.          0.503   0.476
+  weight sum          1000    1000
+  precision          0.006   0.006
+
+to give
+  mean              0.2317  0.1665
+  std. dev.         0.6707  0.5943
+  weight sum          1000    1000
+  precision         0.0258  0.0258
+
+to go
+  mean              0.1973  0.1863
+  std. dev.         0.5194  0.4893
+  weight sum          1000    1000
+  precision         0.0124  0.0124
+
+to have
+  mean              0.2639  0.1984
+  std. dev.         0.5279  0.4597
+  weight sum          1000    1000
+  precision         0.0073  0.0073
+
+to his
+  mean              0.1754  0.2634
+  std. dev.         0.4779  0.5434
+  weight sum          1000    1000
+  precision         0.0084  0.0084
+
+to kill
+  mean              0.1948  0.1168
+  std. dev.         0.6824  0.5251
+  weight sum          1000    1000
+  precision         0.0423  0.0423
+
+to make
+  mean              0.3022  0.2484
+  std. dev.         0.4668  0.4354
+  weight sum          1000    1000
+  precision         0.0045  0.0045
+
+to say
+  mean              0.2008  0.1956
+  std. dev.         0.5201  0.5169
+  weight sum          1000    1000
+  precision         0.0109  0.0109
+
+to see
+  mean              0.2609   0.294
+  std. dev.         0.4627  0.4744
+  weight sum          1000    1000
+  precision         0.0047  0.0047
+
+to take
+  mean              0.1742  0.2181
+  std. dev.         0.4919  0.5293
+  weight sum          1000    1000
+  precision         0.0113  0.0113
+
+to the
+  mean              0.2339  0.2836
+  std. dev.         0.1991  0.2047
+  weight sum          1000    1000
+  precision         0.0007  0.0007
+
+to watch
+  mean              0.1996  0.1971
+  std. dev.         0.5193  0.5169
+  weight sum          1000    1000
+  precision         0.0117  0.0117
+
+to work
+  mean              0.2129   0.106
+  std. dev.         0.6733  0.4624
+  weight sum          1000    1000
+  precision         0.0295  0.0295
+
+together
+  mean               0.219  0.2867
+  std. dev.         0.4843  0.5406
+  weight sum          1000    1000
+  precision         0.0071  0.0071
+
+tom
+  mean              0.1505   0.225
+  std. dev.         0.6516  0.7896
+  weight sum          1000    1000
+  precision         0.0552  0.0552
+
+too
+  mean               0.338  0.3006
+  std. dev.          0.399  0.3649
+  weight sum          1000    1000
+  precision         0.0028  0.0028
+
+too much
+  mean              0.2277  0.2024
+  std. dev.         0.7042  0.6482
+  weight sum          1000    1000
+  precision         0.0266  0.0266
+
+top
+  mean              0.1865  0.1961
+  std. dev.         0.5495  0.5625
+  weight sum          1000    1000
+  precision         0.0185  0.0185
+
+town
+  mean              0.1737  0.2812
+  std. dev.         0.6327  0.7806
+  weight sum          1000    1000
+  precision         0.0284  0.0284
+
+tries
+  mean              0.2634  0.1653
+  std. dev.         0.5806   0.451
+  weight sum          1000    1000
+  precision         0.0113  0.0113
+
+tries to
+  mean              0.2283  0.1545
+  std. dev.         0.5684  0.4616
+  weight sum          1000    1000
+  precision         0.0153  0.0153
+
+true
+  mean              0.1468   0.293
+  std. dev.         0.4511  0.6332
+  weight sum          1000    1000
+  precision         0.0134  0.0134
+
+truly
+  mean              0.1455  0.2149
+  std. dev.         0.4788  0.5701
+  weight sum          1000    1000
+  precision         0.0186  0.0186
+
+try
+  mean               0.189  0.2014
+  std. dev.           0.53  0.5317
+  weight sum          1000    1000
+  precision         0.0116  0.0116
+
+trying
+  mean               0.287  0.2286
+  std. dev.         0.5406  0.4803
+  weight sum          1000    1000
+  precision         0.0062  0.0062
+
+trying to
+  mean              0.2749  0.2228
+  std. dev.         0.5425  0.4874
+  weight sum          1000    1000
+  precision         0.0069  0.0069
+
+turn
+  mean              0.1896  0.2235
+  std. dev.         0.5008   0.531
+  weight sum          1000    1000
+  precision         0.0095  0.0095
+
+turns
+  mean              0.2167  0.2395
+  std. dev.         0.5416  0.5293
+  weight sum          1000    1000
+  precision         0.0111  0.0111
+
+tv
+  mean              0.2673  0.1665
+  std. dev.         0.6877  0.5288
+  weight sum          1000    1000
+  precision         0.0191  0.0191
+
+two
+  mean              0.3178  0.3231
+  std. dev.         0.3503  0.3576
+  weight sum          1000    1000
+  precision         0.0017  0.0017
+
+under
+  mean              0.2204  0.1884
+  std. dev.         0.5299  0.5093
+  weight sum          1000    1000
+  precision         0.0132  0.0132
+
+unfortunately
+  mean              0.2924  0.1449
+  std. dev.         0.5958  0.4153
+  weight sum          1000    1000
+  precision         0.0102  0.0102
+
+until
+  mean              0.2019  0.2529
+  std. dev.         0.4751  0.5036
+  weight sum          1000    1000
+  precision         0.0066  0.0066
+
+up
+  mean              0.2655  0.2521
+  std. dev.         0.2009  0.1948
+  weight sum          1000    1000
+  precision         0.0006  0.0006
+
+up in
+  mean              0.2247  0.1983
+  std. dev.         0.6537  0.6298
+  weight sum          1000    1000
+  precision         0.0296  0.0296
+
+up the
+  mean              0.1696  0.1753
+  std. dev.         0.5071  0.4992
+  weight sum          1000    1000
+  precision         0.0137  0.0137
+
+up to
+  mean              0.1957  0.2254
+  std. dev.         0.4931  0.5112
+  weight sum          1000    1000
+  precision         0.0104  0.0104
+
+up with
+  mean              0.2032  0.1773
+  std. dev.         0.5436  0.5147
+  weight sum          1000    1000
+  precision          0.014   0.014
+
+upon
+  mean              0.1705  0.2118
+  std. dev.          0.519  0.5574
+  weight sum          1000    1000
+  precision         0.0139  0.0139
+
+us
+  mean              0.2966  0.3341
+  std. dev.         0.4757  0.5096
+  weight sum          1000    1000
+  precision         0.0036  0.0036
+
+use
+  mean              0.1949  0.2389
+  std. dev.         0.4993  0.5297
+  weight sum          1000    1000
+  precision         0.0091  0.0091
+
+used
+  mean              0.2285  0.1912
+  std. dev.         0.5493  0.4993
+  weight sum          1000    1000
+  precision         0.0101  0.0101
+
+van
+  mean              0.1617  0.1449
+  std. dev.         0.8003  0.6967
+  weight sum          1000    1000
+  precision         0.0884  0.0884
+
+ve
+  mean               0.288  0.3079
+  std. dev.         0.5224  0.5205
+  weight sum          1000    1000
+  precision         0.0058  0.0058
+
+version
+  mean              0.1735  0.1951
+  std. dev.         0.5811  0.5919
+  weight sum          1000    1000
+  precision          0.026   0.026
+
+very
+  mean               0.289  0.3895
+  std. dev.         0.3669   0.421
+  weight sum          1000    1000
+  precision          0.002   0.002
+
+video
+  mean              0.2337  0.1473
+  std. dev.         0.6331  0.5113
+  weight sum          1000    1000
+  precision         0.0204  0.0204
+
+villain
+  mean              0.1894  0.1451
+  std. dev.         0.6957  0.5903
+  weight sum          1000    1000
+  precision         0.0395  0.0395
+
+violence
+  mean              0.1703     0.2
+  std. dev.          0.538  0.5957
+  weight sum          1000    1000
+  precision         0.0217  0.0217
+
+want
+  mean              0.2618  0.2428
+  std. dev.         0.5105  0.4845
+  weight sum          1000    1000
+  precision         0.0054  0.0054
+
+want to
+  mean              0.2395  0.1994
+  std. dev.         0.5536  0.4903
+  weight sum          1000    1000
+  precision         0.0089  0.0089
+
+wants
+  mean              0.2327  0.2417
+  std. dev.         0.5263  0.5188
+  weight sum          1000    1000
+  precision         0.0093  0.0093
+
+wants to
+  mean              0.1965  0.1749
+  std. dev.         0.5368  0.4829
+  weight sum          1000    1000
+  precision         0.0147  0.0147
+
+was
+  mean              0.2827  0.2663
+  std. dev.         0.2018  0.2004
+  weight sum          1000    1000
+  precision         0.0007  0.0007
+
+was a
+  mean              0.2267  0.1967
+  std. dev.         0.5431  0.5071
+  weight sum          1000    1000
+  precision         0.0146  0.0146
+
+was the
+  mean              0.1936  0.1797
+  std. dev.         0.5367   0.518
+  weight sum          1000    1000
+  precision         0.0201  0.0201
+
+wasn
+  mean              0.2863  0.1648
+  std. dev.         0.7137  0.5398
+  weight sum          1000    1000
+  precision          0.018   0.018
+
+wasn t
+  mean              0.2863  0.1648
+  std. dev.         0.7137  0.5398
+  weight sum          1000    1000
+  precision          0.018   0.018
+
+waste
+  mean              0.2436  0.0457
+  std. dev.         0.7544  0.3239
+  weight sum          1000    1000
+  precision         0.0614  0.0614
+
+watch
+  mean              0.2581   0.272
+  std. dev.          0.504  0.5188
+  weight sum          1000    1000
+  precision         0.0064  0.0064
+
+watching
+  mean              0.2719   0.209
+  std. dev.         0.5249  0.4683
+  weight sum          1000    1000
+  precision         0.0068  0.0068
+
+way
+  mean              0.2887  0.3162
+  std. dev.         0.3297  0.3338
+  weight sum          1000    1000
+  precision         0.0016  0.0016
+
+way to
+  mean              0.1635    0.16
+  std. dev.         0.4915  0.4807
+  weight sum          1000    1000
+  precision         0.0153  0.0153
+
+we
+  mean               0.355  0.3454
+  std. dev.         0.3585  0.3735
+  weight sum          1000    1000
+  precision         0.0017  0.0017
+
+we are
+  mean              0.1581  0.1632
+  std. dev.         0.5185  0.5183
+  weight sum          1000    1000
+  precision          0.021   0.021
+
+we re
+  mean              0.1734  0.1513
+  std. dev.         0.5475  0.5101
+  weight sum          1000    1000
+  precision         0.0244  0.0244
+
+well
+  mean              0.2805  0.3522
+  std. dev.         0.3356  0.3759
+  weight sum          1000    1000
+  precision         0.0015  0.0015
+
+went
+  mean              0.1953  0.1728
+  std. dev.         0.6436  0.6235
+  weight sum          1000    1000
+  precision         0.0418  0.0418
+
+were
+  mean              0.3322  0.3091
+  std. dev.         0.4644  0.4703
+  weight sum          1000    1000
+  precision         0.0031  0.0031
+
+west
+  mean              0.1665  0.0775
+  std. dev.         0.8698  0.4917
+  weight sum          1000    1000
+  precision         0.1271  0.1271
+
+what
+  mean              0.2769  0.2677
+  std. dev.         0.2125   0.212
+  weight sum          1000    1000
+  precision         0.0007  0.0007
+
+what s
+  mean              0.2633  0.1481
+  std. dev.         0.7465  0.5278
+  weight sum          1000    1000
+  precision         0.0239  0.0239
+
+what the
+  mean              0.2133  0.1764
+  std. dev.          0.644  0.5771
+  weight sum          1000    1000
+  precision         0.0208  0.0208
+
+when
+  mean              0.2516  0.2466
+  std. dev.         0.1832  0.1836
+  weight sum          1000    1000
+  precision         0.0006  0.0006
+
+when he
+  mean              0.2071  0.2378
+  std. dev.         0.5239  0.5434
+  weight sum          1000    1000
+  precision         0.0092  0.0092
+
+when the
+  mean               0.238  0.2354
+  std. dev.         0.5147   0.488
+  weight sum          1000    1000
+  precision         0.0069  0.0069
+
+when they
+  mean              0.1934  0.1722
+  std. dev.         0.6297  0.5876
+  weight sum          1000    1000
+  precision         0.0198  0.0198
+
+where
+  mean              0.3014  0.3101
+  std. dev.         0.3581  0.3558
+  weight sum          1000    1000
+  precision         0.0016  0.0016
+
+where the
+  mean               0.173  0.1793
+  std. dev.         0.5047  0.4894
+  weight sum          1000    1000
+  precision         0.0128  0.0128
+
+which
+  mean              0.2872  0.3089
+  std. dev.         0.2481  0.2551
+  weight sum          1000    1000
+  precision         0.0008  0.0008
+
+which is
+  mean              0.2136   0.261
+  std. dev.         0.4875  0.5215
+  weight sum          1000    1000
+  precision         0.0084  0.0084
+
+while
+  mean              0.2787  0.3395
+  std. dev.         0.3441  0.3684
+  weight sum          1000    1000
+  precision         0.0016  0.0016
+
+white
+  mean              0.1783  0.2023
+  std. dev.         0.6128  0.6472
+  weight sum          1000    1000
+  precision         0.0343  0.0343
+
+who
+  mean              0.1515  0.1609
+  std. dev.          0.083  0.0814
+  weight sum          1000    1000
+  precision         0.0003  0.0003
+
+who has
+  mean              0.1902  0.2233
+  std. dev.         0.5066   0.536
+  weight sum          1000    1000
+  precision         0.0112  0.0112
+
+who is
+  mean              0.2291  0.2785
+  std. dev.          0.487  0.5432
+  weight sum          1000    1000
+  precision         0.0066  0.0066
+
+who s
+  mean              0.2009  0.1843
+  std. dev.         0.5832  0.5744
+  weight sum          1000    1000
+  precision           0.02    0.02
+
+whole
+  mean              0.2591  0.2197
+  std. dev.         0.5398  0.4942
+  weight sum          1000    1000
+  precision         0.0074  0.0074
+
+whose
+  mean               0.218  0.2617
+  std. dev.         0.5171   0.554
+  weight sum          1000    1000
+  precision         0.0096  0.0096
+
+why
+  mean              0.3677  0.2212
+  std. dev.         0.5432  0.4284
+  weight sum          1000    1000
+  precision         0.0047  0.0047
+
+wife
+  mean              0.2371  0.3059
+  std. dev.         0.5816  0.6305
+  weight sum          1000    1000
+  precision         0.0103  0.0103
+
+wild
+  mean              0.1986  0.1613
+  std. dev.         0.8828  0.6961
+  weight sum          1000    1000
+  precision         0.0693  0.0693
+
+will
+  mean              0.3034    0.36
+  std. dev.          0.338  0.3743
+  weight sum          1000    1000
+  precision         0.0019  0.0019
+
+will be
+  mean              0.1626  0.2241
+  std. dev.         0.4887  0.5495
+  weight sum          1000    1000
+  precision         0.0122  0.0122
+
+with
+  mean              0.0474  0.0499
+  std. dev.         0.0159  0.0163
+  weight sum          1000    1000
+  precision         0.0001  0.0001
+
+with a
+  mean              0.2882  0.3193
+  std. dev.         0.3303  0.3471
+  weight sum          1000    1000
+  precision         0.0015  0.0015
+
+with an
+  mean              0.1525  0.1902
+  std. dev.         0.4795   0.535
+  weight sum          1000    1000
+  precision         0.0152  0.0152
+
+with her
+  mean              0.1659  0.2344
+  std. dev.         0.5156  0.5977
+  weight sum          1000    1000
+  precision          0.015   0.015
+
+with his
+  mean              0.2398  0.2765
+  std. dev.          0.516  0.5293
+  weight sum          1000    1000
+  precision         0.0067  0.0067
+
+with the
+  mean              0.2837  0.3079
+  std. dev.         0.2957  0.2997
+  weight sum          1000    1000
+  precision         0.0013  0.0013
+
+within
+  mean              0.1631  0.1675
+  std. dev.          0.555  0.5658
+  weight sum          1000    1000
+  precision          0.027   0.027
+
+without
+  mean              0.2477   0.297
+  std. dev.         0.4634  0.5012
+  weight sum          1000    1000
+  precision         0.0062  0.0062
+
+woman
+  mean               0.278   0.255
+  std. dev.         0.6236   0.592
+  weight sum          1000    1000
+  precision         0.0121  0.0121
+
+women
+  mean              0.1954  0.1884
+  std. dev.         0.6437   0.559
+  weight sum          1000    1000
+  precision         0.0231  0.0231
+
+won
+  mean              0.1807  0.2215
+  std. dev.         0.4818  0.5372
+  weight sum          1000    1000
+  precision         0.0114  0.0114
+
+won t
+  mean              0.1706  0.1801
+  std. dev.         0.5005  0.5053
+  weight sum          1000    1000
+  precision         0.0147  0.0147
+
+wonder
+  mean              0.1836  0.1543
+  std. dev.         0.5374  0.4766
+  weight sum          1000    1000
+  precision         0.0215  0.0215
+
+word
+  mean              0.2138  0.2094
+  std. dev.         0.7132  0.6738
+  weight sum          1000    1000
+  precision         0.0349  0.0349
+
+work
+  mean              0.2968  0.3066
+  std. dev.         0.4423  0.4324
+  weight sum          1000    1000
+  precision         0.0029  0.0029
+
+works
+  mean              0.1594  0.2571
+  std. dev.         0.4525   0.561
+  weight sum          1000    1000
+  precision         0.0105  0.0105
+
+world
+  mean              0.2471   0.386
+  std. dev.         0.4928  0.5809
+  weight sum          1000    1000
+  precision         0.0054  0.0054
+
+worse
+  mean              0.2824  0.1274
+  std. dev.         0.7353  0.5077
+  weight sum          1000    1000
+  precision         0.0249  0.0249
+
+worst
+  mean              0.3626  0.0657
+  std. dev.           0.79  0.3227
+  weight sum          1000    1000
+  precision         0.0207  0.0207
+
+worth
+  mean               0.191  0.2068
+  std. dev.         0.5392  0.5268
+  weight sum          1000    1000
+  precision          0.015   0.015
+
+would
+  mean              0.3243  0.2861
+  std. dev.         0.3171  0.2979
+  weight sum          1000    1000
+  precision         0.0012  0.0012
+
+would be
+  mean              0.2447  0.2339
+  std. dev.         0.5315  0.4988
+  weight sum          1000    1000
+  precision          0.008   0.008
+
+would have
+  mean              0.2617  0.1711
+  std. dev.         0.5703  0.4502
+  weight sum          1000    1000
+  precision         0.0085  0.0085
+
+wouldn
+  mean              0.2259  0.1266
+  std. dev.          0.662  0.4789
+  weight sum          1000    1000
+  precision          0.027   0.027
+
+wouldn t
+  mean              0.2259  0.1266
+  std. dev.          0.662  0.4789
+  weight sum          1000    1000
+  precision          0.027   0.027
+
+written
+  mean              0.2028  0.2243
+  std. dev.          0.506  0.5375
+  weight sum          1000    1000
+  precision         0.0112  0.0112
+
+wrong
+  mean              0.2376  0.1912
+  std. dev.          0.548   0.521
+  weight sum          1000    1000
+  precision         0.0114  0.0114
+
+year
+  mean              0.2617  0.3051
+  std. dev.         0.4948  0.5327
+  weight sum          1000    1000
+  precision         0.0051  0.0051
+
+years
+  mean              0.2587  0.3299
+  std. dev.         0.4631  0.4998
+  weight sum          1000    1000
+  precision         0.0041  0.0041
+
+yes
+  mean              0.1918  0.1464
+  std. dev.         0.5488  0.4813
+  weight sum          1000    1000
+  precision         0.0194  0.0194
+
+yet
+  mean              0.2099  0.3172
+  std. dev.          0.449  0.5487
+  weight sum          1000    1000
+  precision         0.0059  0.0059
+
+york
+  mean              0.1728   0.182
+  std. dev.         0.6155  0.6472
+  weight sum          1000    1000
+  precision         0.0329  0.0329
+
+you
+  mean              0.3139  0.2924
+  std. dev.         0.2286  0.2303
+  weight sum          1000    1000
+  precision         0.0007  0.0007
+
+you can
+  mean              0.2193   0.224
+  std. dev.         0.5204  0.5244
+  weight sum          1000    1000
+  precision         0.0105  0.0105
+
+you know
+  mean              0.2068  0.1607
+  std. dev.         0.6747  0.5931
+  weight sum          1000    1000
+  precision         0.0296  0.0296
+
+you ll
+  mean              0.2225  0.2028
+  std. dev.         0.7186  0.6953
+  weight sum          1000    1000
+  precision          0.029   0.029
+
+you re
+  mean              0.2474  0.1676
+  std. dev.         0.6057  0.5166
+  weight sum          1000    1000
+  precision         0.0159  0.0159
+
+young
+  mean              0.2483  0.3421
+  std. dev.         0.5212  0.5838
+  weight sum          1000    1000
+  precision         0.0083  0.0083
+
+your
+  mean              0.3007   0.313
+  std. dev.         0.5481  0.5299
+  weight sum          1000    1000
+  precision         0.0051  0.0051
+
+=
+  mean              0.0822  0.0649
+  std. dev.         0.8695  0.9244
+  weight sum          1000    1000
+  precision         0.9135  0.9135
+
+a new
+  mean              0.1812   0.248
+  std. dev.         0.6024   0.706
+  weight sum          1000    1000
+  precision         0.0197  0.0197
+
+a young
+  mean               0.146  0.2376
+  std. dev.         0.5454  0.6773
+  weight sum          1000    1000
+  precision         0.0235  0.0235
+
+aliens
+  mean              0.1423  0.1869
+  std. dev.         0.6883  0.8911
+  weight sum          1000    1000
+  precision         0.0855  0.0855
+
+amazing
+  mean              0.1228    0.21
+  std. dev.         0.5608  0.7022
+  weight sum          1000    1000
+  precision         0.0512  0.0512
+
+america
+  mean              0.1233  0.2336
+  std. dev.         0.5735  0.7469
+  weight sum          1000    1000
+  precision         0.0382  0.0382
+
+among
+  mean              0.1789  0.2274
+  std. dev.         0.6194  0.6632
+  weight sum          1000    1000
+  precision         0.0205  0.0205
+
+and her
+  mean              0.1641  0.2324
+  std. dev.          0.586  0.6977
+  weight sum          1000    1000
+  precision         0.0276  0.0276
+
+and it s
+  mean              0.1369   0.224
+  std. dev.         0.5247  0.6628
+  weight sum          1000    1000
+  precision         0.0223  0.0223
+
+and they
+  mean              0.1846   0.207
+  std. dev.         0.5949  0.6291
+  weight sum          1000    1000
+  precision         0.0205  0.0205
+
+art
+  mean              0.1435  0.2192
+  std. dev.         0.6542  0.7601
+  weight sum          1000    1000
+  precision         0.0508  0.0508
+
+as he
+  mean               0.169  0.3081
+  std. dev.          0.557  0.7283
+  weight sum          1000    1000
+  precision         0.0139  0.0139
+
+as they
+  mean              0.1803  0.2349
+  std. dev.         0.6057  0.6578
+  weight sum          1000    1000
+  precision         0.0249  0.0249
+
+as well as
+  mean              0.1315  0.2276
+  std. dev.         0.5293  0.6861
+  weight sum          1000    1000
+  precision         0.0271  0.0271
+
+attention
+  mean              0.1623  0.2482
+  std. dev.         0.5644  0.6843
+  weight sum          1000    1000
+  precision         0.0233  0.0233
+
+battle
+  mean              0.1972  0.2066
+  std. dev.         0.7401  0.7568
+  weight sum          1000    1000
+  precision         0.0366  0.0366
+
+beautiful
+  mean              0.1724  0.2983
+  std. dev.         0.5944  0.8441
+  weight sum          1000    1000
+  precision          0.041   0.041
+
+because of
+  mean              0.1826  0.2516
+  std. dev.         0.5972  0.7157
+  weight sum          1000    1000
+  precision          0.023   0.023
+
+ben
+  mean              0.1218  0.2045
+  std. dev.          0.661  0.8437
+  weight sum          1000    1000
+  precision          0.072   0.072
+
+between the
+  mean              0.1682  0.2594
+  std. dev.         0.5723  0.6799
+  weight sum          1000    1000
+  precision         0.0195  0.0195
+
+brilliant
+  mean              0.0882  0.2282
+  std. dev.         0.4486  0.6824
+  weight sum          1000    1000
+  precision         0.0322  0.0322
+
+brings
+  mean              0.1357  0.2229
+  std. dev.         0.5236   0.639
+  weight sum          1000    1000
+  precision         0.0229  0.0229
+
+cameron
+  mean              0.0547  0.1914
+  std. dev.         0.3987  0.9038
+  weight sum          1000    1000
+  precision         0.1093  0.1093
+
+change
+  mean              0.1299  0.2382
+  std. dev.         0.5167  0.6974
+  weight sum          1000    1000
+  precision         0.0219  0.0219
+
+child
+  mean              0.1835  0.2583
+  std. dev.         0.6689  0.7887
+  weight sum          1000    1000
+  precision         0.0313  0.0313
+
+chris
+  mean              0.1981  0.1858
+  std. dev.         0.7863  0.8416
+  weight sum          1000    1000
+  precision         0.0625  0.0625
+
+computer
+  mean              0.1619  0.1801
+  std. dev.         0.7402  0.7784
+  weight sum          1000    1000
+  precision         0.0801  0.0801
+
+crime
+  mean              0.1759  0.2082
+  std. dev.         0.7529  0.8411
+  weight sum          1000    1000
+  precision         0.0635  0.0635
+
+dark
+  mean              0.1841  0.2821
+  std. dev.         0.6199  0.8247
+  weight sum          1000    1000
+  precision         0.0302  0.0302
+
+de
+  mean              0.1602  0.2181
+  std. dev.         0.7521  0.8815
+  weight sum          1000    1000
+  precision          0.092   0.092
+
+deal
+  mean              0.1579  0.2272
+  std. dev.         0.5741  0.6874
+  weight sum          1000    1000
+  precision         0.0271  0.0271
+
+definitely
+  mean              0.1105  0.2145
+  std. dev.         0.4864  0.6801
+  weight sum          1000    1000
+  precision         0.0346  0.0346
+
+difficult
+  mean              0.1705  0.2112
+  std. dev.         0.6139  0.6704
+  weight sum          1000    1000
+  precision         0.0332  0.0332
+
+disney
+  mean              0.1617  0.2245
+  std. dev.         0.8395  1.0861
+  weight sum          1000    1000
+  precision          0.113   0.113
+
+dramatic
+  mean              0.1479  0.2174
+  std. dev.         0.5875  0.7057
+  weight sum          1000    1000
+  precision         0.0324  0.0324
+
+due
+  mean              0.1371  0.2192
+  std. dev.         0.5216    0.68
+  weight sum          1000    1000
+  precision         0.0249  0.0249
+
+easily
+  mean              0.1419  0.2268
+  std. dev.         0.5291  0.6707
+  weight sum          1000    1000
+  precision         0.0208  0.0208
+
+easy
+  mean              0.1669  0.2295
+  std. dev.         0.6042  0.6985
+  weight sum          1000    1000
+  precision         0.0273  0.0273
+
+effective
+  mean              0.0892  0.2464
+  std. dev.         0.4184  0.6978
+  weight sum          1000    1000
+  precision         0.0228  0.0228
+
+emotional
+  mean              0.1524  0.2455
+  std. dev.         0.5874  0.7359
+  weight sum          1000    1000
+  precision          0.033   0.033
+
+enjoy
+  mean              0.1609  0.2437
+  std. dev.          0.558  0.6994
+  weight sum          1000    1000
+  precision         0.0209  0.0209
+
+entertainment
+  mean              0.1628  0.2187
+  std. dev.         0.6015  0.6557
+  weight sum          1000    1000
+  precision         0.0277  0.0277
+
+even though
+  mean               0.179  0.2219
+  std. dev.         0.6066  0.6732
+  weight sum          1000    1000
+  precision         0.0246  0.0246
+
+events
+  mean              0.1549  0.2126
+  std. dev.         0.5971  0.6747
+  weight sum          1000    1000
+  precision         0.0295  0.0295
+
+eventually
+  mean              0.1664  0.2513
+  std. dev.         0.5745  0.7061
+  weight sum          1000    1000
+  precision         0.0243  0.0243
+
+excellent
+  mean              0.0702  0.2606
+  std. dev.         0.3954   0.802
+  weight sum          1000    1000
+  precision         0.0485  0.0485
+
+expect
+  mean              0.1796   0.219
+  std. dev.         0.6112  0.6763
+  weight sum          1000    1000
+  precision         0.0219  0.0219
+
+experience
+  mean              0.1642  0.2466
+  std. dev.         0.5644  0.6826
+  weight sum          1000    1000
+  precision         0.0168  0.0168
+
+extremely
+  mean              0.1487  0.2589
+  std. dev.         0.5434   0.691
+  weight sum          1000    1000
+  precision          0.021   0.021
+
+feature
+  mean              0.1768  0.2171
+  std. dev.         0.6322  0.6849
+  weight sum          1000    1000
+  precision         0.0262  0.0262
+
+feeling
+  mean              0.1726  0.2239
+  std. dev.         0.6129  0.6886
+  weight sum          1000    1000
+  precision         0.0326  0.0326
+
+feels
+  mean               0.179  0.2264
+  std. dev.         0.6266  0.6864
+  weight sum          1000    1000
+  precision         0.0281  0.0281
+
+fiction
+  mean              0.1153  0.2316
+  std. dev.         0.5748  0.8667
+  weight sum          1000    1000
+  precision         0.0483  0.0483
+
+for her
+  mean              0.1496  0.2062
+  std. dev.         0.5747  0.6801
+  weight sum          1000    1000
+  precision         0.0284  0.0284
+
+forced
+  mean              0.1769  0.2221
+  std. dev.         0.6227  0.6637
+  weight sum          1000    1000
+  precision         0.0214  0.0214
+
+form
+  mean              0.1589  0.2254
+  std. dev.         0.6078  0.6861
+  weight sum          1000    1000
+  precision         0.0307  0.0307
+
+from his
+  mean              0.1463  0.2123
+  std. dev.          0.563  0.6581
+  weight sum          1000    1000
+  precision         0.0292  0.0292
+
+future
+  mean              0.1759  0.2518
+  std. dev.         0.6839  0.7689
+  weight sum          1000    1000
+  precision          0.033   0.033
+
+genre
+  mean              0.1998  0.2423
+  std. dev.         0.6601  0.7171
+  weight sum          1000    1000
+  precision         0.0227  0.0227
+
+george
+  mean              0.1515  0.2215
+  std. dev.         0.6587  0.8285
+  weight sum          1000    1000
+  precision         0.0518  0.0518
+
+happy
+  mean              0.1627   0.231
+  std. dev.         0.6052  0.7349
+  weight sum          1000    1000
+  precision         0.0325  0.0325
+
+has the
+  mean               0.197  0.2017
+  std. dev.          0.641  0.6299
+  weight sum          1000    1000
+  precision         0.0235  0.0235
+
+he does
+  mean              0.1532  0.2234
+  std. dev.         0.5447  0.6566
+  weight sum          1000    1000
+  precision         0.0214  0.0214
+
+heart
+  mean              0.1681  0.2593
+  std. dev.         0.6099  0.7247
+  weight sum          1000    1000
+  precision         0.0289  0.0289
+
+hilarious
+  mean              0.1066  0.2587
+  std. dev.         0.4716  0.7135
+  weight sum          1000    1000
+  precision         0.0213  0.0213
+
+his character
+  mean              0.1921  0.2218
+  std. dev.         0.6455  0.6826
+  weight sum          1000    1000
+  precision         0.0301  0.0301
+
+history
+  mean              0.1106  0.2408
+  std. dev.         0.4817   0.714
+  weight sum          1000    1000
+  precision         0.0277  0.0277
+
+husband
+  mean              0.1791  0.2741
+  std. dev.         0.7207  0.9015
+  weight sum          1000    1000
+  precision         0.0463  0.0463
+
+important
+  mean              0.1439  0.2186
+  std. dev.         0.5466  0.6595
+  weight sum          1000    1000
+  precision         0.0234  0.0234
+
+impressive
+  mean              0.1566  0.2206
+  std. dev.         0.5828  0.6618
+  weight sum          1000    1000
+  precision         0.0266  0.0266
+
+in its
+  mean              0.1714  0.2366
+  std. dev.         0.5668  0.6643
+  weight sum          1000    1000
+  precision         0.0195  0.0195
+
+in love
+  mean              0.1927  0.2151
+  std. dev.         0.6945  0.7363
+  weight sum          1000    1000
+  precision         0.0434  0.0434
+
+in order
+  mean              0.1851  0.2181
+  std. dev.         0.6212   0.668
+  weight sum          1000    1000
+  precision         0.0206  0.0206
+
+in order to
+  mean              0.1766  0.2078
+  std. dev.         0.6153  0.6726
+  weight sum          1000    1000
+  precision         0.0233  0.0233
+
+in their
+  mean              0.1736   0.259
+  std. dev.         0.5763  0.7164
+  weight sum          1000    1000
+  precision         0.0176  0.0176
+
+intelligent
+  mean              0.1051  0.2164
+  std. dev.         0.4601  0.6895
+  weight sum          1000    1000
+  precision           0.03    0.03
+
+is more
+  mean              0.1466  0.2155
+  std. dev.         0.5431   0.631
+  weight sum          1000    1000
+  precision         0.0196  0.0196
+
+is one of
+  mean              0.1708  0.2662
+  std. dev.         0.5541  0.6695
+  weight sum          1000    1000
+  precision         0.0181  0.0181
+
+is very
+  mean              0.1107  0.2591
+  std. dev.         0.4621  0.7465
+  weight sum          1000    1000
+  precision         0.0306  0.0306
+
+it does
+  mean              0.1171  0.2158
+  std. dev.          0.493  0.6319
+  weight sum          1000    1000
+  precision         0.0252  0.0252
+
+it has
+  mean              0.1647  0.2295
+  std. dev.         0.5964  0.6989
+  weight sum          1000    1000
+  precision         0.0313  0.0313
+
+it is a
+  mean              0.1265  0.2361
+  std. dev.         0.5036  0.6581
+  weight sum          1000    1000
+  precision         0.0184  0.0184
+
+it to
+  mean              0.1815  0.2194
+  std. dev.         0.6323  0.6423
+  weight sum          1000    1000
+  precision         0.0256  0.0256
+
+jackie
+  mean              0.0852   0.205
+  std. dev.         0.6384   1.134
+  weight sum          1000    1000
+  precision         0.1708  0.1708
+
+just a
+  mean              0.1794  0.2134
+  std. dev.         0.5881  0.6057
+  weight sum          1000    1000
+  precision         0.0255  0.0255
+
+leads
+  mean               0.172  0.2459
+  std. dev.         0.5837  0.6798
+  weight sum          1000    1000
+  precision         0.0196  0.0196
+
+leave
+  mean              0.1652  0.2297
+  std. dev.         0.5632   0.673
+  weight sum          1000    1000
+  precision         0.0199  0.0199
+
+light
+  mean              0.1311  0.2166
+  std. dev.         0.5383  0.6656
+  weight sum          1000    1000
+  precision         0.0295  0.0295
+
+living
+  mean              0.1869  0.2235
+  std. dev.         0.6459  0.6743
+  weight sum          1000    1000
+  precision         0.0252  0.0252
+
+local
+  mean              0.1794  0.2322
+  std. dev.         0.6266  0.7545
+  weight sum          1000    1000
+  precision         0.0302  0.0302
+
+man who
+  mean              0.1376  0.2527
+  std. dev.         0.5249  0.6872
+  weight sum          1000    1000
+  precision         0.0237  0.0237
+
+many of
+  mean              0.0827  0.2125
+  std. dev.         0.4031  0.6491
+  weight sum          1000    1000
+  precision          0.027   0.027
+
+meets
+  mean              0.1878  0.2166
+  std. dev.         0.6685   0.679
+  weight sum          1000    1000
+  precision          0.028   0.028
+
+memorable
+  mean              0.0564  0.2204
+  std. dev.         0.3458  0.6942
+  weight sum          1000    1000
+  precision         0.0393  0.0393
+
+nature
+  mean              0.1236  0.2125
+  std. dev.         0.5413  0.7028
+  weight sum          1000    1000
+  precision         0.0388  0.0388
+
+novel
+  mean              0.1824  0.2432
+  std. dev.         0.6654  0.7929
+  weight sum          1000    1000
+  precision         0.0304  0.0304
+
+of the best
+  mean              0.0653  0.2285
+  std. dev.          0.363  0.6507
+  weight sum          1000    1000
+  precision          0.025   0.025
+
+of the most
+  mean              0.1588  0.2519
+  std. dev.         0.5452  0.6642
+  weight sum          1000    1000
+  precision          0.018   0.018
+
+of these
+  mean              0.1783  0.2221
+  std. dev.         0.5908  0.6593
+  weight sum          1000    1000
+  precision         0.0181  0.0181
+
+order to
+  mean              0.1818  0.2115
+  std. dev.         0.6204  0.6729
+  weight sum          1000    1000
+  precision         0.0223  0.0223
+
+oscar
+  mean               0.104  0.2348
+  std. dev.           0.52  0.7673
+  weight sum          1000    1000
+  precision         0.0544  0.0544
+
+others
+  mean               0.144  0.2931
+  std. dev.         0.5015  0.6971
+  weight sum          1000    1000
+  precision          0.018   0.018
+
+overall
+  mean              0.0882  0.2241
+  std. dev.         0.4237  0.6985
+  weight sum          1000    1000
+  precision         0.0366  0.0366
+
+parents
+  mean               0.162  0.2239
+  std. dev.         0.6603  0.7715
+  weight sum          1000    1000
+  precision         0.0439  0.0439
+
+particularly
+  mean              0.1844  0.2597
+  std. dev.         0.6035   0.727
+  weight sum          1000    1000
+  precision          0.028   0.028
+
+perfect
+  mean              0.1467   0.335
+  std. dev.         0.5518    0.77
+  weight sum          1000    1000
+  precision          0.018   0.018
+
+perfectly
+  mean              0.0712  0.2382
+  std. dev.         0.3739  0.7162
+  weight sum          1000    1000
+  precision         0.0324  0.0324
+
+personal
+  mean              0.1148  0.2151
+  std. dev.         0.5161  0.6833
+  weight sum          1000    1000
+  precision           0.03    0.03
+
+political
+  mean              0.0642  0.2145
+  std. dev.         0.4314  0.8952
+  weight sum          1000    1000
+  precision         0.1048  0.1048
+
+power
+  mean              0.1637  0.2292
+  std. dev.         0.6296  0.6949
+  weight sum          1000    1000
+  precision         0.0304  0.0304
+
+powerful
+  mean              0.0969  0.2152
+  std. dev.         0.4548  0.6782
+  weight sum          1000    1000
+  precision         0.0264  0.0264
+
+previous
+  mean              0.1548  0.2004
+  std. dev.         0.6006  0.6744
+  weight sum          1000    1000
+  precision         0.0344  0.0344
+
+reality
+  mean              0.1064  0.2048
+  std. dev.          0.536  0.7506
+  weight sum          1000    1000
+  precision         0.0561  0.0561
+
+recent
+  mean              0.1929  0.2082
+  std. dev.         0.6469  0.6287
+  weight sum          1000    1000
+  precision         0.0224  0.0224
+
+release
+  mean              0.1566  0.1975
+  std. dev.         0.6157  0.6439
+  weight sum          1000    1000
+  precision         0.0327  0.0327
+
+released
+  mean               0.152  0.2058
+  std. dev.         0.5727  0.6483
+  weight sum          1000    1000
+  precision         0.0246  0.0246
+
+rich
+  mean              0.1388  0.2149
+  std. dev.         0.6005  0.6926
+  weight sum          1000    1000
+  precision         0.0314  0.0314
+
+ryan
+  mean              0.1331  0.1916
+  std. dev.         0.7542  0.9478
+  weight sum          1000    1000
+  precision         0.0994  0.0994
+
+science
+  mean              0.1624  0.1924
+  std. dev.         0.7011  0.8407
+  weight sum          1000    1000
+  precision         0.0632  0.0632
+
+score
+  mean               0.153  0.2216
+  std. dev.         0.6003  0.6869
+  weight sum          1000    1000
+  precision          0.036   0.036
+
+sense of
+  mean               0.144  0.2661
+  std. dev.         0.5158   0.726
+  weight sum          1000    1000
+  precision          0.021   0.021
+
+sets
+  mean              0.1734  0.2471
+  std. dev.         0.6095  0.6705
+  weight sum          1000    1000
+  precision         0.0233  0.0233
+
+similar
+  mean              0.1318  0.2084
+  std. dev.         0.5336  0.6317
+  weight sum          1000    1000
+  precision         0.0261  0.0261
+
+simple
+  mean              0.1662  0.2836
+  std. dev.         0.5735  0.7327
+  weight sum          1000    1000
+  precision         0.0257  0.0257
+
+solid
+  mean              0.0981  0.2255
+  std. dev.         0.4596  0.6651
+  weight sum          1000    1000
+  precision         0.0248  0.0248
+
+sometimes
+  mean               0.149  0.2814
+  std. dev.         0.5778  0.7596
+  weight sum          1000    1000
+  precision         0.0229  0.0229
+
+somewhat
+  mean               0.129   0.223
+  std. dev.         0.5225   0.686
+  weight sum          1000    1000
+  precision         0.0315  0.0315
+
+star wars
+  mean              0.0619  0.1532
+  std. dev.         0.4692  0.8086
+  weight sum          1000    1000
+  precision         0.1165  0.1165
+
+stories
+  mean              0.1232   0.196
+  std. dev.         0.5614   0.757
+  weight sum          1000    1000
+  precision         0.0602  0.0602
+
+story is
+  mean              0.1727  0.2267
+  std. dev.         0.6142  0.7154
+  weight sum          1000    1000
+  precision         0.0283  0.0283
+
+story of
+  mean              0.1447  0.2402
+  std. dev.         0.5774  0.7214
+  weight sum          1000    1000
+  precision         0.0328  0.0328
+
+strong
+  mean              0.1447  0.2759
+  std. dev.         0.5355  0.7008
+  weight sum          1000    1000
+  precision         0.0174  0.0174
+
+success
+  mean              0.1702   0.228
+  std. dev.          0.618  0.6801
+  weight sum          1000    1000
+  precision         0.0292  0.0292
+
+surprise
+  mean              0.1766  0.2152
+  std. dev.         0.6307  0.6668
+  weight sum          1000    1000
+  precision         0.0406  0.0406
+
+surprisingly
+  mean               0.148  0.2225
+  std. dev.         0.5633  0.6598
+  weight sum          1000    1000
+  precision         0.0231  0.0231
+
+sweet
+  mean              0.1041  0.1987
+  std. dev.          0.514  0.7886
+  weight sum          1000    1000
+  precision         0.0568  0.0568
+
+taken
+  mean              0.1941  0.2196
+  std. dev.         0.6266  0.6562
+  weight sum          1000    1000
+  precision          0.019   0.019
+
+tale
+  mean              0.1294  0.2608
+  std. dev.         0.5154   0.745
+  weight sum          1000    1000
+  precision         0.0249  0.0249
+
+the cast
+  mean              0.2058  0.2118
+  std. dev.         0.6723  0.6619
+  weight sum          1000    1000
+  precision         0.0236  0.0236
+
+the character
+  mean              0.1597  0.2157
+  std. dev.         0.5658  0.6386
+  weight sum          1000    1000
+  precision         0.0252  0.0252
+
+the final
+  mean              0.1587  0.2064
+  std. dev.         0.5658  0.6424
+  weight sum          1000    1000
+  precision         0.0239  0.0239
+
+the right
+  mean               0.103  0.2242
+  std. dev.          0.491  0.7405
+  weight sum          1000    1000
+  precision         0.0396  0.0396
+
+the screen
+  mean              0.1868  0.2151
+  std. dev.         0.5988  0.6333
+  weight sum          1000    1000
+  precision         0.0178  0.0178
+
+the year
+  mean              0.1449  0.2141
+  std. dev.           0.55  0.6477
+  weight sum          1000    1000
+  precision         0.0269  0.0269
+
+to keep
+  mean              0.1663  0.2219
+  std. dev.         0.6144  0.6712
+  weight sum          1000    1000
+  precision          0.029   0.029
+
+told
+  mean              0.1489  0.2203
+  std. dev.         0.5471  0.6625
+  weight sum          1000    1000
+  precision          0.024   0.024
+
+towards
+  mean              0.1317  0.2126
+  std. dev.         0.5202  0.6812
+  weight sum          1000    1000
+  precision         0.0319  0.0319
+
+truman
+  mean               0.034  0.1426
+  std. dev.         0.3829  1.0933
+  weight sum          1000    1000
+  precision         0.4052  0.4052
+
+unlike
+  mean              0.1035  0.2097
+  std. dev.         0.4552   0.672
+  weight sum          1000    1000
+  precision         0.0304  0.0304
+
+uses
+  mean              0.1529  0.2085
+  std. dev.         0.5686  0.6504
+  weight sum          1000    1000
+  precision         0.0244  0.0244
+
+using
+  mean              0.1509  0.2103
+  std. dev.         0.5686  0.6462
+  weight sum          1000    1000
+  precision         0.0261  0.0261
+
+usually
+  mean              0.1847  0.2184
+  std. dev.         0.6102  0.6579
+  weight sum          1000    1000
+  precision         0.0217  0.0217
+
+viewer
+  mean              0.1614  0.2325
+  std. dev.         0.6074  0.7418
+  weight sum          1000    1000
+  precision         0.0324  0.0324
+
+visual
+  mean              0.1141  0.2147
+  std. dev.         0.5279  0.6825
+  weight sum          1000    1000
+  precision         0.0417  0.0417
+
+voice
+  mean               0.155  0.2423
+  std. dev.         0.6095  0.8181
+  weight sum          1000    1000
+  precision         0.0436  0.0436
+
+war
+  mean              0.1482  0.3309
+  std. dev.         0.6604  1.0502
+  weight sum          1000    1000
+  precision         0.0429  0.0429
+
+wars
+  mean              0.0668  0.1704
+  std. dev.         0.4855  0.8234
+  weight sum          1000    1000
+  precision         0.0977  0.0977
+
+we see
+  mean              0.1305   0.196
+  std. dev.         0.5407  0.6591
+  weight sum          1000    1000
+  precision         0.0303  0.0303
+
+well as
+  mean              0.1459  0.2512
+  std. dev.         0.5409  0.7122
+  weight sum          1000    1000
+  precision         0.0229  0.0229
+
+what he
+  mean              0.1268  0.1991
+  std. dev.          0.512  0.6332
+  weight sum          1000    1000
+  precision         0.0251  0.0251
+
+what is
+  mean              0.1665  0.2163
+  std. dev.          0.603  0.6555
+  weight sum          1000    1000
+  precision         0.0257  0.0257
+
+whether
+  mean              0.1573  0.2299
+  std. dev.         0.5479  0.6708
+  weight sum          1000    1000
+  precision         0.0217  0.0217
+
+while the
+  mean              0.1779  0.2049
+  std. dev.           0.59  0.6356
+  weight sum          1000    1000
+  precision         0.0216  0.0216
+
+whom
+  mean              0.1336  0.2284
+  std. dev.         0.5162  0.6744
+  weight sum          1000    1000
+  precision         0.0272  0.0272
+
+wonderful
+  mean               0.096  0.2559
+  std. dev.         0.4478  0.7142
+  weight sum          1000    1000
+  precision         0.0279  0.0279
+
+words
+  mean               0.199  0.2075
+  std. dev.         0.6888  0.6527
+  weight sum          1000    1000
+  precision         0.0436  0.0436
+
+
+
+Time taken to build model: 0.93 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1592               79.6    %
+Incorrectly Classified Instances       408               20.4    %
+Kappa statistic                          0.592
+Mean absolute error                      0.2049
+Root mean squared error                  0.4477
+Relative absolute error                 40.9898 %
+Root relative squared error             89.533  %
+Total Number of Instances             2000
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.797    0.205    0.795      0.797    0.796      0.592    0.837     0.803     neg
+                 0.795    0.203    0.797      0.795    0.796      0.592    0.835     0.807     pos
+Weighted Avg.    0.796    0.204    0.796      0.796    0.796      0.592    0.836     0.805
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 797 203 |   a = neg
+ 205 795 |   b = pos
+
